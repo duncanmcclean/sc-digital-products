@@ -1,0 +1,48 @@
+{
+    "name": "doublethreedigital/sc-digital-downloads",
+    "description": "Digital Downloads for Simple Commerce",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "DoubleThreeDigital\\DigitalDownloads\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DoubleThreeDigital\\DigitalDownloads\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Digital Downloads",
+            "description": "Digital Downloads for Simple Commerce"
+        },
+        "laravel": {
+            "providers": [
+                "DoubleThreeDigital\\DigitalDownloads\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "doublethreedigital/simple-commerce": "dev-master",
+        "statamic/cms": "^3.0@beta"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^4.2",
+        "orchestra/testbench": "^5.0"
+    },
+    "minimum-stability": "dev",
+    "scripts": {
+        "lint": [
+            "php-cs-fixer fix ./src"
+        ],
+        "test": [
+            "./vendor/bin/phpunit"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
