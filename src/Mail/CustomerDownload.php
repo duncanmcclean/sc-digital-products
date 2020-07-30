@@ -24,7 +24,7 @@ class CustomerDownload extends Mailable
     {
         $order = Cart::find($this->order->id());
 
-        return $this->markdown('sc-digital-downloads::customer-download')
+        return $this->markdown('sc-digital-products::customer-download')
             ->subject("Downloads for Order {$order->title}")
             ->with('order', $order->data)
             ->with('cart', $order->data)

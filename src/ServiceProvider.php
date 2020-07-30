@@ -26,6 +26,25 @@ class ServiceProvider extends AddonServiceProvider
     {
         parent::boot();
 
+        $this
+            ->bootVendorAssets()
+            ->bootRepositries();
+    }
+
+    protected function bootVendorAssets()
+    {
+        $this->publishes([
+            __DIR__.'/../resources/views' => resource_path('views/vendor/sc-digital-products'),
+        ], 'sc-digital-products-views');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'sc-digital-products');
+
+        return $this;
+    }
+
+    protected function bootRepositries()
+    {
         $this->app->bind('LicenseKey', Repositories\LicenseKeyRepository::class);
+
+        return $this;
     }
 }
