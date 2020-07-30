@@ -25,5 +25,7 @@ class ServiceProvider extends AddonServiceProvider
     public function boot()
     {
         parent::boot();
+
+        $this->app->bind('LicenseKey', Repositories\LicenseKeyRepository::class);
     }
 }

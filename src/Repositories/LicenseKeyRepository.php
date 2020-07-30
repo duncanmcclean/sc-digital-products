@@ -1,13 +1,15 @@
 <?php
 
-namespace DoubleThreeDigital\DigitalDownloads\Support;
+namespace DoubleThreeDigital\DigitalDownloads\Repositories;
 
-class LicenseKeyGenerator
+use DoubleThreeDigital\DigitalDownloads\Contracts\LicenseKeyRepository as LicenseKeyContract;
+
+class LicenseKeyRepository implements LicenseKeyContract
 {
     protected $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     protected $length = 24;
 
-    public function generate()
+    public function generate(): string
     {
         $key = '';
 

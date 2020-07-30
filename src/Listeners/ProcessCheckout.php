@@ -2,14 +2,13 @@
 
 namespace DoubleThreeDigital\DigitalDownloads\Listeners;
 
+use DoubleThreeDigital\DigitalDownloads\Facades\LicenseKey;
 use DoubleThreeDigital\DigitalDownloads\Mail\CustomerDownload;
-use DoubleThreeDigital\DigitalDownloads\Support\LicenseKeyGenerator;
 use DoubleThreeDigital\SimpleCommerce\Events\CartCompleted;
 use DoubleThreeDigital\SimpleCommerce\Facades\Cart;
 use DoubleThreeDigital\SimpleCommerce\Facades\Customer;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\URL;
-use Statamic\Assets\Asset;
 use Statamic\Entries\Entry;
 
 class ProcessCheckout
@@ -26,7 +25,7 @@ class ProcessCheckout
                 return ! $product->data()->has('is_digital_product') ? $product->data()->get('is_digital_product') : false;
             })
             ->each(function ($item) use ($order, &$hasDownloads) {
-                $item['license_key'] = (new LicenseKeyGenerator)->generate();
+                $item['license_key'] = LicenseKey::generate();
                 $item['download_url'] = URL::signedRoute('statamic.digital-downloads.download', [
                     'order_id' => $order->id,
                     'item_id' => $item['id'],
