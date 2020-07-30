@@ -4,6 +4,7 @@ namespace DoubleThreeDigital\DigitalProducts\Http\Controllers;
 
 use DoubleThreeDigital\SimpleCommerce\Facades\Cart;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Statamic\Facades\Entry;
 
 class DownloadController
@@ -29,8 +30,12 @@ class DownloadController
         }
 
         $product = Entry::find($item['product']);
+        $asset = $product->toAugmentedArray()['downloadable_asset']->value();
 
-        // TODO: figure out way to protect the file path
-        return redirect($product->toAugmentedArray()['downloadable_asset']->value()->absoluteUrl());
+        $download = Storage::disk($asset->container()->toArray()['disk'])->get($asset->path());
+
+        return response($download)
+            ->header('Content-Type', Storage::disk($asset->container()->toArray()['disk'])->mimeType($asset->path()))
+            ->header('Content-Length', strlen($download));
     }
 }
