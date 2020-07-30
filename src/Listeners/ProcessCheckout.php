@@ -46,6 +46,6 @@ class ProcessCheckout
         if ($hasDownloads && isset($order->data['customer'])) {
             Mail::to(Customer::find($order->data['customer'])->data['email'])
                 ->send(new CustomerDownload($order->entry()));
-        }    
+        }
     }
 }
