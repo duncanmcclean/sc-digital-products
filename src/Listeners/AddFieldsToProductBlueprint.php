@@ -1,6 +1,6 @@
 <?php
 
-namespace DoubleThreeDigital\DigitalDownloads\Listeners;
+namespace DoubleThreeDigital\DigitalProducts\Listeners;
 
 use Statamic\Events\EntryBlueprintFound;
 

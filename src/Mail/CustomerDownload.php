@@ -1,6 +1,6 @@
 <?php
 
-namespace DoubleThreeDigital\DigitalDownloads\Mail;
+namespace DoubleThreeDigital\DigitalProducts\Mail;
 
 use DoubleThreeDigital\SimpleCommerce\Facades\Cart;
 use DoubleThreeDigital\SimpleCommerce\Facades\Customer;

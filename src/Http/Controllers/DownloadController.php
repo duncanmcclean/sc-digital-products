@@ -1,6 +1,6 @@
 <?php
 
-namespace DoubleThreeDigital\DigitalDownloads\Http\Controllers;
+namespace DoubleThreeDigital\DigitalProducts\Http\Controllers;
 
 use DoubleThreeDigital\SimpleCommerce\Facades\Cart;
 use Illuminate\Http\Request;

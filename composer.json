@@ -1,25 +1,25 @@
 {
-    "name": "doublethreedigital/sc-digital-downloads",
-    "description": "Digital Downloads for Simple Commerce",
+    "name": "doublethreedigital/sc-digital-products",
+    "description": "Sell digital products with Simple Commerce",
     "license": "proprietary",
     "autoload": {
         "psr-4": {
-            "DoubleThreeDigital\\DigitalDownloads\\": "src"
+            "DoubleThreeDigital\\DigitalProducts\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DoubleThreeDigital\\DigitalDownloads\\Tests\\": "tests"
+            "DoubleThreeDigital\\DigitalProducts\\Tests\\": "tests"
         }
     },
     "extra": {
         "statamic": {
-            "name": "Digital Downloads",
-            "description": "Digital Downloads for Simple Commerce"
+            "name": "Digital Products",
+            "description": "Sell digital products with Simple Commerce"
         },
         "laravel": {
             "providers": [
-                "DoubleThreeDigital\\DigitalDownloads\\ServiceProvider"
+                "DoubleThreeDigital\\DigitalProducts\\ServiceProvider"
             ]
         }
     },

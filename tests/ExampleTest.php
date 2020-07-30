@@ -1,8 +1,8 @@
 <?php
 
-namespace DoubleThreeDigital\DigitalDownloads\Tests;
+namespace DoubleThreeDigital\DigitalProducts\Tests;
 
-use DoubleThreeDigital\DigitalDownloads\Listeners\AddFieldsToProductBlueprint;
+use DoubleThreeDigital\DigitalProducts\Listeners\AddFieldsToProductBlueprint;
 use Statamic\Events\EntryBlueprintFound;
 use Statamic\Facades\Blueprint;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace DoubleThreeDigital\DigitalDownloads;
+namespace DoubleThreeDigital\DigitalProducts;
 
-use DoubleThreeDigital\DigitalDownloads\Listeners\ProcessCheckout;
+use DoubleThreeDigital\DigitalProducts\Listeners\ProcessCheckout;
 use DoubleThreeDigital\SimpleCommerce\Events\CartCompleted;
 use Statamic\Events\EntryBlueprintFound;
 use Statamic\Providers\AddonServiceProvider;

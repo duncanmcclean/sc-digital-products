@@ -1,6 +1,6 @@
 <?php
 
-namespace DoubleThreeDigital\DigitalDownloads\Contracts;
+namespace DoubleThreeDigital\DigitalProducts\Contracts;
 
 interface LicenseKeyRepository
 {

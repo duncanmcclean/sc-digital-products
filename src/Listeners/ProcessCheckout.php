@@ -1,9 +1,9 @@
 <?php
 
-namespace DoubleThreeDigital\DigitalDownloads\Listeners;
+namespace DoubleThreeDigital\DigitalProducts\Listeners;
 
-use DoubleThreeDigital\DigitalDownloads\Facades\LicenseKey;
-use DoubleThreeDigital\DigitalDownloads\Mail\CustomerDownload;
+use DoubleThreeDigital\DigitalProducts\Facades\LicenseKey;
+use DoubleThreeDigital\DigitalProducts\Mail\CustomerDownload;
 use DoubleThreeDigital\SimpleCommerce\Events\CartCompleted;
 use DoubleThreeDigital\SimpleCommerce\Facades\Cart;
 use DoubleThreeDigital\SimpleCommerce\Facades\Customer;

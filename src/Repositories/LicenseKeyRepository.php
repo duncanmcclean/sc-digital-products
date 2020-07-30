@@ -1,8 +1,8 @@
 <?php
 
-namespace DoubleThreeDigital\DigitalDownloads\Repositories;
+namespace DoubleThreeDigital\DigitalProducts\Repositories;
 
-use DoubleThreeDigital\DigitalDownloads\Contracts\LicenseKeyRepository as LicenseKeyContract;
+use DoubleThreeDigital\DigitalProducts\Contracts\LicenseKeyRepository as LicenseKeyContract;
 
 class LicenseKeyRepository implements LicenseKeyContract
 {

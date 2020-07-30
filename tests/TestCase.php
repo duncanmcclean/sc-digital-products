@@ -1,10 +1,10 @@
 <?php
 
-namespace DoubleThreeDigital\DigitalDownloads\Tests;
+namespace DoubleThreeDigital\DigitalProducts\Tests;
 
 use Statamic\Extend\Manifest;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use DoubleThreeDigital\DigitalDownloads\ServiceProvider;
+use DoubleThreeDigital\DigitalProducts\ServiceProvider;
 use Statamic\Facades\Blueprint;
 use Statamic\Providers\StatamicServiceProvider;
 use Statamic\Statamic;
@@ -31,9 +31,9 @@ abstract class TestCase extends OrchestraTestCase
         parent::getEnvironmentSetUp($app);
 
         $app->make(Manifest::class)->manifest = [
-            'doublethreedigital/sc-digital-downloads' => [
-                'id' => 'doublethreedigital/sc-digital-downloads',
-                'namespace' => 'DoubleThreeDigital\\DigitalDownloads\\',
+            'doublethreedigital/sc-digital-products' => [
+                'id' => 'doublethreedigital/sc-digital-products',
+                'namespace' => 'DoubleThreeDigital\\DigitalProducts\\',
             ],
         ];
     }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ceab109f83573738be2c5881b8dc99db",
+    "content-hash": "255ead5a0c096503130f49d285d3f090",
     "packages": [
         {
             "name": "barryvdh/laravel-dompdf",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-dompdf.git",
-                "reference": "d7108f78cf5254a2d8c224542967f133e5a6d4e8"
+                "reference": "ff0fbe368980c90299e5cb575501a302bc34d910"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-dompdf/zipball/d7108f78cf5254a2d8c224542967f133e5a6d4e8",
-                "reference": "d7108f78cf5254a2d8c224542967f133e5a6d4e8",
+                "url": "https://api.github.com/repos/barryvdh/laravel-dompdf/zipball/ff0fbe368980c90299e5cb575501a302bc34d910",
+                "reference": "ff0fbe368980c90299e5cb575501a302bc34d910",
                 "shasum": ""
             },
             "require": {
@@ -60,7 +60,13 @@
                 "laravel",
                 "pdf"
             ],
-            "time": "2020-02-25T20:44:34+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/barryvdh",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-07-28T19:29:28+00:00"
         },
         {
             "name": "brick/math",
@@ -821,12 +827,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doublethreedigital/simple-commerce.git",
-                "reference": "5b31a6e4f2251576c1baaa46394c593f2d3c355c"
+                "reference": "a5e3ec79128586fe00c02f09ee9d40a21a93c613"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/5b31a6e4f2251576c1baaa46394c593f2d3c355c",
-                "reference": "5b31a6e4f2251576c1baaa46394c593f2d3c355c",
+                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/a5e3ec79128586fe00c02f09ee9d40a21a93c613",
+                "reference": "a5e3ec79128586fe00c02f09ee9d40a21a93c613",
                 "shasum": ""
             },
             "require": {
@@ -864,7 +870,7 @@
                 "proprietary"
             ],
             "description": "A perfectly simple e-commerce addon for Statamic",
-            "time": "2020-07-23T22:30:15+00:00"
+            "time": "2020-07-25T22:21:54+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -1539,12 +1545,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "29c64cb6c1d8cc712463c63fcf60c0a46fe3455e"
+                "reference": "d9efbb6f7a335407e7f1bf52e38b0e4d6b588c9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/29c64cb6c1d8cc712463c63fcf60c0a46fe3455e",
-                "reference": "29c64cb6c1d8cc712463c63fcf60c0a46fe3455e",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d9efbb6f7a335407e7f1bf52e38b0e4d6b588c9d",
+                "reference": "d9efbb6f7a335407e7f1bf52e38b0e4d6b588c9d",
                 "shasum": ""
             },
             "require": {
@@ -1688,7 +1694,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-07-24T16:48:44+00:00"
+            "time": "2020-07-28T17:31:07+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -1921,12 +1927,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "279e0fbe70dbf577a73694a42db731f548905842"
+                "reference": "585824702f534f8d3cf7fab7225e8466cc4b7493"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/279e0fbe70dbf577a73694a42db731f548905842",
-                "reference": "279e0fbe70dbf577a73694a42db731f548905842",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/585824702f534f8d3cf7fab7225e8466cc4b7493",
+                "reference": "585824702f534f8d3cf7fab7225e8466cc4b7493",
                 "shasum": ""
             },
             "require": {
@@ -2003,7 +2009,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2020-07-22T19:35:04+00:00"
+            "time": "2020-07-26T07:20:36+00:00"
         },
         {
             "name": "league/glide",
@@ -2461,12 +2467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "2eef272913ce4fd3938d445398232d494957fa5d"
+                "reference": "1f61206de973d67f36ce50f041c792ddac663c3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/2eef272913ce4fd3938d445398232d494957fa5d",
-                "reference": "2eef272913ce4fd3938d445398232d494957fa5d",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/1f61206de973d67f36ce50f041c792ddac663c3e",
+                "reference": "1f61206de973d67f36ce50f041c792ddac663c3e",
                 "shasum": ""
             },
             "require": {
@@ -2542,7 +2548,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-23T09:06:23+00:00"
+            "time": "2020-07-28T06:04:54+00:00"
         },
         {
             "name": "opis/closure",
@@ -3283,12 +3289,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "9ebb0eb9ed63faac72fb4897442ad0fc7d0f5e9b"
+                "reference": "69b3eb8824546bf2c06211fcf2ef630effa5ec49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/9ebb0eb9ed63faac72fb4897442ad0fc7d0f5e9b",
-                "reference": "9ebb0eb9ed63faac72fb4897442ad0fc7d0f5e9b",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/69b3eb8824546bf2c06211fcf2ef630effa5ec49",
+                "reference": "69b3eb8824546bf2c06211fcf2ef630effa5ec49",
                 "shasum": ""
             },
             "require": {
@@ -3362,7 +3368,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-07-10T20:25:54+00:00"
+            "time": "2020-07-28T16:52:54+00:00"
         },
         {
             "name": "sabberworm/php-css-parser",
@@ -3562,16 +3568,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.0.0-beta.39",
+            "version": "v3.0.0-beta.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "5715a8a0452dfe5e61fafb5c22c00933cdf11e86"
+                "reference": "6aef80817764504c45d4330e10646761f81a684c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/5715a8a0452dfe5e61fafb5c22c00933cdf11e86",
-                "reference": "5715a8a0452dfe5e61fafb5c22c00933cdf11e86",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/6aef80817764504c45d4330e10646761f81a684c",
+                "reference": "6aef80817764504c45d4330e10646761f81a684c",
                 "shasum": ""
             },
             "require": {
@@ -3633,7 +3639,7 @@
                 "laravel",
                 "statamic"
             ],
-            "time": "2020-07-22T18:12:25+00:00"
+            "time": "2020-07-29T18:38:49+00:00"
         },
         {
             "name": "statamic/stringy",
@@ -3698,16 +3704,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.44.0",
+            "version": "v7.45.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "b39ccc77358fbe0d462e6cc89ac01b7a0c896f35"
+                "reference": "21e5001f5e0d787e4755c8bfc00e578dce9ae058"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/b39ccc77358fbe0d462e6cc89ac01b7a0c896f35",
-                "reference": "b39ccc77358fbe0d462e6cc89ac01b7a0c896f35",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/21e5001f5e0d787e4755c8bfc00e578dce9ae058",
+                "reference": "21e5001f5e0d787e4755c8bfc00e578dce9ae058",
                 "shasum": ""
             },
             "require": {
@@ -3751,7 +3757,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2020-07-20T21:25:50+00:00"
+            "time": "2020-07-29T04:29:52+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -5613,12 +5619,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "1f9639f804838e57a61f970fbc3961e2b1fb2499"
+                "reference": "0fb6f05de9eb6639ee09ec46c5ea512e6c39ecb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/1f9639f804838e57a61f970fbc3961e2b1fb2499",
-                "reference": "1f9639f804838e57a61f970fbc3961e2b1fb2499",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/0fb6f05de9eb6639ee09ec46c5ea512e6c39ecb2",
+                "reference": "0fb6f05de9eb6639ee09ec46c5ea512e6c39ecb2",
                 "shasum": ""
             },
             "require": {
@@ -5697,7 +5703,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-18T19:55:03+00:00"
+            "time": "2020-07-29T16:19:41+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -7003,12 +7009,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "1404386ca3410b04fe58b9517e85d702ab33b2c6"
+                "reference": "0dc25522071ab7b287c455dfa98d5725ebfdb058"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/1404386ca3410b04fe58b9517e85d702ab33b2c6",
-                "reference": "1404386ca3410b04fe58b9517e85d702ab33b2c6",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/0dc25522071ab7b287c455dfa98d5725ebfdb058",
+                "reference": "0dc25522071ab7b287c455dfa98d5725ebfdb058",
                 "shasum": ""
             },
             "require": {
@@ -7063,7 +7069,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2020-07-09T08:31:54+00:00"
+            "time": "2020-07-29T13:14:13+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -7125,12 +7131,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "acaf3fecad7f2ee0d82bb51ea680e396aae07b97"
+                "reference": "21dce06dfbf0365c6a7cc8fdbdc995926c6a9300"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/acaf3fecad7f2ee0d82bb51ea680e396aae07b97",
-                "reference": "acaf3fecad7f2ee0d82bb51ea680e396aae07b97",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/21dce06dfbf0365c6a7cc8fdbdc995926c6a9300",
+                "reference": "21dce06dfbf0365c6a7cc8fdbdc995926c6a9300",
                 "shasum": ""
             },
             "require": {
@@ -7169,7 +7175,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-07-23T10:28:13+00:00"
+            "time": "2020-07-25T13:18:53+00:00"
         },
         {
             "name": "nunomaduro/collision",
@@ -7321,12 +7327,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "a1f55d014167ecbde1f61f405c01b34ad34d03a2"
+                "reference": "efb93f44ee76d2393d166e7bdee92400af74b8a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/a1f55d014167ecbde1f61f405c01b34ad34d03a2",
-                "reference": "a1f55d014167ecbde1f61f405c01b34ad34d03a2",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/efb93f44ee76d2393d166e7bdee92400af74b8a3",
+                "reference": "efb93f44ee76d2393d166e7bdee92400af74b8a3",
                 "shasum": ""
             },
             "require": {
@@ -7389,7 +7395,7 @@
                     "type": "liberapay"
                 }
             ],
-            "time": "2020-07-11T03:15:49+00:00"
+            "time": "2020-07-28T04:04:11+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -7710,12 +7716,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "f1741b9fe9205282feb49f2e11e166443da2f469"
+                "reference": "07c2b257a2ff9bbdacfa1071de814f8544fbc35b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/f1741b9fe9205282feb49f2e11e166443da2f469",
-                "reference": "f1741b9fe9205282feb49f2e11e166443da2f469",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/07c2b257a2ff9bbdacfa1071de814f8544fbc35b",
+                "reference": "07c2b257a2ff9bbdacfa1071de814f8544fbc35b",
                 "shasum": ""
             },
             "require": {
@@ -7726,7 +7732,7 @@
                 "phpunit/php-file-iterator": "^3.0.3",
                 "phpunit/php-text-template": "^2.0.2",
                 "sebastian/code-unit-reverse-lookup": "^2.0.2",
-                "sebastian/complexity": "^1.0",
+                "sebastian/complexity": "^2.0",
                 "sebastian/environment": "^5.1.2",
                 "sebastian/lines-of-code": "^1.0",
                 "sebastian/version": "^3.0.1",
@@ -7774,7 +7780,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-07-24T05:12:56+00:00"
+            "time": "2020-07-29T12:18:00+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -8007,12 +8013,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "d682102a1ee22c7d0fd25485d31c99f2eab6c6c2"
+                "reference": "e3c16d32cddab9fefdcc1c7e1bc750768740887c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d682102a1ee22c7d0fd25485d31c99f2eab6c6c2",
-                "reference": "d682102a1ee22c7d0fd25485d31c99f2eab6c6c2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e3c16d32cddab9fefdcc1c7e1bc750768740887c",
+                "reference": "e3c16d32cddab9fefdcc1c7e1bc750768740887c",
                 "shasum": ""
             },
             "require": {
@@ -8097,7 +8103,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-07-24T08:59:24+00:00"
+            "time": "2020-07-29T05:00:17+00:00"
         },
         {
             "name": "sebastian/code-unit",
@@ -8278,16 +8284,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/complexity.git",
-                "reference": "261434fdbdb2b36a73b5616b5b6baa46f94dafed"
+                "reference": "33fcd6a26656c6546f70871244ecba4b4dced097"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/complexity/zipball/261434fdbdb2b36a73b5616b5b6baa46f94dafed",
-                "reference": "261434fdbdb2b36a73b5616b5b6baa46f94dafed",
+                "url": "https://api.github.com/repos/sebastianbergmann/complexity/zipball/33fcd6a26656c6546f70871244ecba4b4dced097",
+                "reference": "33fcd6a26656c6546f70871244ecba4b4dced097",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "^4.6",
+                "nikic/php-parser": "^4.7",
                 "php": "^7.3 || ^8.0"
             },
             "require-dev": {
@@ -8296,7 +8302,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -8323,7 +8329,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-07-22T18:34:30+00:00"
+            "time": "2020-07-25T14:01:34+00:00"
         },
         {
             "name": "sebastian/diff",

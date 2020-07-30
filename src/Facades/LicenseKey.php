@@ -1,6 +1,6 @@
 <?php
 
-namespace DoubleThreeDigital\DigitalDownloads\Facades;
+namespace DoubleThreeDigital\DigitalProducts\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
