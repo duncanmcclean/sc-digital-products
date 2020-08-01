@@ -15,14 +15,10 @@ class DownloadController
             abort(401);
         }
 
-        $orderId = $request->order_id;
-        $itemId = $request->item_id;
-        $licenseKey = $request->license_key;
-
-        $order = Cart::find($orderId);
+        $order = Cart::find($request->order_id);
 
         $item = collect($order->data['items'])
-            ->where('id', $itemId)
+            ->where('id', $request->item_id)
             ->first();
 
         if ($item['license_key'] != $request->license_key) {
