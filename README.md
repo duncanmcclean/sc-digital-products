@@ -5,13 +5,24 @@ This addon enables you to sell digital products with Simple Commerce, an e-comme
 
 This addon is free, however to use it in production, you'll need to purchase a Simple Commerce license from the [Statamic Marketplace](https://statamic.com/addons/double-three-digital/simple-commerce).
 
+## Features
+* Allows you to specifiy assets for the customer to download
+* Generates license keys
+* Emails customers with license keys and download links to purchased products
+
 ## Installation
 1. Install with Composer - `composer require doublethreedigital/sc-digital-products`
-2. Done!
+2. Start using the addon!
 
 ## Usage
+### Adding downloadable assets to products
 TODO
 
+### Overriding the licence key generation logic
+TODO
+
+### Customising email views
+TODO
 
 ## Resources
 * [Simple Commerce Documentation](https://doublethree.digital/simple-commerce/about)
