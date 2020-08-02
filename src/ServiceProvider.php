@@ -4,6 +4,7 @@ namespace DoubleThreeDigital\DigitalProducts;
 
 use DoubleThreeDigital\DigitalProducts\Listeners\ProcessCheckout;
 use DoubleThreeDigital\SimpleCommerce\Events\CartCompleted;
+use Illuminate\Support\Facades\Route;
 use Statamic\Events\EntryBlueprintFound;
 use Statamic\Providers\AddonServiceProvider;
 
@@ -28,7 +29,8 @@ class ServiceProvider extends AddonServiceProvider
 
         $this
             ->bootVendorAssets()
-            ->bootRepositries();
+            ->bootRepositries()
+            ->registerApiRoutes();
     }
 
     protected function bootVendorAssets()
@@ -44,6 +46,17 @@ class ServiceProvider extends AddonServiceProvider
     protected function bootRepositries()
     {
         $this->app->bind('LicenseKey', Repositories\LicenseKeyRepository::class);
+
+        return $this;
+    }
+
+    protected function registerApiRoutes()
+    {
+        Route::middleware(config('statamic.api.middleware'))
+            ->name('sc-digital-products.api.')
+            ->prefix(config('statamic.api.route').'/sc-digital-downloads/')
+            // ->namespace('DoubleThreeDigital\SimpleCommerce\Http\Controllers\API')
+            ->group(__DIR__.'/../routes/api.php');
 
         return $this;
     }

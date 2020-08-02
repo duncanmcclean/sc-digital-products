@@ -4,10 +4,11 @@ namespace DoubleThreeDigital\DigitalProducts\Http\Controllers;
 
 use DoubleThreeDigital\SimpleCommerce\Facades\Cart;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Storage;
 use Statamic\Facades\Entry;
 
-class DownloadController
+class DownloadController extends Controller
 {
     public function show(Request $request)
     {
