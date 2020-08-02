@@ -42,6 +42,35 @@ php artisan vendor:pulish --tag="sc-digital-products-views"
 
 You'll then find the published views in your `resources/views/vendor/sc-digital-products` folder.
 
+### License Verification
+We've included a basic verification endpoint which you can use to check if a customer's license key is valid. Before you can use the endpoint, you'll need to [enable Statamic's REST API](https://statamic.dev/rest-api#enable-the-api).
+
+Once enabled, you can simply make a POST request to `/api/sc-digital-downloads/verification` with a JSON body containing the license key you wish to verify.
+
+```
+{
+    "license_key": "IpebSuXft9Koio5GgP7TSRdtl"
+}
+```
+
+A valid response will look like this:
+
+```
+{
+  "license_key": "IpebSuXft9Koio5GgP7TSRdtl",
+  "valid": true
+}
+```
+
+And an invalid one will be like this.
+
+```
+{
+  "license_key": "IpebSuXft9Koio5GgP7TSRdtl",
+  "valid": false
+}
+```
+
 ## Resources
 * [Simple Commerce Documentation](https://doublethree.digital/simple-commerce/about)
 * [Simple Commerce Issues](https://github.com/doublethreedigital/simple-commerce/issues)
