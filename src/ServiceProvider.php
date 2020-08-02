@@ -52,11 +52,12 @@ class ServiceProvider extends AddonServiceProvider
 
     protected function registerApiRoutes()
     {
-        Route::middleware(config('statamic.api.middleware'))
-            ->name('sc-digital-products.api.')
-            ->prefix(config('statamic.api.route').'/sc-digital-downloads/')
-            // ->namespace('DoubleThreeDigital\SimpleCommerce\Http\Controllers\API')
-            ->group(__DIR__.'/../routes/api.php');
+        if (config('statamic.api.enabed') === true) {
+            Route::middleware(config('statamic.api.middleware'))
+                ->name('sc-digital-products.api.')
+                ->prefix(config('statamic.api.route').'/sc-digital-downloads/')
+                ->group(__DIR__.'/../routes/api.php');
+        }
 
         return $this;
     }
