@@ -7,6 +7,7 @@ use DoubleThreeDigital\SimpleCommerce\Events\CartCompleted;
 use Illuminate\Support\Facades\Route;
 use Statamic\Events\EntryBlueprintFound;
 use Statamic\Providers\AddonServiceProvider;
+use Statamic\Statamic;
 
 class ServiceProvider extends AddonServiceProvider
 {
@@ -45,7 +46,10 @@ class ServiceProvider extends AddonServiceProvider
 
     protected function bootRepositries()
     {
-        $this->app->bind('LicenseKey', Repositories\LicenseKeyRepository::class);
+        Statamic::repository(
+            Contracts\LicenseKeyRepository::class,
+            Repositories\LicenseKeyRepository::class
+        );
 
         return $this;
     }
