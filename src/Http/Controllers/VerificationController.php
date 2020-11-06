@@ -10,7 +10,7 @@ class VerificationController extends Controller
 {
     public function index(VerificationRequest $request)
     {
-        $orders = Entry::whereCollection('orders')
+        $orders = Entry::whereCollection(config('simple-commerce.collections.orders'))
             ->filter(function ($order) {
                 return $order->get('is_paid') === true;
             })
