@@ -9,7 +9,7 @@ class AddFieldsToProductBlueprint
     public function handle(EntryBlueprintFound $event)
     {
         if ($event->blueprint->namespace() !== "collections.".config('simple-commerce.collections.products')) {
-            return ;
+            return $event->blueprint;
         }
 
         $event->blueprint->ensureField('is_digital_product', [
@@ -26,5 +26,7 @@ class AddFieldsToProductBlueprint
                 'is_digital_product' => 'equals true',
             ],
         ], 'Digital Product');
+
+        return $event->blueprint;
     }
 }
