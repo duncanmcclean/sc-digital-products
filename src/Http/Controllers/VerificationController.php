@@ -11,8 +11,8 @@ class VerificationController extends Controller
     public function index(VerificationRequest $request)
     {
         $orders = Entry::whereCollection('orders')
-            ->reject(function ($order) {
-                return ! $order->get('is_paid') === true; 
+            ->filter(function ($order) {
+                return $order->get('is_paid') === true;
             })
             ->map(function ($order) use ($request) {
                 foreach ($order->get('items') as $item) {
