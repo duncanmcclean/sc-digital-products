@@ -47,7 +47,7 @@ We've included a basic verification endpoint which you can use to check if a cus
 
 Once enabled, you can simply make a POST request to `/api/sc-digital-downloads/verification` with a JSON body containing the license key you wish to verify.
 
-```
+```json
 {
     "license_key": "IpebSuXft9Koio5GgP7TSRdtl"
 }
@@ -55,7 +55,7 @@ Once enabled, you can simply make a POST request to `/api/sc-digital-downloads/v
 
 A valid response will look like this:
 
-```
+```json
 {
   "license_key": "IpebSuXft9Koio5GgP7TSRdtl",
   "valid": true
@@ -64,7 +64,7 @@ A valid response will look like this:
 
 And an invalid one will be like this.
 
-```
+```json
 {
   "license_key": "IpebSuXft9Koio5GgP7TSRdtl",
   "valid": false
