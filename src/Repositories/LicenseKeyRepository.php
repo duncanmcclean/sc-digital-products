@@ -19,4 +19,9 @@ class LicenseKeyRepository implements LicenseKeyContract
 
         return $key;
     }
+
+    public static function bindings(): array
+    {
+        return [];
+    }
 }
