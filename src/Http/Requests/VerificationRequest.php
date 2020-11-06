@@ -14,7 +14,7 @@ class VerificationRequest extends FormRequest
     public function rules()
     {
         return [
-            'license_key' => 'required|string',
+            'license_key' => ['required', 'string'],
         ];
     }
 }
