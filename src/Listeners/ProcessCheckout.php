@@ -22,7 +22,9 @@ class ProcessCheckout
             ->reject(function ($item) {
                 $product = Entry::find($item['product']);
 
-                return ! $product->data()->has('is_digital_product') ? $product->data()->get('is_digital_product') : false;
+                return ! $product->data()->has('is_digital_product') ?
+                    $product->data()->get('is_digital_product') :
+                    false;
             })
             ->each(function ($item) use ($order, &$hasDownloads) {
                 $item['license_key'] = LicenseKey::generate();
@@ -39,7 +41,7 @@ class ProcessCheckout
                 ];
 
                 $order->update($data);
-                
+
                 $hasDownloads = true;
             });
 
