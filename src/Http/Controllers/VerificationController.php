@@ -16,8 +16,8 @@ class VerificationController extends Controller
             })
             ->map(function ($order) use ($request) {
                 foreach ($order->get('items') as $item) {
-                    if (isset($item['license_key'])) {
-                        if ($item['license_key'] === $request->license_key) return ['result' => true];
+                    if (isset($item['license_key']) && $item['license_key'] === $request->license_key) {
+                        return ['result' => true];
                     }
                 }
 
