@@ -1,6 +1,6 @@
 <?php
 
-namespace DoubleThreeDigital\DigitalProducts\Repositories;
+namespace DoubleThreeDigital\DigitalProducts\Tests\Repositories;
 
 use DoubleThreeDigital\DigitalProducts\Tests\TestCase;
 
