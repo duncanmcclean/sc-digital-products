@@ -2,6 +2,7 @@
 
 namespace DoubleThreeDigital\DigitalProducts\Tests\Repositories;
 
+use DoubleThreeDigital\DigitalProducts\Repositories\LicenseKeyRepository;
 use DoubleThreeDigital\DigitalProducts\Tests\TestCase;
 
 class LicenseKeyRepositoryTest extends TestCase
