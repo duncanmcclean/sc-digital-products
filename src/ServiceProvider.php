@@ -56,7 +56,7 @@ class ServiceProvider extends AddonServiceProvider
 
     protected function registerApiRoutes()
     {
-        if (config('statamic.api.enabed') === true) {
+        if (config('statamic.api.enabled') === true) {
             Route::middleware(config('statamic.api.middleware'))
                 ->name('sc-digital-products.api.')
                 ->prefix(config('statamic.api.route').'/sc-digital-downloads/')
