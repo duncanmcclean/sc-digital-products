@@ -2,9 +2,9 @@
 
 namespace DoubleThreeDigital\DigitalProducts\Repositories;
 
-use DoubleThreeDigital\DigitalProducts\Contracts\LicenseKeyRepository as LicenseKeyContract;
+use DoubleThreeDigital\DigitalProducts\Contracts\LicenseKeyRepository as Contract;
 
-class LicenseKeyRepository implements LicenseKeyContract
+class LicenseKeyRepository implements Contract
 {
     protected $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     protected $length = 24;
