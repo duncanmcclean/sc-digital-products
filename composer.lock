@@ -196,12 +196,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "4ac6f57d18cb5d234ba7d7226dbff6bfb4165ceb"
+                "reference": "480a6439fd388361cfa9bbafcfe0d5eaa69f8bce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/4ac6f57d18cb5d234ba7d7226dbff6bfb4165ceb",
-                "reference": "4ac6f57d18cb5d234ba7d7226dbff6bfb4165ceb",
+                "url": "https://api.github.com/repos/composer/composer/zipball/480a6439fd388361cfa9bbafcfe0d5eaa69f8bce",
+                "reference": "480a6439fd388361cfa9bbafcfe0d5eaa69f8bce",
                 "shasum": ""
             },
             "require": {
@@ -280,7 +280,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-16T21:42:21+00:00"
+            "time": "2020-11-20T08:28:09+00:00"
         },
         {
             "name": "composer/semver",
@@ -492,16 +492,16 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "dev-master",
+            "version": "2.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "9219404578b0063985bdf97d96aa4bb3e7e4125a"
+                "reference": "c6a0da4f0e06aa5cd83a2c1a4e449fae98c8bad7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/9219404578b0063985bdf97d96aa4bb3e7e4125a",
-                "reference": "9219404578b0063985bdf97d96aa4bb3e7e4125a",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/c6a0da4f0e06aa5cd83a2c1a4e449fae98c8bad7",
+                "reference": "c6a0da4f0e06aa5cd83a2c1a4e449fae98c8bad7",
                 "shasum": ""
             },
             "require": {
@@ -515,11 +515,6 @@
                 "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.1.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Inflector\\": "lib/Doctrine/Inflector"
@@ -579,7 +574,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-28T08:25:50+00:00"
+            "time": "2020-10-28T16:09:51+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -1424,12 +1419,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "910d5edb32b24a07849fcf99fa8aa6673f940c8b"
+                "reference": "318c226907707e6d82941e8449ab9527b789cd90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/910d5edb32b24a07849fcf99fa8aa6673f940c8b",
-                "reference": "910d5edb32b24a07849fcf99fa8aa6673f940c8b",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/318c226907707e6d82941e8449ab9527b789cd90",
+                "reference": "318c226907707e6d82941e8449ab9527b789cd90",
                 "shasum": ""
             },
             "require": {
@@ -1502,7 +1497,7 @@
                 "illuminate/view": "self.version"
             },
             "require-dev": {
-                "aws/aws-sdk-php": "^3.0",
+                "aws/aws-sdk-php": "^3.155",
                 "doctrine/dbal": "^2.6|^3.0",
                 "filp/whoops": "^2.8",
                 "guzzlehttp/guzzle": "^6.5.5|^7.0.1",
@@ -1515,7 +1510,7 @@
                 "symfony/cache": "^5.1"
             },
             "suggest": {
-                "aws/aws-sdk-php": "Required to use the SQS queue driver, DynamoDb failed job storage and SES mail driver (^3.0).",
+                "aws/aws-sdk-php": "Required to use the SQS queue driver, DynamoDb failed job storage and SES mail driver (^3.155).",
                 "doctrine/dbal": "Required to rename columns and drop SQLite columns (^2.6|^3.0).",
                 "ext-ftp": "Required to use the Flysystem FTP driver.",
                 "ext-gd": "Required to use Illuminate\\Http\\Testing\\FileFactory::image().",
@@ -1579,7 +1574,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-11-18T03:06:47+00:00"
+            "time": "2020-11-19T17:43:32+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -3672,16 +3667,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.0.28",
+            "version": "v3.0.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "a08f17e6eeac46cb00bc7ec17b8ef4eee65e1bdf"
+                "reference": "b2ce703727cdded49a932a43f76031911494b8be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/a08f17e6eeac46cb00bc7ec17b8ef4eee65e1bdf",
-                "reference": "a08f17e6eeac46cb00bc7ec17b8ef4eee65e1bdf",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/b2ce703727cdded49a932a43f76031911494b8be",
+                "reference": "b2ce703727cdded49a932a43f76031911494b8be",
                 "shasum": ""
             },
             "require": {
@@ -3751,7 +3746,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-17T21:19:53+00:00"
+            "time": "2020-11-19T20:52:44+00:00"
         },
         {
             "name": "statamic/stringy",
@@ -4453,12 +4448,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "19de51f4fd1cb88ba4d8d9a8c39d79cca7f11577"
+                "reference": "fd8305521692f27eae3263895d1ef1571c71a78d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/19de51f4fd1cb88ba4d8d9a8c39d79cca7f11577",
-                "reference": "19de51f4fd1cb88ba4d8d9a8c39d79cca7f11577",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/fd8305521692f27eae3263895d1ef1571c71a78d",
+                "reference": "fd8305521692f27eae3263895d1ef1571c71a78d",
                 "shasum": ""
             },
             "require": {
@@ -4503,7 +4498,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-02T07:55:38+00:00"
+            "time": "2020-11-18T09:42:36+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -4657,12 +4652,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "ad93121b82327d1bed5cabefe272421dd7ff538d"
+                "reference": "3b9e61cdc33f2f667fbbdfcb1ee2c07e4d2c395d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/ad93121b82327d1bed5cabefe272421dd7ff538d",
-                "reference": "ad93121b82327d1bed5cabefe272421dd7ff538d",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/3b9e61cdc33f2f667fbbdfcb1ee2c07e4d2c395d",
+                "reference": "3b9e61cdc33f2f667fbbdfcb1ee2c07e4d2c395d",
                 "shasum": ""
             },
             "require": {
@@ -4758,7 +4753,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-10T07:38:36+00:00"
+            "time": "2020-11-18T10:00:07+00:00"
         },
         {
             "name": "symfony/lock",
@@ -7246,12 +7241,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "dc9b56810f45adfb9e9be8d250b8c83d55dade49"
+                "reference": "0839cfc56fbd91601b0d8d7eb566e7672c9c5f96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/dc9b56810f45adfb9e9be8d250b8c83d55dade49",
-                "reference": "dc9b56810f45adfb9e9be8d250b8c83d55dade49",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/0839cfc56fbd91601b0d8d7eb566e7672c9c5f96",
+                "reference": "0839cfc56fbd91601b0d8d7eb566e7672c9c5f96",
                 "shasum": ""
             },
             "require": {
@@ -7318,7 +7313,7 @@
                     "type": "liberapay"
                 }
             ],
-            "time": "2020-11-17T23:18:11+00:00"
+            "time": "2020-11-19T23:00:53+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -7478,12 +7473,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556"
+                "reference": "e3324ecbde7319b0bbcf0fd7ca4af19469c38da9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/069a785b2141f5bcf49f3e353548dc1cce6df556",
-                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/e3324ecbde7319b0bbcf0fd7ca4af19469c38da9",
+                "reference": "e3324ecbde7319b0bbcf0fd7ca4af19469c38da9",
                 "shasum": ""
             },
             "require": {
@@ -7522,7 +7517,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2020-09-03T19:13:55+00:00"
+            "time": "2020-11-18T14:27:38+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -7936,12 +7931,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "f49c536742da845979ad34d8c201492b57c5bdef"
+                "reference": "a3e9c9358642734261136502c7e485aaeb1b259b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f49c536742da845979ad34d8c201492b57c5bdef",
-                "reference": "f49c536742da845979ad34d8c201492b57c5bdef",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a3e9c9358642734261136502c7e485aaeb1b259b",
+                "reference": "a3e9c9358642734261136502c7e485aaeb1b259b",
                 "shasum": ""
             },
             "require": {
@@ -8027,7 +8022,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-16T14:30:40+00:00"
+            "time": "2020-11-20T06:44:28+00:00"
         },
         {
             "name": "sebastian/cli-parser",
