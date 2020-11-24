@@ -72,9 +72,9 @@ And an invalid one will be like this.
 ```
 
 ## Resources
-* [Simple Commerce Documentation](https://doublethree.digital/simple-commerce/about)
+* [Documentation](https://sc-docs.doublethree.digital)
 * [Simple Commerce Issues](https://github.com/doublethreedigital/simple-commerce/issues)
-* [Simple Commerce Discord](https://discord.gg/P3ACYf9)
+* [Simple Commerce Discussions](https://github.com/doublethreedigital/simple-commerce/discussions)
 
 <p>
 <a href="https://statamic.com"><img src="https://img.shields.io/badge/Statamic-3.0+-FF269E?style=for-the-badge" alt="Compatible with Statamic v3"></a>
