@@ -196,12 +196,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "0da9e216fc1d52889c5b569fd60b719ef170abaa"
+                "reference": "adf7bebf21aa10754ed37ab32c23d96f3a4e2da9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/0da9e216fc1d52889c5b569fd60b719ef170abaa",
-                "reference": "0da9e216fc1d52889c5b569fd60b719ef170abaa",
+                "url": "https://api.github.com/repos/composer/composer/zipball/adf7bebf21aa10754ed37ab32c23d96f3a4e2da9",
+                "reference": "adf7bebf21aa10754ed37ab32c23d96f3a4e2da9",
                 "shasum": ""
             },
             "require": {
@@ -280,7 +280,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-27T12:10:48+00:00"
+            "time": "2020-12-02T22:31:12+00:00"
         },
         {
             "name": "composer/semver",
@@ -582,21 +582,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "4f8001a38062a3104c612ada5143b267eb57227f"
+                "reference": "cffe3e94d62f717a10a7d8614a19917f9311a5bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/4f8001a38062a3104c612ada5143b267eb57227f",
-                "reference": "4f8001a38062a3104c612ada5143b267eb57227f",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/cffe3e94d62f717a10a7d8614a19917f9311a5bc",
+                "reference": "cffe3e94d62f717a10a7d8614a19917f9311a5bc",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2 || ^8.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^7.0.2",
-                "phpstan/phpstan": "^0.11.8",
-                "phpunit/phpunit": "^8.2"
+                "doctrine/coding-standard": "^8.0",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^8.2 || ^9.4"
             },
             "type": "library",
             "extra": {
@@ -650,7 +650,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-15T17:34:58+00:00"
+            "time": "2020-12-02T07:27:58+00:00"
         },
         {
             "name": "dompdf/dompdf",
@@ -1224,63 +1224,6 @@
             "time": "2020-10-22T07:42:05+00:00"
         },
         {
-            "name": "intervention/httpauth",
-            "version": "3.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Intervention/httpauth.git",
-                "reference": "825202e88c0918f5249bd5af6ff1fb8ef6e3271e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Intervention/httpauth/zipball/825202e88c0918f5249bd5af6ff1fb8ef6e3271e",
-                "reference": "825202e88c0918f5249bd5af6ff1fb8ef6e3271e",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^0.12.11",
-                "phpunit/phpunit": "^8.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Intervention\\HttpAuth\\Laravel\\HttpAuthServiceProvider"
-                    ],
-                    "aliases": {
-                        "HttpAuth": "Intervention\\HttpAuth\\Laravel\\Facades\\HttpAuth"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Intervention\\HttpAuth\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Oliver Vogel",
-                    "email": "oliver@olivervogel.com",
-                    "homepage": "https://olivervogel.com/"
-                }
-            ],
-            "description": "HTTP authentication (Basic & Digest) including ServiceProviders for easy Laravel integration",
-            "homepage": "https://github.com/Intervention/httpauth",
-            "keywords": [
-                "Authentication",
-                "http",
-                "laravel"
-            ],
-            "time": "2020-03-09T16:18:28+00:00"
-        },
-        {
             "name": "intervention/image",
             "version": "2.5.1",
             "source": {
@@ -1422,12 +1365,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "2b4b18c8e0368906424d13594de3634a9bc6095b"
+                "reference": "7618102c4864ac1f1f791c966c0e9a86949d9b83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/2b4b18c8e0368906424d13594de3634a9bc6095b",
-                "reference": "2b4b18c8e0368906424d13594de3634a9bc6095b",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/7618102c4864ac1f1f791c966c0e9a86949d9b83",
+                "reference": "7618102c4864ac1f1f791c966c0e9a86949d9b83",
                 "shasum": ""
             },
             "require": {
@@ -1577,7 +1520,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-11-29T20:29:07+00:00"
+            "time": "2020-12-02T06:08:43+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -1733,18 +1676,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/csv.git",
-                "reference": "e3ce7379e7c4a977e10e5dceb3a7c6b377803862"
+                "reference": "9f24cf4e136805e41e15394b85850c298bffec9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/csv/zipball/e3ce7379e7c4a977e10e5dceb3a7c6b377803862",
-                "reference": "e3ce7379e7c4a977e10e5dceb3a7c6b377803862",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/9f24cf4e136805e41e15394b85850c298bffec9e",
+                "reference": "9f24cf4e136805e41e15394b85850c298bffec9e",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-mbstring": "*",
-                "php": "^7.2.5 || ^8.0"
+                "php": ">=7.2.5"
             },
             "require-dev": {
                 "ext-curl": "*",
@@ -1803,7 +1746,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-06T20:47:38+00:00"
+            "time": "2020-12-01T08:31:37+00:00"
         },
         {
             "name": "league/flysystem",
@@ -2007,58 +1950,6 @@
                 }
             ],
             "time": "2020-10-18T11:50:25+00:00"
-        },
-        {
-            "name": "marcusschwarz/lesserphp",
-            "version": "0.5.4.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/MarcusSchwarz/lesserphp.git",
-                "reference": "3a0f5ae0d63cbb661b5f4afd2f96875e73b3ad7e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/MarcusSchwarz/lesserphp/zipball/3a0f5ae0d63cbb661b5f4afd2f96875e73b3ad7e",
-                "reference": "3a0f5ae0d63cbb661b5f4afd2f96875e73b3ad7e",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.3"
-            },
-            "bin": [
-                "plessc"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.5.1-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "lessc.inc.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Leaf Corcoran",
-                    "email": "leafot@gmail.com",
-                    "homepage": "http://leafo.net"
-                },
-                {
-                    "name": "Marcus Schwarz",
-                    "email": "github@maswaba.de",
-                    "homepage": "https://www.maswaba.de"
-                }
-            ],
-            "description": "lesserphp is a compiler for LESS written in PHP based on leafo's lessphp.",
-            "homepage": "http://leafo.net/lessphp/",
-            "time": "2020-01-19T19:18:49+00:00"
         },
         {
             "name": "michelf/php-smartypants",
@@ -2370,170 +2261,6 @@
             "time": "2020-10-29T15:43:01+00:00"
         },
         {
-            "name": "mrclay/jsmin-php",
-            "version": "2.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mrclay/jsmin-php.git",
-                "reference": "bb05febc9440852d39899255afd5569b7f21a72c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mrclay/jsmin-php/zipball/bb05febc9440852d39899255afd5569b7f21a72c",
-                "reference": "bb05febc9440852d39899255afd5569b7f21a72c",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcre": "*",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "JSMin\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Stephen Clay",
-                    "email": "steve@mrclay.org",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Ryan Grove",
-                    "email": "ryan@wonko.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Provides a modified port of Douglas Crockford's jsmin.c, which removes unnecessary whitespace from JavaScript files.",
-            "homepage": "https://github.com/mrclay/jsmin-php/",
-            "keywords": [
-                "compress",
-                "jsmin",
-                "minify"
-            ],
-            "time": "2018-12-06T15:03:38+00:00"
-        },
-        {
-            "name": "mrclay/minify",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mrclay/minify.git",
-                "reference": "efec97278f4886e282c45e783ed07a452f5dbfcc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mrclay/minify/zipball/efec97278f4886e282c45e783ed07a452f5dbfcc",
-                "reference": "efec97278f4886e282c45e783ed07a452f5dbfcc",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcre": "*",
-                "intervention/httpauth": "^2.0|^3.0",
-                "marcusschwarz/lesserphp": "^0.5.1",
-                "monolog/monolog": "~1.1|~2.0",
-                "mrclay/jsmin-php": "~2",
-                "mrclay/props-dic": "^2.2|^3.0",
-                "php": "^5.3.0 || ^7.0",
-                "tubalmartin/cssmin": "~4"
-            },
-            "require-dev": {
-                "firephp/firephp-core": "~0.4.0",
-                "leafo/scssphp": "^0.3 || ^0.6 || ^0.7",
-                "meenie/javascript-packer": "~1.1",
-                "phpunit/phpunit": "^4.8.36",
-                "tedivm/jshrink": "~1.1.0"
-            },
-            "suggest": {
-                "firephp/firephp-core": "Use FirePHP for Log messages",
-                "meenie/javascript-packer": "Keep track of the Packer PHP port using Composer"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "lib/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Stephen Clay",
-                    "email": "steve@mrclay.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Minify is a PHP app that helps you follow several rules for client-side performance. It combines multiple CSS or Javascript files, removes unnecessary whitespace and comments, and serves them with gzip encoding and optimal client-side cache headers",
-            "homepage": "https://github.com/mrclay/minify",
-            "time": "2020-10-24T17:29:56+00:00"
-        },
-        {
-            "name": "mrclay/props-dic",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mrclay/Props.git",
-                "reference": "0b0fd254e33e2d60bc2bcd7867f2ab3cdd05a843"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mrclay/Props/zipball/0b0fd254e33e2d60bc2bcd7867f2ab3cdd05a843",
-                "reference": "0b0fd254e33e2d60bc2bcd7867f2ab3cdd05a843",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3",
-                "pimple/pimple": "~3.0",
-                "psr/container": "^1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Props\\": [
-                        "src/"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Steve Clay",
-                    "email": "steve@mrclay.org",
-                    "homepage": "http://www.mrclay.org/"
-                }
-            ],
-            "description": "Props is a simple DI container that allows retrieving values via custom property and method names",
-            "keywords": [
-                "container",
-                "dependency injection",
-                "dependency injection container",
-                "di",
-                "di container"
-            ],
-            "time": "2019-11-26T17:56:10+00:00"
-        },
-        {
             "name": "nesbot/carbon",
             "version": "dev-master",
             "source": {
@@ -2829,56 +2556,6 @@
                 }
             ],
             "time": "2020-07-20T17:29:33+00:00"
-        },
-        {
-            "name": "pimple/pimple",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silexphp/Pimple.git",
-                "reference": "e072dd116ecb7654b106c211075afff95f3a6bdc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/e072dd116ecb7654b106c211075afff95f3a6bdc",
-                "reference": "e072dd116ecb7654b106c211075afff95f3a6bdc",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "psr/container": "^1.0"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "^5.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Pimple": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Pimple, a simple Dependency Injection Container",
-            "homepage": "https://pimple.symfony.com",
-            "keywords": [
-                "container",
-                "dependency injection"
-            ],
-            "time": "2020-11-25T08:24:13+00:00"
         },
         {
             "name": "pixelfear/composer-dist-plugin",
@@ -3622,23 +3299,23 @@
         },
         {
             "name": "spatie/blink",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/blink.git",
-                "reference": "9d75211ed5185d7242f388336714a3d7fefc650e"
+                "reference": "2830fa61a6e4ad7353aad64b8ae487b0468c9e5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/blink/zipball/9d75211ed5185d7242f388336714a3d7fefc650e",
-                "reference": "9d75211ed5185d7242f388336714a3d7fefc650e",
+                "url": "https://api.github.com/repos/spatie/blink/zipball/2830fa61a6e4ad7353aad64b8ae487b0468c9e5c",
+                "reference": "2830fa61a6e4ad7353aad64b8ae487b0468c9e5c",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0"
+                "php": "^7.3 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.0 || ^7.0"
+                "phpunit/phpunit": "^9.0"
             },
             "type": "library",
             "autoload": {
@@ -3666,20 +3343,26 @@
                 "caching",
                 "spatie"
             ],
-            "time": "2020-02-16T19:18:04+00:00"
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-11-29T19:47:08+00:00"
         },
         {
             "name": "statamic/cms",
-            "version": "v3.0.31",
+            "version": "v3.0.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "4c3e769ca8ffef26eeaf7a0361489831111b0a6b"
+                "reference": "ee6970ddb58a163b81454137bc3af7cbc559acf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/4c3e769ca8ffef26eeaf7a0361489831111b0a6b",
-                "reference": "4c3e769ca8ffef26eeaf7a0361489831111b0a6b",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/ee6970ddb58a163b81454137bc3af7cbc559acf7",
+                "reference": "ee6970ddb58a163b81454137bc3af7cbc559acf7",
                 "shasum": ""
             },
             "require": {
@@ -3749,7 +3432,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-25T19:12:18+00:00"
+            "time": "2020-12-02T18:28:11+00:00"
         },
         {
             "name": "statamic/stringy",
@@ -3946,12 +3629,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "790f3e5baac8875bf2af2d0caca459b0dca094eb"
+                "reference": "a02809c97f01fbb45f401a8e2e6ac9afec37f5a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/790f3e5baac8875bf2af2d0caca459b0dca094eb",
-                "reference": "790f3e5baac8875bf2af2d0caca459b0dca094eb",
+                "url": "https://api.github.com/repos/symfony/console/zipball/a02809c97f01fbb45f401a8e2e6ac9afec37f5a8",
+                "reference": "a02809c97f01fbb45f401a8e2e6ac9afec37f5a8",
                 "shasum": ""
             },
             "require": {
@@ -4032,7 +3715,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-28T11:24:57+00:00"
+            "time": "2020-11-30T17:27:11+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -4392,12 +4075,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "bb92ba7f38b037e531908590a858a04d85c0e238"
+                "reference": "fa8f8cab6b65e2d99a118e082935344c5ba8c60d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/bb92ba7f38b037e531908590a858a04d85c0e238",
-                "reference": "bb92ba7f38b037e531908590a858a04d85c0e238",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/fa8f8cab6b65e2d99a118e082935344c5ba8c60d",
+                "reference": "fa8f8cab6b65e2d99a118e082935344c5ba8c60d",
                 "shasum": ""
             },
             "require": {
@@ -4443,7 +4126,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-12T09:58:18+00:00"
+            "time": "2020-11-30T17:05:38+00:00"
         },
         {
             "name": "symfony/finder",
@@ -5842,12 +5525,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "40e975edadd4e32cd16f3753b3bad65d9ac48242"
+                "reference": "fa3e7c3e108c06c743e416bec5aca1684df016d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/40e975edadd4e32cd16f3753b3bad65d9ac48242",
-                "reference": "40e975edadd4e32cd16f3753b3bad65d9ac48242",
+                "url": "https://api.github.com/repos/symfony/string/zipball/fa3e7c3e108c06c743e416bec5aca1684df016d1",
+                "reference": "fa3e7c3e108c06c743e416bec5aca1684df016d1",
                 "shasum": ""
             },
             "require": {
@@ -5914,7 +5597,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-24T12:08:07+00:00"
+            "time": "2020-12-02T08:39:23+00:00"
         },
         {
             "name": "symfony/translation",
@@ -6088,12 +5771,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "173a79c462b1c81e1fa26129f71e41333d846b26"
+                "reference": "e1789346d5a42ce41635d5cca3fef96f02a5a6cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/173a79c462b1c81e1fa26129f71e41333d846b26",
-                "reference": "173a79c462b1c81e1fa26129f71e41333d846b26",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/e1789346d5a42ce41635d5cca3fef96f02a5a6cf",
+                "reference": "e1789346d5a42ce41635d5cca3fef96f02a5a6cf",
                 "shasum": ""
             },
             "require": {
@@ -6165,7 +5848,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-27T00:39:34+00:00"
+            "time": "2020-11-30T17:15:52+00:00"
         },
         {
             "name": "symfony/var-exporter",
@@ -6242,12 +5925,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "7b2bec8aa8ccde8cf7ae586abec3af41fb026c5b"
+                "reference": "728ea9a506e76f6a785b0dec191535835392cb8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/7b2bec8aa8ccde8cf7ae586abec3af41fb026c5b",
-                "reference": "7b2bec8aa8ccde8cf7ae586abec3af41fb026c5b",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/728ea9a506e76f6a785b0dec191535835392cb8d",
+                "reference": "728ea9a506e76f6a785b0dec191535835392cb8d",
                 "shasum": ""
             },
             "require": {
@@ -6306,7 +5989,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-28T11:24:57+00:00"
+            "time": "2020-12-02T08:55:39+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -6358,75 +6041,21 @@
             "time": "2020-07-13T06:12:54+00:00"
         },
         {
-            "name": "tubalmartin/cssmin",
-            "version": "v4.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port.git",
-                "reference": "3cbf557f4079d83a06f9c3ff9b957c022d7805cf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tubalmartin/YUI-CSS-compressor-PHP-port/zipball/3cbf557f4079d83a06f9c3ff9b957c022d7805cf",
-                "reference": "3cbf557f4079d83a06f9c3ff9b957c022d7805cf",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcre": "*",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "cogpowered/finediff": "0.3.*",
-                "phpunit/phpunit": "4.8.*"
-            },
-            "bin": [
-                "cssmin"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "tubalmartin\\CssMin\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Túbal Martín",
-                    "homepage": "http://tubalmartin.me/"
-                }
-            ],
-            "description": "A PHP port of the YUI CSS compressor",
-            "homepage": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port",
-            "keywords": [
-                "compress",
-                "compressor",
-                "css",
-                "cssmin",
-                "minify",
-                "yui"
-            ],
-            "time": "2018-01-15T15:26:51+00:00"
-        },
-        {
             "name": "ueberdosis/html-to-prosemirror",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ueberdosis/html-to-prosemirror.git",
-                "reference": "d82d8550c4f52be6ec8c0495b1e0ce5b663073ed"
+                "reference": "ea1b80c43d6c8b01675cb60e4554c880b804941e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ueberdosis/html-to-prosemirror/zipball/d82d8550c4f52be6ec8c0495b1e0ce5b663073ed",
-                "reference": "d82d8550c4f52be6ec8c0495b1e0ce5b663073ed",
+                "url": "https://api.github.com/repos/ueberdosis/html-to-prosemirror/zipball/ea1b80c43d6c8b01675cb60e4554c880b804941e",
+                "reference": "ea1b80c43d6c8b01675cb60e4554c880b804941e",
                 "shasum": ""
             },
             "require": {
-                "mrclay/minify": "^3.0",
-                "php": "^7.1.3"
+                "php": "^7.1.3|^8.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.15",
@@ -6458,24 +6087,24 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-24T10:10:03+00:00"
+            "time": "2020-12-01T10:34:08+00:00"
         },
         {
             "name": "ueberdosis/prosemirror-to-html",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ueberdosis/prosemirror-to-html.git",
-                "reference": "e9186f1393335931fd2a2018455997f2708f3154"
+                "reference": "5f7002669f13e3ebee51b093ed2ac0f1c9ff668d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ueberdosis/prosemirror-to-html/zipball/e9186f1393335931fd2a2018455997f2708f3154",
-                "reference": "e9186f1393335931fd2a2018455997f2708f3154",
+                "url": "https://api.github.com/repos/ueberdosis/prosemirror-to-html/zipball/5f7002669f13e3ebee51b093ed2ac0f1c9ff668d",
+                "reference": "5f7002669f13e3ebee51b093ed2ac0f1c9ff668d",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": "^7.1.3|^8.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.15",
@@ -6507,7 +6136,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-22T14:55:10+00:00"
+            "time": "2020-12-01T10:40:04+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -7233,18 +6862,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "05011a5b6e9562356b8bc4eb4719b03410821f8f"
+                "reference": "dc73c0415db859ea252b1633d8b269ffdd96e36d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/05011a5b6e9562356b8bc4eb4719b03410821f8f",
-                "reference": "05011a5b6e9562356b8bc4eb4719b03410821f8f",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/dc73c0415db859ea252b1633d8b269ffdd96e36d",
+                "reference": "dc73c0415db859ea252b1633d8b269ffdd96e36d",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "^8.0",
                 "mockery/mockery": "^1.3.1",
-                "orchestra/testbench-core": "^6.6",
+                "orchestra/testbench-core": "^6.7",
                 "php": ">=7.3 || >=8.0",
                 "phpunit/phpunit": "^8.4 || ^9.0"
             },
@@ -7285,7 +6914,7 @@
                     "type": "liberapay"
                 }
             ],
-            "time": "2020-11-10T06:44:45+00:00"
+            "time": "2020-12-01T11:28:02+00:00"
         },
         {
             "name": "orchestra/testbench-core",
@@ -7293,12 +6922,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "bcd7e70146053616f86816e1a6ed33dc13c30161"
+                "reference": "4f9fe7b3f901984c4e012fc29354ccc9eaf9e66f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/bcd7e70146053616f86816e1a6ed33dc13c30161",
-                "reference": "bcd7e70146053616f86816e1a6ed33dc13c30161",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/4f9fe7b3f901984c4e012fc29354ccc9eaf9e66f",
+                "reference": "4f9fe7b3f901984c4e012fc29354ccc9eaf9e66f",
                 "shasum": ""
             },
             "require": {
@@ -7365,7 +6994,7 @@
                     "type": "liberapay"
                 }
             ],
-            "time": "2020-11-25T22:34:32+00:00"
+            "time": "2020-12-01T11:00:52+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -7983,12 +7612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "d86b1eeda377af03ac2e64ed1c7159c2623bf59e"
+                "reference": "0f04e9692ed0609d14167ba25584cec804871cca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d86b1eeda377af03ac2e64ed1c7159c2623bf59e",
-                "reference": "d86b1eeda377af03ac2e64ed1c7159c2623bf59e",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/0f04e9692ed0609d14167ba25584cec804871cca",
+                "reference": "0f04e9692ed0609d14167ba25584cec804871cca",
                 "shasum": ""
             },
             "require": {
@@ -8074,7 +7703,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-28T02:24:24+00:00"
+            "time": "2020-12-03T05:00:54+00:00"
         },
         {
             "name": "sebastian/cli-parser",
