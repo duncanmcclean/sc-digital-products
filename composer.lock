@@ -724,16 +724,16 @@
         },
         {
             "name": "doublethreedigital/simple-commerce",
-            "version": "v2.1.18",
+            "version": "v2.1.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doublethreedigital/simple-commerce.git",
-                "reference": "a75ae8ba85212a7557bfbf0c729f7efdfb328667"
+                "reference": "189b20cba743225629b8ed0677eb39c317b46a55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/a75ae8ba85212a7557bfbf0c729f7efdfb328667",
-                "reference": "a75ae8ba85212a7557bfbf0c729f7efdfb328667",
+                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/189b20cba743225629b8ed0677eb39c317b46a55",
+                "reference": "189b20cba743225629b8ed0677eb39c317b46a55",
                 "shasum": ""
             },
             "require": {
@@ -776,7 +776,7 @@
                 "proprietary"
             ],
             "description": "A perfectly simple e-commerce addon for Statamic",
-            "time": "2020-12-18T21:43:19+00:00"
+            "time": "2020-12-21T23:09:44+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -1367,12 +1367,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "d986176219114a19286bf7aea992c4f19716dbeb"
+                "reference": "d30dbebba270034bbba1316f5c0fe7579bc20408"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/d986176219114a19286bf7aea992c4f19716dbeb",
-                "reference": "d986176219114a19286bf7aea992c4f19716dbeb",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d30dbebba270034bbba1316f5c0fe7579bc20408",
+                "reference": "d30dbebba270034bbba1316f5c0fe7579bc20408",
                 "shasum": ""
             },
             "require": {
@@ -1522,7 +1522,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-12-20T23:00:04+00:00"
+            "time": "2020-12-21T14:38:56+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -7622,12 +7622,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "1c03020f6a764553f08baba17d426ea23b2015ee"
+                "reference": "36f37eb149c59a0f004b4499f79abf1963c78a95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1c03020f6a764553f08baba17d426ea23b2015ee",
-                "reference": "1c03020f6a764553f08baba17d426ea23b2015ee",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/36f37eb149c59a0f004b4499f79abf1963c78a95",
+                "reference": "36f37eb149c59a0f004b4499f79abf1963c78a95",
                 "shasum": ""
             },
             "require": {
@@ -7713,7 +7713,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-18T12:35:52+00:00"
+            "time": "2020-12-22T08:04:01+00:00"
         },
         {
             "name": "sebastian/cli-parser",
