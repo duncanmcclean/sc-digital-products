@@ -1367,12 +1367,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "ca39a57c6fad669ad4da937bc023b096daf2e632"
+                "reference": "658bd91ff339782124047f5d8e5df7654d29463b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/ca39a57c6fad669ad4da937bc023b096daf2e632",
-                "reference": "ca39a57c6fad669ad4da937bc023b096daf2e632",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/658bd91ff339782124047f5d8e5df7654d29463b",
+                "reference": "658bd91ff339782124047f5d8e5df7654d29463b",
                 "shasum": ""
             },
             "require": {
@@ -1522,7 +1522,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-12-22T23:11:21+00:00"
+            "time": "2020-12-23T14:44:51+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -3357,16 +3357,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.0.35",
+            "version": "v3.0.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "653430e185e9c457b69bb879e30b6db1b4894606"
+                "reference": "796c58a528811273a63c9d1e8b85cfff4c06834f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/653430e185e9c457b69bb879e30b6db1b4894606",
-                "reference": "653430e185e9c457b69bb879e30b6db1b4894606",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/796c58a528811273a63c9d1e8b85cfff4c06834f",
+                "reference": "796c58a528811273a63c9d1e8b85cfff4c06834f",
                 "shasum": ""
             },
             "require": {
@@ -3437,7 +3437,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-17T16:29:54+00:00"
+            "time": "2020-12-23T19:50:36+00:00"
         },
         {
             "name": "statamic/stringy",
@@ -5457,12 +5457,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "0aeee2f70f4550e6c48c9a796d98f5ceda58dfda"
+                "reference": "5c448a39281b671be2cc8d208e6df75ac2d4b366"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/0aeee2f70f4550e6c48c9a796d98f5ceda58dfda",
-                "reference": "0aeee2f70f4550e6c48c9a796d98f5ceda58dfda",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/5c448a39281b671be2cc8d208e6df75ac2d4b366",
+                "reference": "5c448a39281b671be2cc8d208e6df75ac2d4b366",
                 "shasum": ""
             },
             "require": {
@@ -5526,7 +5526,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-14T17:08:19+00:00"
+            "time": "2020-12-23T15:38:30+00:00"
         },
         {
             "name": "symfony/string",
