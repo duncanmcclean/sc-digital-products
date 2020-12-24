@@ -724,16 +724,16 @@
         },
         {
             "name": "doublethreedigital/simple-commerce",
-            "version": "v2.1.21",
+            "version": "v2.1.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doublethreedigital/simple-commerce.git",
-                "reference": "07d638c294c6972f235b92ba8f175090a51243b0"
+                "reference": "987d2b57d2a029a5bccda983d0e26df219013694"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/07d638c294c6972f235b92ba8f175090a51243b0",
-                "reference": "07d638c294c6972f235b92ba8f175090a51243b0",
+                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/987d2b57d2a029a5bccda983d0e26df219013694",
+                "reference": "987d2b57d2a029a5bccda983d0e26df219013694",
                 "shasum": ""
             },
             "require": {
@@ -776,7 +776,7 @@
                 "proprietary"
             ],
             "description": "A perfectly simple e-commerce addon for Statamic",
-            "time": "2020-12-23T06:50:22+00:00"
+            "time": "2020-12-23T23:12:28+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -1367,12 +1367,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "ca39a57c6fad669ad4da937bc023b096daf2e632"
+                "reference": "658bd91ff339782124047f5d8e5df7654d29463b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/ca39a57c6fad669ad4da937bc023b096daf2e632",
-                "reference": "ca39a57c6fad669ad4da937bc023b096daf2e632",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/658bd91ff339782124047f5d8e5df7654d29463b",
+                "reference": "658bd91ff339782124047f5d8e5df7654d29463b",
                 "shasum": ""
             },
             "require": {
@@ -1522,7 +1522,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-12-22T23:11:21+00:00"
+            "time": "2020-12-23T14:44:51+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -5457,12 +5457,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "0aeee2f70f4550e6c48c9a796d98f5ceda58dfda"
+                "reference": "5c448a39281b671be2cc8d208e6df75ac2d4b366"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/0aeee2f70f4550e6c48c9a796d98f5ceda58dfda",
-                "reference": "0aeee2f70f4550e6c48c9a796d98f5ceda58dfda",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/5c448a39281b671be2cc8d208e6df75ac2d4b366",
+                "reference": "5c448a39281b671be2cc8d208e6df75ac2d4b366",
                 "shasum": ""
             },
             "require": {
@@ -5526,7 +5526,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-14T17:08:19+00:00"
+            "time": "2020-12-23T15:38:30+00:00"
         },
         {
             "name": "symfony/string",
