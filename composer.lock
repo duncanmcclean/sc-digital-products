@@ -719,16 +719,16 @@
         },
         {
             "name": "doublethreedigital/simple-commerce",
-            "version": "v2.1.30",
+            "version": "v2.1.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doublethreedigital/simple-commerce.git",
-                "reference": "3bbd9ba620c04b1e08cb8d91a953c6c4e841d35c"
+                "reference": "3a61e15d43e6b6dff623543f4e00559298ae8b35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/3bbd9ba620c04b1e08cb8d91a953c6c4e841d35c",
-                "reference": "3bbd9ba620c04b1e08cb8d91a953c6c4e841d35c",
+                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/3a61e15d43e6b6dff623543f4e00559298ae8b35",
+                "reference": "3a61e15d43e6b6dff623543f4e00559298ae8b35",
                 "shasum": ""
             },
             "require": {
@@ -771,7 +771,7 @@
                 "proprietary"
             ],
             "description": "A perfectly simple e-commerce addon for Statamic",
-            "time": "2021-01-17T13:49:37+00:00"
+            "time": "2021-01-21T21:10:17+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -3505,16 +3505,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.68.0",
+            "version": "v7.69.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "36b10e1f0e9d973f00f802bbd098bce85d0438e4"
+                "reference": "6716cbc4ebf8cba7d45374a059c7c6e5bf53277d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/36b10e1f0e9d973f00f802bbd098bce85d0438e4",
-                "reference": "36b10e1f0e9d973f00f802bbd098bce85d0438e4",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/6716cbc4ebf8cba7d45374a059c7c6e5bf53277d",
+                "reference": "6716cbc4ebf8cba7d45374a059c7c6e5bf53277d",
                 "shasum": ""
             },
             "require": {
@@ -3558,7 +3558,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2021-01-15T00:38:28+00:00"
+            "time": "2021-01-22T03:21:13+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
