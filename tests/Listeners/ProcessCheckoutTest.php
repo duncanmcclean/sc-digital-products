@@ -4,7 +4,7 @@ namespace DoubleThreeDigital\DigitalProducts\Tests\Listeners;
 
 use DoubleThreeDigital\DigitalProducts\Tests\TestCase;
 use DoubleThreeDigital\SimpleCommerce\Events\CartCompleted;
-use DoubleThreeDigital\SimpleCommerce\Facades\Cart;
+use DoubleThreeDigital\SimpleCommerce\Facades\Order;
 use DoubleThreeDigital\SimpleCommerce\Facades\Product;
 use Statamic\Facades\Stache;
 
@@ -15,23 +15,25 @@ class ProcessCheckoutTest extends TestCase
     {
         $this->markTestIncomplete();
 
-        $product = Product::make()
-            ->save()
-            ->set('is_digital_product', true)
-            ->set('price', 1200);
+        $product = Product::create([
+            'is_digital_product' => true,
+            'price' => 1200,
+        ]);
 
-        $cart = Cart::make()->set('items', [
-            [
-                'id' => Stache::generateId(),
-                'product' => $product->id(),
-                'quantity' => 1,
-                'total' => 1200,
+        $cart = Order::create([
+            'items' => [
+                [
+                    'id' => Stache::generateId(),
+                    'product' => $product->id(),
+                    'quantity' => 1,
+                    'total' => 1200,
+                ],
             ],
-        ])->save();
+        ]);
 
         $event = new CartCompleted($cart->entry());
 
-        $cart = Cart::find($cart->id());
+        $cart = Order::find($cart->id());
 
         $this->assertArrayHasKey($cart->data, 'license_key');
         $this->assertArrayHasKey($cart->data, 'download_url');

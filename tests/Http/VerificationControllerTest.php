@@ -4,11 +4,8 @@ namespace DoubleThreeDigital\SimpleCommerce\Tests\Http;
 
 use DoubleThreeDigital\DigitalProducts\Facades\LicenseKey;
 use DoubleThreeDigital\DigitalProducts\Tests\TestCase;
-use Statamic\Entries\Entry;
-use Statamic\Entries\EntryCollection;
 use Statamic\Facades\Collection;
 use Statamic\Facades\Entry as FacadesEntry;
-use Statamic\Facades\Stache;
 
 class VerificationControllerTest extends TestCase
 {

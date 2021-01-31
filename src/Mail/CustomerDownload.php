@@ -2,8 +2,8 @@
 
 namespace DoubleThreeDigital\DigitalProducts\Mail;
 
-use DoubleThreeDigital\SimpleCommerce\Facades\Cart;
 use DoubleThreeDigital\SimpleCommerce\Facades\Customer;
+use DoubleThreeDigital\SimpleCommerce\Facades\Order;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
@@ -22,12 +22,12 @@ class CustomerDownload extends Mailable
 
     public function build()
     {
-        $order = Cart::find($this->order->id());
+        $order = Order::find($this->order->id());
 
         return $this->markdown('sc-digital-products::customer-download')
             ->subject("Downloads for Order {$order->title}")
             ->with('order', $order->data)
             ->with('cart', $order->data)
-            ->with('customer', Customer::find($order->data['customer'])->data);
+            ->with('customer', Customer::find($order->data['customer'])->data());
     }
 }

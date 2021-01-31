@@ -2,7 +2,7 @@
 
 namespace DoubleThreeDigital\DigitalProducts\Http\Controllers;
 
-use DoubleThreeDigital\SimpleCommerce\Facades\Cart;
+use DoubleThreeDigital\SimpleCommerce\Facades\Order;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Storage;
@@ -16,9 +16,9 @@ class DownloadController extends Controller
             abort(401);
         }
 
-        $order = Cart::find($request->order_id);
+        $order = Order::find($request->order_id);
 
-        $item = collect($order->data['items'])
+        $item = collect($order->get('items'))
             ->where('id', $request->item_id)
             ->first();
 

@@ -5,8 +5,8 @@ namespace DoubleThreeDigital\DigitalProducts\Listeners;
 use DoubleThreeDigital\DigitalProducts\Facades\LicenseKey;
 use DoubleThreeDigital\DigitalProducts\Mail\CustomerDownload;
 use DoubleThreeDigital\SimpleCommerce\Events\CartCompleted;
-use DoubleThreeDigital\SimpleCommerce\Facades\Cart;
 use DoubleThreeDigital\SimpleCommerce\Facades\Customer;
+use DoubleThreeDigital\SimpleCommerce\Facades\Order;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\URL;
 use Statamic\Entries\Entry;
@@ -16,14 +16,14 @@ class ProcessCheckout
     public function handle(CartCompleted $event)
     {
         $hasDownloads = false;
-        $order = Cart::find($event->cart->id());
+        $order = Order::find($event->cart->id());
 
-        collect($order->data['items'])
+        collect($order->get('items'))
             ->reject(function ($item) {
                 $product = Entry::find($item['product']);
 
-                return ! $product->data()->has('is_digital_product') ?
-                    $product->data()->get('is_digital_product') :
+                return ! $product->has('is_digital_product') ?
+                    $product->get('is_digital_product') :
                     false;
             })
             ->each(function ($item) use ($order, &$hasDownloads) {
@@ -40,7 +40,7 @@ class ProcessCheckout
                     ],
                 ];
 
-                $order->update($data);
+                $order->data($data)->save();
 
                 $hasDownloads = true;
             });
