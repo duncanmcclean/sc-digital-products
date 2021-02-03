@@ -24,7 +24,7 @@
         }
     },
     "require": {
-        "doublethreedigital/simple-commerce": "^v2.0 || ^2.1",
+        "doublethreedigital/simple-commerce": "^v2.2",
         "statamic/cms": "3.0.*"
     },
     "require-dev": {
