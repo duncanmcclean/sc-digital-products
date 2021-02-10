@@ -74,13 +74,13 @@ abstract class TestCase extends OrchestraTestCase
     protected function bootSimpleCommerceRepositories($app)
     {
         collect([
-            \DoubleThreeDigital\SimpleCommerce\Contracts\CartRepository::class => \DoubleThreeDigital\SimpleCommerce\Repositories\CartRepository::class,
-            \DoubleThreeDigital\SimpleCommerce\Contracts\CouponRepository::class => \DoubleThreeDigital\SimpleCommerce\Repositories\CouponRepository::class,
-            \DoubleThreeDigital\SimpleCommerce\Contracts\CurrencyRepository::class => \DoubleThreeDigital\SimpleCommerce\Repositories\CurrencyRepository::class,
-            \DoubleThreeDigital\SimpleCommerce\Contracts\CustomerRepository::class => \DoubleThreeDigital\SimpleCommerce\Repositories\CustomerRepository::class,
-            \DoubleThreeDigital\SimpleCommerce\Contracts\GatewayRepository::class => \DoubleThreeDigital\SimpleCommerce\Repositories\GatewayRepository::class,
-            \DoubleThreeDigital\SimpleCommerce\Contracts\ProductRepository::class => \DoubleThreeDigital\SimpleCommerce\Repositories\ProductRepository::class,
-            \DoubleThreeDigital\SimpleCommerce\Contracts\ShippingRepository::class => \DoubleThreeDigital\SimpleCommerce\Repositories\ShippingRepository::class,
+            \DoubleThreeDigital\SimpleCommerce\Contracts\Order::class    => \DoubleThreeDigital\SimpleCommerce\Orders\Order::class,
+            \DoubleThreeDigital\SimpleCommerce\Contracts\Coupon::class   => \DoubleThreeDigital\SimpleCommerce\Coupons\Coupon::class,
+            \DoubleThreeDigital\SimpleCommerce\Contracts\Currency::class => \DoubleThreeDigital\SimpleCommerce\Support\Currency::class,
+            \DoubleThreeDigital\SimpleCommerce\Contracts\Customer::class => \DoubleThreeDigital\SimpleCommerce\Customers\Customer::class,
+            \DoubleThreeDigital\SimpleCommerce\Contracts\Gateway::class  => \DoubleThreeDigital\SimpleCommerce\Gateways\GatewayManager::class,
+            \DoubleThreeDigital\SimpleCommerce\Contracts\Product::class  => \DoubleThreeDigital\SimpleCommerce\Products\Product::class,
+            \DoubleThreeDigital\SimpleCommerce\Contracts\Shipping::class => \DoubleThreeDigital\SimpleCommerce\Shipping\ShippingManager::class,
         ])->each(function ($concrete, $abstract) use ($app) {
             if (! $app->bound($abstract)) {
                 Statamic::repository($abstract, $concrete);
