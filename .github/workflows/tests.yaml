@@ -12,8 +12,8 @@ jobs:
       matrix:
         php: [7.4]
         laravel: [8.*, 7.*, 6.*]
-        statamic: [3.0.*]
-        simpleCommerce: [2.0, 2.1]
+        statamic: [3.0.*, 3.1.*]
+        simpleCommerce: [2.2]
         os: [ubuntu-latest]
         include:
           - laravel: 8.*
