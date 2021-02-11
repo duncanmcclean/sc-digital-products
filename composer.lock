@@ -211,12 +211,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "28bc0cecf1228de2743bbff5c41bce7d2c5e5714"
+                "reference": "f37f3dab04cbcfc8d5936d22cfc5de20b600f82e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/28bc0cecf1228de2743bbff5c41bce7d2c5e5714",
-                "reference": "28bc0cecf1228de2743bbff5c41bce7d2c5e5714",
+                "url": "https://api.github.com/repos/composer/composer/zipball/f37f3dab04cbcfc8d5936d22cfc5de20b600f82e",
+                "reference": "f37f3dab04cbcfc8d5936d22cfc5de20b600f82e",
                 "shasum": ""
             },
             "require": {
@@ -301,7 +301,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-08T12:32:30+00:00"
+            "time": "2021-02-10T16:34:15+00:00"
         },
         {
             "name": "composer/semver",
@@ -768,16 +768,16 @@
         },
         {
             "name": "doublethreedigital/simple-commerce",
-            "version": "v2.2.5",
+            "version": "v2.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doublethreedigital/simple-commerce.git",
-                "reference": "6235b4c28ac273f676076574cd04b595c9be68d7"
+                "reference": "6c83a7358a2dd45c1c1f8f19963603a7e1a48be5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/6235b4c28ac273f676076574cd04b595c9be68d7",
-                "reference": "6235b4c28ac273f676076574cd04b595c9be68d7",
+                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/6c83a7358a2dd45c1c1f8f19963603a7e1a48be5",
+                "reference": "6c83a7358a2dd45c1c1f8f19963603a7e1a48be5",
                 "shasum": ""
             },
             "require": {
@@ -823,9 +823,9 @@
             "description": "A perfectly simple e-commerce addon for Statamic",
             "support": {
                 "issues": "https://github.com/doublethreedigital/simple-commerce/issues",
-                "source": "https://github.com/doublethreedigital/simple-commerce/tree/v2.2.5"
+                "source": "https://github.com/doublethreedigital/simple-commerce/tree/v2.2.6"
             },
-            "time": "2021-02-09T16:53:32+00:00"
+            "time": "2021-02-10T20:45:32+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -1455,12 +1455,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "a6680d98f9dadaa363aa7d5218517a08706cee64"
+                "reference": "fe72373ea803871d90f352b3e68ccbd812d5519e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/a6680d98f9dadaa363aa7d5218517a08706cee64",
-                "reference": "a6680d98f9dadaa363aa7d5218517a08706cee64",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/fe72373ea803871d90f352b3e68ccbd812d5519e",
+                "reference": "fe72373ea803871d90f352b3e68ccbd812d5519e",
                 "shasum": ""
             },
             "require": {
@@ -1616,7 +1616,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-02-09T15:14:54+00:00"
+            "time": "2021-02-10T14:32:46+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -4727,12 +4727,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "a111eed4e73125be6deb8a7eccb94d5de02aea6b"
+                "reference": "d336d8762694d13a0db2c308eaec1abe9c488db2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/a111eed4e73125be6deb8a7eccb94d5de02aea6b",
-                "reference": "a111eed4e73125be6deb8a7eccb94d5de02aea6b",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/d336d8762694d13a0db2c308eaec1abe9c488db2",
+                "reference": "d336d8762694d13a0db2c308eaec1abe9c488db2",
                 "shasum": ""
             },
             "require": {
@@ -4832,7 +4832,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-05T17:04:25+00:00"
+            "time": "2021-02-10T17:27:22+00:00"
         },
         {
             "name": "symfony/lock",
