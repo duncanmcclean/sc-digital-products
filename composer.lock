@@ -211,12 +211,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "f37f3dab04cbcfc8d5936d22cfc5de20b600f82e"
+                "reference": "1c715b5821dd3b58c022be381a09aaaf8905b0ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/f37f3dab04cbcfc8d5936d22cfc5de20b600f82e",
-                "reference": "f37f3dab04cbcfc8d5936d22cfc5de20b600f82e",
+                "url": "https://api.github.com/repos/composer/composer/zipball/1c715b5821dd3b58c022be381a09aaaf8905b0ae",
+                "reference": "1c715b5821dd3b58c022be381a09aaaf8905b0ae",
                 "shasum": ""
             },
             "require": {
@@ -301,7 +301,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-10T16:34:15+00:00"
+            "time": "2021-02-11T15:05:37+00:00"
         },
         {
             "name": "composer/semver",
@@ -1455,12 +1455,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "fe72373ea803871d90f352b3e68ccbd812d5519e"
+                "reference": "5ab3464b8755293815e57c0de0829feaf7242aae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/fe72373ea803871d90f352b3e68ccbd812d5519e",
-                "reference": "fe72373ea803871d90f352b3e68ccbd812d5519e",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/5ab3464b8755293815e57c0de0829feaf7242aae",
+                "reference": "5ab3464b8755293815e57c0de0829feaf7242aae",
                 "shasum": ""
             },
             "require": {
@@ -1616,7 +1616,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-02-10T14:32:46+00:00"
+            "time": "2021-02-11T15:45:46+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -2413,12 +2413,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "e2ba3174ce869da1713c38340dbb36572dfacd5a"
+                "reference": "5853493c508b5095486b335c7ced7450dc57affa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/e2ba3174ce869da1713c38340dbb36572dfacd5a",
-                "reference": "e2ba3174ce869da1713c38340dbb36572dfacd5a",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/5853493c508b5095486b335c7ced7450dc57affa",
+                "reference": "5853493c508b5095486b335c7ced7450dc57affa",
                 "shasum": ""
             },
             "require": {
@@ -2499,7 +2499,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-07T21:35:59+00:00"
+            "time": "2021-02-11T23:37:07+00:00"
         },
         {
             "name": "opis/closure",
@@ -3683,16 +3683,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.1.0-alpha.2",
+            "version": "v3.1.0-alpha.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "60e0dc631fee1e7c2008338a77828e01e90c9edd"
+                "reference": "c0f9513cf357933f3aa37321d31fad025950cf9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/60e0dc631fee1e7c2008338a77828e01e90c9edd",
-                "reference": "60e0dc631fee1e7c2008338a77828e01e90c9edd",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/c0f9513cf357933f3aa37321d31fad025950cf9b",
+                "reference": "c0f9513cf357933f3aa37321d31fad025950cf9b",
                 "shasum": ""
             },
             "require": {
@@ -3760,7 +3760,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v3.1.0-alpha.2"
+                "source": "https://github.com/statamic/cms/tree/v3.1.0-alpha.3"
             },
             "funding": [
                 {
@@ -3768,7 +3768,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-02-04T21:45:59+00:00"
+            "time": "2021-02-11T17:20:19+00:00"
         },
         {
             "name": "statamic/stringy",
@@ -4213,12 +4213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/error-handler.git",
-                "reference": "b2aa0980229d4f7fa094ee903aa42f2cd1a8ef0a"
+                "reference": "bc14c25d6a560562731e6167a694cdee4658fe45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/error-handler/zipball/b2aa0980229d4f7fa094ee903aa42f2cd1a8ef0a",
-                "reference": "b2aa0980229d4f7fa094ee903aa42f2cd1a8ef0a",
+                "url": "https://api.github.com/repos/symfony/error-handler/zipball/bc14c25d6a560562731e6167a694cdee4658fe45",
+                "reference": "bc14c25d6a560562731e6167a694cdee4658fe45",
                 "shasum": ""
             },
             "require": {
@@ -4275,7 +4275,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-04T12:03:58+00:00"
+            "time": "2021-02-11T08:21:33+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -4449,12 +4449,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "4ff1d2e04790e021941a9bcbed5aca383f8250da"
+                "reference": "4b4800804bf3715b7fafe674c93c73036c8eaf54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/4ff1d2e04790e021941a9bcbed5aca383f8250da",
-                "reference": "4ff1d2e04790e021941a9bcbed5aca383f8250da",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/4b4800804bf3715b7fafe674c93c73036c8eaf54",
+                "reference": "4b4800804bf3715b7fafe674c93c73036c8eaf54",
                 "shasum": ""
             },
             "require": {
@@ -4504,7 +4504,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-11T09:50:50+00:00"
+            "time": "2021-02-11T19:49:37+00:00"
         },
         {
             "name": "symfony/finder",
@@ -4653,12 +4653,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "f8474ef5c7a3fe2635fe38792aac7383ec8c3efc"
+                "reference": "93f133c82aedd88bc26f6e567a046e2955322c2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/f8474ef5c7a3fe2635fe38792aac7383ec8c3efc",
-                "reference": "f8474ef5c7a3fe2635fe38792aac7383ec8c3efc",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/93f133c82aedd88bc26f6e567a046e2955322c2d",
+                "reference": "93f133c82aedd88bc26f6e567a046e2955322c2d",
                 "shasum": ""
             },
             "require": {
@@ -4719,7 +4719,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-06T10:28:18+00:00"
+            "time": "2021-02-11T19:46:04+00:00"
         },
         {
             "name": "symfony/http-kernel",
