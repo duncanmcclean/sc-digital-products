@@ -15,10 +15,9 @@ class ProcessCheckout
 {
     public function handle(CartCompleted $event)
     {
-        $hasDownloads = false;
         $order = Order::find($event->cart->id());
 
-        collect($order->get('items'))
+        $hasDownloads = collect($order->get('items'))
             ->reject(function ($item) {
                 $product = Entry::find($item['product']);
 
@@ -26,27 +25,19 @@ class ProcessCheckout
                     $product->get('is_digital_product') :
                     false;
             })
-            ->each(function ($item) use ($order, &$hasDownloads) {
-                $item['license_key'] = LicenseKey::generate();
-                $item['download_url'] = URL::signedRoute('statamic.digital-downloads.download', [
-                    'order_id' => $order->id,
-                    'item_id' => $item['id'],
-                    'license_key' => $item['license_key'],
+            ->each(function ($item) use ($order) {
+                $order->updateOrderItem($item['id'], [
+                    'license_key'  => $licenseKey = LicenseKey::generate(),
+                    'download_url' => URL::signedRoute('statamic.digital-downloads.download', [
+                        'order_id'    => $order->id,
+                        'item_id'     => $item['id'],
+                        'license_key' => $licenseKey,
+                    ]),
                 ]);
-
-                $data = [
-                    'items' => [
-                        $item,
-                    ],
-                ];
-
-                $order->data($data)->save();
-
-                $hasDownloads = true;
             });
 
-        if ($hasDownloads && isset($order->data['customer'])) {
-            Mail::to(Customer::find($order->data['customer'])->data['email'])
+        if ($hasDownloads->count() >= 1 && isset($order->data['customer'])) {
+            Mail::to($order->customer()->email())
                 ->send(new CustomerDownload($order->entry()));
         }
     }
