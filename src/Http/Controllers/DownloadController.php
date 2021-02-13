@@ -17,12 +17,9 @@ class DownloadController extends Controller
         }
 
         $order = Order::find($request->order_id);
+        $item = $order->orderItems()->firstWhere('id', $request->item_id);
 
-        $item = collect($order->get('items'))
-            ->where('id', $request->item_id)
-            ->first();
-
-        if ($item['license_key'] != $request->license_key) {
+        if ($item['license_key'] !== $request->license_key) {
             abort(401);
         }
 
