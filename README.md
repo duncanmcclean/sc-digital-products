@@ -71,6 +71,36 @@ And an invalid one will be like this.
 }
 ```
 
+### Download History
+
+The Digital Downloads addon automatically provides a history log of every time something is downloaded. The download history is tracked per order item. When tracking downloads, we store the timestamp of download and the IP address it was downloaded from.
+
+Inside your order's entry, it may look something like this:
+
+```yaml
+items:
+  -
+    product: d113c964-d254-4f6b-931b-686348f36af5
+    quantity: 1
+    total: 9000
+    id: a50a22d3-432f-4b6c-85db-48ea7ba92036
+    license_key: COt2IXuPqP6VTg3cfXmqQmP0
+    download_url: 'blahbla.test/link-for-download'
+    download_history:
+      -
+        timestamp: 1613228831
+        ip_address: 127.0.0.1
+      -
+        timestamp: 1613228828
+        ip_address: 127.0.0.1
+      -
+        timestamp: 1613228746
+        ip_address: 127.0.0.1
+      -
+        timestamp: 1613228722
+        ip_address: 127.0.0.1
+```
+
 ## Resources
 * [Documentation](https://sc-docs.doublethree.digital)
 * [Simple Commerce Issues](https://github.com/doublethreedigital/simple-commerce/issues)

@@ -33,6 +33,7 @@ class ProcessCheckout
                         'item_id'     => $item['id'],
                         'license_key' => $licenseKey,
                     ]),
+                    'download_history' => [],
                 ]);
             });
 
