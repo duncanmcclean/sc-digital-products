@@ -211,12 +211,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "d3ba447b79e45d1130e5523224700b97541b16de"
+                "reference": "6035e462d8ce2532b44ae9c80aa63922e64aef3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/d3ba447b79e45d1130e5523224700b97541b16de",
-                "reference": "d3ba447b79e45d1130e5523224700b97541b16de",
+                "url": "https://api.github.com/repos/composer/composer/zipball/6035e462d8ce2532b44ae9c80aa63922e64aef3d",
+                "reference": "6035e462d8ce2532b44ae9c80aa63922e64aef3d",
                 "shasum": ""
             },
             "require": {
@@ -301,7 +301,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-12T10:09:00+00:00"
+            "time": "2021-02-17T22:43:35+00:00"
         },
         {
             "name": "composer/semver",
@@ -768,16 +768,16 @@
         },
         {
             "name": "doublethreedigital/simple-commerce",
-            "version": "v2.2.8",
+            "version": "v2.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doublethreedigital/simple-commerce.git",
-                "reference": "9244a8a5be8f7cea57a8578376802b1c8c0b66c2"
+                "reference": "a3d455c1cd0cae00e86f38997e294956a0b3fda3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/9244a8a5be8f7cea57a8578376802b1c8c0b66c2",
-                "reference": "9244a8a5be8f7cea57a8578376802b1c8c0b66c2",
+                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/a3d455c1cd0cae00e86f38997e294956a0b3fda3",
+                "reference": "a3d455c1cd0cae00e86f38997e294956a0b3fda3",
                 "shasum": ""
             },
             "require": {
@@ -823,9 +823,9 @@
             "description": "A perfectly simple e-commerce addon for Statamic",
             "support": {
                 "issues": "https://github.com/doublethreedigital/simple-commerce/issues",
-                "source": "https://github.com/doublethreedigital/simple-commerce/tree/v2.2.8"
+                "source": "https://github.com/doublethreedigital/simple-commerce/tree/v2.2.9"
             },
-            "time": "2021-02-16T22:32:47+00:00"
+            "time": "2021-02-18T07:24:46+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -1455,12 +1455,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "73dd43d92fcde6c6abc00658ae33391397ca119d"
+                "reference": "16ab3237bcf232195476aa2530a8f747f5705a4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/73dd43d92fcde6c6abc00658ae33391397ca119d",
-                "reference": "73dd43d92fcde6c6abc00658ae33391397ca119d",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/16ab3237bcf232195476aa2530a8f747f5705a4a",
+                "reference": "16ab3237bcf232195476aa2530a8f747f5705a4a",
                 "shasum": ""
             },
             "require": {
@@ -1616,7 +1616,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-02-16T18:07:44+00:00"
+            "time": "2021-02-17T17:55:19+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -3840,16 +3840,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.73.0",
+            "version": "v7.74.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "15d9e4b5c1076499e9681e7a6801c6945d6d530c"
+                "reference": "e45b12ff0b47746b646f51c8249210303fb076f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/15d9e4b5c1076499e9681e7a6801c6945d6d530c",
-                "reference": "15d9e4b5c1076499e9681e7a6801c6945d6d530c",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/e45b12ff0b47746b646f51c8249210303fb076f5",
+                "reference": "e45b12ff0b47746b646f51c8249210303fb076f5",
                 "shasum": ""
             },
             "require": {
@@ -3895,9 +3895,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.73.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v7.74.0"
             },
-            "time": "2021-02-17T01:42:32+00:00"
+            "time": "2021-02-18T00:17:33+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3981,12 +3981,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "1128c89e7e4de32f78b7e6cb13c139668db7b207"
+                "reference": "2a6f75224a537ee506e9fa1e6fc4200ad411ffd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/1128c89e7e4de32f78b7e6cb13c139668db7b207",
-                "reference": "1128c89e7e4de32f78b7e6cb13c139668db7b207",
+                "url": "https://api.github.com/repos/symfony/console/zipball/2a6f75224a537ee506e9fa1e6fc4200ad411ffd9",
+                "reference": "2a6f75224a537ee506e9fa1e6fc4200ad411ffd9",
                 "shasum": ""
             },
             "require": {
@@ -4071,7 +4071,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-15T18:57:44+00:00"
+            "time": "2021-02-17T15:27:35+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -5976,12 +5976,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "13c9099cdb470223b5863f7d11d17554b2dc6404"
+                "reference": "6d830fae00e2bb336074eae141bb00db36cd3551"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/13c9099cdb470223b5863f7d11d17554b2dc6404",
-                "reference": "13c9099cdb470223b5863f7d11d17554b2dc6404",
+                "url": "https://api.github.com/repos/symfony/string/zipball/6d830fae00e2bb336074eae141bb00db36cd3551",
+                "reference": "6d830fae00e2bb336074eae141bb00db36cd3551",
                 "shasum": ""
             },
             "require": {
@@ -6052,7 +6052,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-26T09:33:05+00:00"
+            "time": "2021-02-17T15:27:35+00:00"
         },
         {
             "name": "symfony/translation",
@@ -6060,12 +6060,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "24d590c94879aa227f597153e962a4a30d2da952"
+                "reference": "61d3c80b5c106e9e3e21542db7e6a90b2f01250f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/24d590c94879aa227f597153e962a4a30d2da952",
-                "reference": "24d590c94879aa227f597153e962a4a30d2da952",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/61d3c80b5c106e9e3e21542db7e6a90b2f01250f",
+                "reference": "61d3c80b5c106e9e3e21542db7e6a90b2f01250f",
                 "shasum": ""
             },
             "require": {
@@ -6146,7 +6146,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-16T10:14:08+00:00"
+            "time": "2021-02-17T15:27:35+00:00"
         },
         {
             "name": "symfony/translation-contracts",
