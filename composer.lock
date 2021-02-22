@@ -211,12 +211,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "6035e462d8ce2532b44ae9c80aa63922e64aef3d"
+                "reference": "03e8cacd12aa66d6ee0d4bf31e65ab6a1f2cab96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/6035e462d8ce2532b44ae9c80aa63922e64aef3d",
-                "reference": "6035e462d8ce2532b44ae9c80aa63922e64aef3d",
+                "url": "https://api.github.com/repos/composer/composer/zipball/03e8cacd12aa66d6ee0d4bf31e65ab6a1f2cab96",
+                "reference": "03e8cacd12aa66d6ee0d4bf31e65ab6a1f2cab96",
                 "shasum": ""
             },
             "require": {
@@ -301,7 +301,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-17T22:43:35+00:00"
+            "time": "2021-02-18T09:37:22+00:00"
         },
         {
             "name": "composer/semver",
@@ -768,16 +768,16 @@
         },
         {
             "name": "doublethreedigital/simple-commerce",
-            "version": "v2.2.9",
+            "version": "v2.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doublethreedigital/simple-commerce.git",
-                "reference": "a3d455c1cd0cae00e86f38997e294956a0b3fda3"
+                "reference": "b7493ab067d0430a09d760d6cab0b7367d9b2ec8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/a3d455c1cd0cae00e86f38997e294956a0b3fda3",
-                "reference": "a3d455c1cd0cae00e86f38997e294956a0b3fda3",
+                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/b7493ab067d0430a09d760d6cab0b7367d9b2ec8",
+                "reference": "b7493ab067d0430a09d760d6cab0b7367d9b2ec8",
                 "shasum": ""
             },
             "require": {
@@ -823,9 +823,9 @@
             "description": "A perfectly simple e-commerce addon for Statamic",
             "support": {
                 "issues": "https://github.com/doublethreedigital/simple-commerce/issues",
-                "source": "https://github.com/doublethreedigital/simple-commerce/tree/v2.2.9"
+                "source": "https://github.com/doublethreedigital/simple-commerce/tree/v2.2.11"
             },
-            "time": "2021-02-18T07:24:46+00:00"
+            "time": "2021-02-19T23:42:38+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -1455,12 +1455,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "16ab3237bcf232195476aa2530a8f747f5705a4a"
+                "reference": "ed3a8dbc826f49cf240d9db3f5e0a1ddb7ce35ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/16ab3237bcf232195476aa2530a8f747f5705a4a",
-                "reference": "16ab3237bcf232195476aa2530a8f747f5705a4a",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/ed3a8dbc826f49cf240d9db3f5e0a1ddb7ce35ef",
+                "reference": "ed3a8dbc826f49cf240d9db3f5e0a1ddb7ce35ef",
                 "shasum": ""
             },
             "require": {
@@ -1616,7 +1616,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-02-17T17:55:19+00:00"
+            "time": "2021-02-21T16:09:39+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -1782,12 +1782,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/csv.git",
-                "reference": "6aafcef719d2f9993629b59d240e91b1b87047d8"
+                "reference": "03be1caee4ccc93c2c09147387e81e7261edc76a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/csv/zipball/6aafcef719d2f9993629b59d240e91b1b87047d8",
-                "reference": "6aafcef719d2f9993629b59d240e91b1b87047d8",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/03be1caee4ccc93c2c09147387e81e7261edc76a",
+                "reference": "03be1caee4ccc93c2c09147387e81e7261edc76a",
                 "shasum": ""
             },
             "require": {
@@ -1859,7 +1859,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-02-03T08:34:51+00:00"
+            "time": "2021-02-21T20:27:35+00:00"
         },
         {
             "name": "league/flysystem",
@@ -3981,12 +3981,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "2a6f75224a537ee506e9fa1e6fc4200ad411ffd9"
+                "reference": "539148499aaafa5058d534582f61ce2a66480987"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/2a6f75224a537ee506e9fa1e6fc4200ad411ffd9",
-                "reference": "2a6f75224a537ee506e9fa1e6fc4200ad411ffd9",
+                "url": "https://api.github.com/repos/symfony/console/zipball/539148499aaafa5058d534582f61ce2a66480987",
+                "reference": "539148499aaafa5058d534582f61ce2a66480987",
                 "shasum": ""
             },
             "require": {
@@ -4071,7 +4071,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-17T15:27:35+00:00"
+            "time": "2021-02-18T11:02:40+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -4283,12 +4283,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "4f9760f8074978ad82e2ce854dff79a71fe45367"
+                "reference": "bcbfcf5fdfec7d4ae8133bfa76a756831b6f46c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/4f9760f8074978ad82e2ce854dff79a71fe45367",
-                "reference": "4f9760f8074978ad82e2ce854dff79a71fe45367",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/bcbfcf5fdfec7d4ae8133bfa76a756831b6f46c6",
+                "reference": "bcbfcf5fdfec7d4ae8133bfa76a756831b6f46c6",
                 "shasum": ""
             },
             "require": {
@@ -4345,7 +4345,7 @@
             "description": "Provides tools that allow your application components to communicate with each other by dispatching events and listening to them",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/event-dispatcher/tree/v5.2.3"
+                "source": "https://github.com/symfony/event-dispatcher/tree/5.x"
             },
             "funding": [
                 {
@@ -4361,7 +4361,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-27T10:36:42+00:00"
+            "time": "2021-02-19T00:04:43+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -5247,12 +5247,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-idn.git",
-                "reference": "2d63434d922daf7da8dd863e7907e67ee3031483"
+                "reference": "3709eb82b37c8d6eb23cf10ef19b27b3312d1632"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/2d63434d922daf7da8dd863e7907e67ee3031483",
-                "reference": "2d63434d922daf7da8dd863e7907e67ee3031483",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/3709eb82b37c8d6eb23cf10ef19b27b3312d1632",
+                "reference": "3709eb82b37c8d6eb23cf10ef19b27b3312d1632",
                 "shasum": ""
             },
             "require": {
@@ -5311,7 +5311,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.22.1"
+                "source": "https://github.com/symfony/polyfill-intl-idn/tree/main"
             },
             "funding": [
                 {
@@ -5327,7 +5327,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-22T09:19:47+00:00"
+            "time": "2021-02-19T11:00:07+00:00"
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
@@ -6233,12 +6233,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "93c1914af9c0619294d867a0fa346d5ea6b7d707"
+                "reference": "898d0e3b20171d9178c0fcd058a76b5698cc804e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/93c1914af9c0619294d867a0fa346d5ea6b7d707",
-                "reference": "93c1914af9c0619294d867a0fa346d5ea6b7d707",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/898d0e3b20171d9178c0fcd058a76b5698cc804e",
+                "reference": "898d0e3b20171d9178c0fcd058a76b5698cc804e",
                 "shasum": ""
             },
             "require": {
@@ -6314,7 +6314,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-25T14:09:21+00:00"
+            "time": "2021-02-18T23:11:25+00:00"
         },
         {
             "name": "symfony/var-exporter",
