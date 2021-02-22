@@ -17,6 +17,12 @@ class AddFieldsToProductBlueprint
             'display' => 'Is Digital Product?',
         ], 'Digital Product');
 
+        $event->blueprint->ensureField('download_limit', [
+            'type' => 'integer',
+            'display' => 'Download Limit',
+            'instructions' => "If you'd like to limit the amount if times this product can be downloaded, set it here. Keep it blank if you'd like it to be unlimited.",
+        ], 'Digital Product');
+
         $event->blueprint->ensureField('downloadable_asset', [
             'type' => 'assets',
             'mode' => 'grid',

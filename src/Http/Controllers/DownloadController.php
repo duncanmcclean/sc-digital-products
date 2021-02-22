@@ -28,6 +28,12 @@ class DownloadController extends Controller
 
         $download = Storage::disk($asset->container()->toArray()['disk'])->get($asset->path());
 
+        if (isset($item['download_history']) && $product->has('download_limit')) {
+            if (collect($item['download_history'])->count() >= $product->get('download_limit')) {
+                abort(405, "You've reached the download limit for this product.");
+            }
+        }
+
         $order->updateOrderItem($item['id'], [
             'download_history' => array_merge(
                 [

@@ -21,6 +21,7 @@ class AddFieldsToProductBlueprintTest extends TestCase
         $handle = (new AddFieldsToProductBlueprint())->handle($event);
 
         $this->assertTrue($handle->hasField('is_digital_product'));
+        $this->assertTrue($handle->hasField('download_limit'));
         $this->assertTrue($handle->hasField('downloadable_asset'));
         $this->assertTrue($handle->hasSection('Digital Product'));
     }
@@ -37,6 +38,7 @@ class AddFieldsToProductBlueprintTest extends TestCase
         $handle = (new AddFieldsToProductBlueprint())->handle($event);
 
         $this->assertFalse($handle->hasField('is_digital_product'));
+        $this->assertFalse($handle->hasField('download_limit'));
         $this->assertFalse($handle->hasField('downloadable_asset'));
         $this->assertFalse($handle->hasSection('Digital Product'));
     }
