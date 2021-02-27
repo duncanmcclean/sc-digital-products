@@ -1,9 +1,10 @@
-# Digital Products
-> Sell digital products with [Simple Commerce](https://github.com/doublethreedigital/simple-commerce)
+![Banner](https://raw.githubusercontent.com/doublethreedigital/sc-digital-products/master/banner.png)
 
-This addon enables you to sell digital products with Simple Commerce, an e-commerce addon for Statamic.
+## Digital Products
 
-This addon is free, however to use it in production, you'll need to purchase a Simple Commerce license from the [Statamic Marketplace](https://statamic.com/addons/double-three-digital/simple-commerce).
+This addon is a first-party extension of Simple Commerce which enables you to sell Digital Products with Simple Commerce.
+
+This repository contains the source code to the Digital Products addon. The addon itself is free, however you must already [own a Simple Commerce license](https://statamic.com/simple-commerce) to use this in production.
 
 ## Features
 * Allows you to specifiy assets for the customer to download
@@ -14,7 +15,7 @@ This addon is free, however to use it in production, you'll need to purchase a S
 1. Install with Composer - `composer require doublethreedigital/sc-digital-products`
 2. Start using the addon!
 
-## Usage
+## Documentation
 ### Adding downloadable assets to products
 Once installed, you'll see a `Digital Product` tab appear on the publish form for your product entries.
 
@@ -101,10 +102,7 @@ items:
         ip_address: 127.0.0.1
 ```
 
-## Resources
-* [Documentation](https://sc-docs.doublethree.digital)
-* [Simple Commerce Issues](https://github.com/doublethreedigital/simple-commerce/issues)
-* [Simple Commerce Discussions](https://github.com/doublethreedigital/simple-commerce/discussions)
+---
 
 <p>
 <a href="https://statamic.com"><img src="https://img.shields.io/badge/Statamic-3.0+-FF269E?style=for-the-badge" alt="Compatible with Statamic v3"></a>
