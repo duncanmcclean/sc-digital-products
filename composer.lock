@@ -211,12 +211,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "dfc69140fe720b169b978b18b7863611cc0d8077"
+                "reference": "346356a4dd62967f1b4df6a91a562a1cb9078cfc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/dfc69140fe720b169b978b18b7863611cc0d8077",
-                "reference": "dfc69140fe720b169b978b18b7863611cc0d8077",
+                "url": "https://api.github.com/repos/composer/composer/zipball/346356a4dd62967f1b4df6a91a562a1cb9078cfc",
+                "reference": "346356a4dd62967f1b4df6a91a562a1cb9078cfc",
                 "shasum": ""
             },
             "require": {
@@ -301,7 +301,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-26T15:26:47+00:00"
+            "time": "2021-03-10T12:44:42+00:00"
         },
         {
             "name": "composer/semver",
@@ -391,12 +391,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/spdx-licenses.git",
-                "reference": "17dff337be87d9a5a406c6f6de33617d71b4acea"
+                "reference": "8729d194e028b76ea3e84cd157bba3950203a7db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/17dff337be87d9a5a406c6f6de33617d71b4acea",
-                "reference": "17dff337be87d9a5a406c6f6de33617d71b4acea",
+                "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/8729d194e028b76ea3e84cd157bba3950203a7db",
+                "reference": "8729d194e028b76ea3e84cd157bba3950203a7db",
                 "shasum": ""
             },
             "require": {
@@ -464,7 +464,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-08T14:02:31+00:00"
+            "time": "2021-03-09T12:00:19+00:00"
         },
         {
             "name": "composer/xdebug-handler",
@@ -768,16 +768,16 @@
         },
         {
             "name": "doublethreedigital/simple-commerce",
-            "version": "v2.2.14",
+            "version": "v2.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doublethreedigital/simple-commerce.git",
-                "reference": "8197313747f143367fa926ce100f35f5156cd294"
+                "reference": "c18832b64ee5c6c179cec476dd8493365ac0abce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/8197313747f143367fa926ce100f35f5156cd294",
-                "reference": "8197313747f143367fa926ce100f35f5156cd294",
+                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/c18832b64ee5c6c179cec476dd8493365ac0abce",
+                "reference": "c18832b64ee5c6c179cec476dd8493365ac0abce",
                 "shasum": ""
             },
             "require": {
@@ -823,9 +823,9 @@
             "description": "A perfectly simple e-commerce addon for Statamic",
             "support": {
                 "issues": "https://github.com/doublethreedigital/simple-commerce/issues",
-                "source": "https://github.com/doublethreedigital/simple-commerce/tree/v2.2.14"
+                "source": "https://github.com/doublethreedigital/simple-commerce/tree/v2.2.15"
             },
-            "time": "2021-03-08T18:21:50+00:00"
+            "time": "2021-03-10T21:41:25+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -1236,12 +1236,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "64245c4a03d43ddb638c4ff0b2d330c2af726ec5"
+                "reference": "d7fe0a0eabc266c3dcf2f20aa12121044ff196a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/64245c4a03d43ddb638c4ff0b2d330c2af726ec5",
-                "reference": "64245c4a03d43ddb638c4ff0b2d330c2af726ec5",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/d7fe0a0eabc266c3dcf2f20aa12121044ff196a4",
+                "reference": "d7fe0a0eabc266c3dcf2f20aa12121044ff196a4",
                 "shasum": ""
             },
             "require": {
@@ -1303,7 +1303,7 @@
                 "issues": "https://github.com/guzzle/psr7/issues",
                 "source": "https://github.com/guzzle/psr7/tree/1.x"
             },
-            "time": "2021-03-07T16:17:45+00:00"
+            "time": "2021-03-09T14:42:40+00:00"
         },
         {
             "name": "intervention/image",
@@ -1455,12 +1455,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "0798479b95fd241c829b0e36a1d6f8573a586738"
+                "reference": "71265318358ee150fe8b13f68a03cb9f869fb483"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/0798479b95fd241c829b0e36a1d6f8573a586738",
-                "reference": "0798479b95fd241c829b0e36a1d6f8573a586738",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/71265318358ee150fe8b13f68a03cb9f869fb483",
+                "reference": "71265318358ee150fe8b13f68a03cb9f869fb483",
                 "shasum": ""
             },
             "require": {
@@ -1616,7 +1616,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-03-08T17:52:35+00:00"
+            "time": "2021-03-11T03:45:44+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -3904,16 +3904,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "2c56a7f54e322f7d001d0ab9f28b0c7254ac87fc"
+                "reference": "27d5ef808a066747d60f5329985949a559ec35a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/2c56a7f54e322f7d001d0ab9f28b0c7254ac87fc",
-                "reference": "2c56a7f54e322f7d001d0ab9f28b0c7254ac87fc",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/27d5ef808a066747d60f5329985949a559ec35a0",
+                "reference": "27d5ef808a066747d60f5329985949a559ec35a0",
                 "shasum": ""
             },
             "require": {
-                "egulias/email-validator": "^2.0",
+                "egulias/email-validator": "^2.0|^3.1",
                 "php": ">=7.0.0",
                 "symfony/polyfill-iconv": "^1.0",
                 "symfony/polyfill-intl-idn": "^1.10",
@@ -3972,7 +3972,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-05T12:09:23+00:00"
+            "time": "2021-03-09T12:31:14+00:00"
         },
         {
             "name": "symfony/console",
@@ -4212,12 +4212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/error-handler.git",
-                "reference": "bc14c25d6a560562731e6167a694cdee4658fe45"
+                "reference": "035e390eb7d8c8ad58ff1649f98ebac4e79f7878"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/error-handler/zipball/bc14c25d6a560562731e6167a694cdee4658fe45",
-                "reference": "bc14c25d6a560562731e6167a694cdee4658fe45",
+                "url": "https://api.github.com/repos/symfony/error-handler/zipball/035e390eb7d8c8ad58ff1649f98ebac4e79f7878",
+                "reference": "035e390eb7d8c8ad58ff1649f98ebac4e79f7878",
                 "shasum": ""
             },
             "require": {
@@ -4274,7 +4274,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-11T08:21:33+00:00"
+            "time": "2021-03-10T22:12:52+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -4652,12 +4652,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "18cf248dcee5a6c20b4cfceef9b6fe18c63b9066"
+                "reference": "30841d3da1c20642bc7caac6da8b49c742293588"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/18cf248dcee5a6c20b4cfceef9b6fe18c63b9066",
-                "reference": "18cf248dcee5a6c20b4cfceef9b6fe18c63b9066",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/30841d3da1c20642bc7caac6da8b49c742293588",
+                "reference": "30841d3da1c20642bc7caac6da8b49c742293588",
                 "shasum": ""
             },
             "require": {
@@ -4718,7 +4718,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-25T17:20:06+00:00"
+            "time": "2021-03-10T10:16:25+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -4726,12 +4726,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "d162d4514e915a9e0c91d9ec7f4232bd25aaf119"
+                "reference": "d5ac10abce185d246702a2219be50d486df96c6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/d162d4514e915a9e0c91d9ec7f4232bd25aaf119",
-                "reference": "d162d4514e915a9e0c91d9ec7f4232bd25aaf119",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/d5ac10abce185d246702a2219be50d486df96c6e",
+                "reference": "d5ac10abce185d246702a2219be50d486df96c6e",
                 "shasum": ""
             },
             "require": {
@@ -4831,7 +4831,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-26T00:25:47+00:00"
+            "time": "2021-03-10T08:24:39+00:00"
         },
         {
             "name": "symfony/lock",
@@ -4980,7 +4980,7 @@
                 "mime-type"
             ],
             "support": {
-                "source": "https://github.com/symfony/mime/tree/5.x"
+                "source": "https://github.com/symfony/mime/tree/v5.2.5"
             },
             "funding": [
                 {
@@ -6061,12 +6061,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "1df60f0debacffeead546abb2bc8857960f757bf"
+                "reference": "4bf8149ffcd74c424a20e4f32f1d3c550d4320ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/1df60f0debacffeead546abb2bc8857960f757bf",
-                "reference": "1df60f0debacffeead546abb2bc8857960f757bf",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/4bf8149ffcd74c424a20e4f32f1d3c550d4320ce",
+                "reference": "4bf8149ffcd74c424a20e4f32f1d3c550d4320ce",
                 "shasum": ""
             },
             "require": {
@@ -6147,7 +6147,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-04T15:41:30+00:00"
+            "time": "2021-03-06T08:05:19+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -6395,12 +6395,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "5fb6f09221ea8f9d61f0617a1c4a02f519be1328"
+                "reference": "0887a2c153b836b521bc8f58103f24890834cef6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/5fb6f09221ea8f9d61f0617a1c4a02f519be1328",
-                "reference": "5fb6f09221ea8f9d61f0617a1c4a02f519be1328",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/0887a2c153b836b521bc8f58103f24890834cef6",
+                "reference": "0887a2c153b836b521bc8f58103f24890834cef6",
                 "shasum": ""
             },
             "require": {
@@ -6463,7 +6463,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-23T10:10:15+00:00"
+            "time": "2021-03-06T08:05:19+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -6786,12 +6786,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/assert.git",
-                "reference": "728e29486e6b2719da51f5d6f63663d00a63a49a"
+                "reference": "f07851c5b43e4cb502c24068620e9af6cbdd953f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozarts/assert/zipball/728e29486e6b2719da51f5d6f63663d00a63a49a",
-                "reference": "728e29486e6b2719da51f5d6f63663d00a63a49a",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/f07851c5b43e4cb502c24068620e9af6cbdd953f",
+                "reference": "f07851c5b43e4cb502c24068620e9af6cbdd953f",
                 "shasum": ""
             },
             "require": {
@@ -6837,7 +6837,7 @@
                 "issues": "https://github.com/webmozarts/assert/issues",
                 "source": "https://github.com/webmozarts/assert/tree/master"
             },
-            "time": "2021-03-08T16:48:55+00:00"
+            "time": "2021-03-11T07:08:13+00:00"
         },
         {
             "name": "webonyx/graphql-php",
