@@ -1237,12 +1237,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "d7fe0a0eabc266c3dcf2f20aa12121044ff196a4"
+                "reference": "a67cdbf85690e54a7b92fe91c297b20d2607c0b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/d7fe0a0eabc266c3dcf2f20aa12121044ff196a4",
-                "reference": "d7fe0a0eabc266c3dcf2f20aa12121044ff196a4",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/a67cdbf85690e54a7b92fe91c297b20d2607c0b2",
+                "reference": "a67cdbf85690e54a7b92fe91c297b20d2607c0b2",
                 "shasum": ""
             },
             "require": {
@@ -1304,7 +1304,7 @@
                 "issues": "https://github.com/guzzle/psr7/issues",
                 "source": "https://github.com/guzzle/psr7/tree/1.x"
             },
-            "time": "2021-03-09T14:42:40+00:00"
+            "time": "2021-03-15T11:15:53+00:00"
         },
         {
             "name": "intervention/image",
@@ -1456,12 +1456,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "e4ed3317c2730803925918e1cb1e1e739e20ba5f"
+                "reference": "c02e3250c3a933b08656ac4c84168353eba771a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/e4ed3317c2730803925918e1cb1e1e739e20ba5f",
-                "reference": "e4ed3317c2730803925918e1cb1e1e739e20ba5f",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/c02e3250c3a933b08656ac4c84168353eba771a8",
+                "reference": "c02e3250c3a933b08656ac4c84168353eba771a8",
                 "shasum": ""
             },
             "require": {
@@ -1617,7 +1617,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-03-12T14:45:30+00:00"
+            "time": "2021-03-15T13:48:56+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -1783,12 +1783,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/csv.git",
-                "reference": "877025e64a6796e6bff878db669abe0e0a9ad749"
+                "reference": "4e5d7156e7f2a35c73ad86e5dbb2302fc9825335"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/csv/zipball/877025e64a6796e6bff878db669abe0e0a9ad749",
-                "reference": "877025e64a6796e6bff878db669abe0e0a9ad749",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/4e5d7156e7f2a35c73ad86e5dbb2302fc9825335",
+                "reference": "4e5d7156e7f2a35c73ad86e5dbb2302fc9825335",
                 "shasum": ""
             },
             "require": {
@@ -1860,7 +1860,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-15T06:43:18+00:00"
+            "time": "2021-03-16T04:04:38+00:00"
         },
         {
             "name": "league/flysystem",
@@ -3682,16 +3682,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.1.0-alpha.4",
+            "version": "v3.1.0-beta.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "26b446d1491a308c019809b30d6b77414a54e8c1"
+                "reference": "295bef94a73b6217987b7f13322101a30dab0a53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/26b446d1491a308c019809b30d6b77414a54e8c1",
-                "reference": "26b446d1491a308c019809b30d6b77414a54e8c1",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/295bef94a73b6217987b7f13322101a30dab0a53",
+                "reference": "295bef94a73b6217987b7f13322101a30dab0a53",
                 "shasum": ""
             },
             "require": {
@@ -3759,7 +3759,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v3.1.0-alpha.4"
+                "source": "https://github.com/statamic/cms/tree/v3.1.0-beta.1"
             },
             "funding": [
                 {
@@ -3767,7 +3767,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-08T16:01:52+00:00"
+            "time": "2021-03-15T18:08:14+00:00"
         },
         {
             "name": "statamic/stringy",
