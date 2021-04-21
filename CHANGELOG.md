@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## v2.0.4
+
+* [fix] Fixed bug with digital product detection sometimes being off #88
+
 ## v2.0.3
 
 * [new] Limit the number of downloads per product #71
