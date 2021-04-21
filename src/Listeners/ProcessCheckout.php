@@ -18,12 +18,12 @@ class ProcessCheckout
         $order = Order::find($event->cart->id());
 
         $hasDownloads = collect($order->get('items'))
-            ->reject(function ($item) {
+            ->filter(function ($item) {
                 $product = Entry::find($item['product']);
 
-                return ! ($product->has('is_digital_product') ?
+                return $product->has('is_digital_product') ?
                     $product->get('is_digital_product') :
-                    false);
+                    false;
             })
             ->each(function ($item) use ($order) {
                 $order->updateOrderItem($item['id'], [
