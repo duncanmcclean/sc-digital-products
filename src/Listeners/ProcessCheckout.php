@@ -21,9 +21,9 @@ class ProcessCheckout
             ->reject(function ($item) {
                 $product = Entry::find($item['product']);
 
-                return ! $product->has('is_digital_product') ?
+                return ! ($product->has('is_digital_product') ?
                     $product->get('is_digital_product') :
-                    false;
+                    false);
             })
             ->each(function ($item) use ($order) {
                 $order->updateOrderItem($item['id'], [
