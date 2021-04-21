@@ -5,7 +5,6 @@ namespace DoubleThreeDigital\DigitalProducts\Listeners;
 use DoubleThreeDigital\DigitalProducts\Facades\LicenseKey;
 use DoubleThreeDigital\DigitalProducts\Mail\CustomerDownload;
 use DoubleThreeDigital\SimpleCommerce\Events\CartCompleted;
-use DoubleThreeDigital\SimpleCommerce\Facades\Customer;
 use DoubleThreeDigital\SimpleCommerce\Facades\Order;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\URL;
@@ -26,7 +25,7 @@ class ProcessCheckout
                     false;
             })
             ->each(function ($item) use ($order) {
-                $order->updateOrderItem($item['id'], [
+                $order->updateLineItem($item['id'], [
                     'license_key'  => $licenseKey = LicenseKey::generate(),
                     'download_url' => URL::signedRoute('statamic.digital-downloads.download', [
                         'order_id'    => $order->id,
