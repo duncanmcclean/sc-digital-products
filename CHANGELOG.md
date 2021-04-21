@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-## v2.0.4
+## v2.0.4 (2021-04-21)
 
 * [fix] Fixed bug with digital product detection sometimes being off #88
 
