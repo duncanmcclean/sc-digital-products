@@ -11,8 +11,7 @@ class VerificationController extends Controller
 {
     public function index(VerificationRequest $request)
     {
-        $orders = Order::query()
-            ->get()
+        $orders = collect(Order::all())
             ->filter(function ($order) {
                 return $order->get('is_paid') === true;
             })
