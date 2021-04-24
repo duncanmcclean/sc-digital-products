@@ -3,6 +3,7 @@
 namespace DoubleThreeDigital\DigitalProducts\Http\Controllers;
 
 use DoubleThreeDigital\DigitalProducts\Http\Requests\VerificationRequest;
+use DoubleThreeDigital\SimpleCommerce\Facades\Order;
 use Illuminate\Routing\Controller;
 use Statamic\Facades\Entry;
 
@@ -10,13 +11,14 @@ class VerificationController extends Controller
 {
     public function index(VerificationRequest $request)
     {
-        $orders = Entry::whereCollection(config('simple-commerce.collections.orders'))
+        $orders = Order::query()
+            ->get()
             ->filter(function ($order) {
                 return $order->get('is_paid') === true;
             })
             ->map(function ($order) use ($request) {
                 foreach ($order->get('items') as $item) {
-                    if (isset($item['license_key']) && $item['license_key'] === $request->license_key) {
+                    if (isset($item['metadata']['license_key']) && $item['metadata']['license_key'] === $request->license_key) {
                         return ['result' => true];
                     }
                 }
