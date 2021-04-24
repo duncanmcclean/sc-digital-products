@@ -38,6 +38,7 @@ class ServiceProvider extends AddonServiceProvider
         $this->publishes([
             __DIR__.'/../resources/views' => resource_path('views/vendor/sc-digital-products'),
         ], 'sc-digital-products-views');
+
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'sc-digital-products');
 
         return $this;
