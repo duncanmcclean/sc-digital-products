@@ -12,7 +12,6 @@ jobs:
       matrix:
         php: [8.0, 7.4]
         laravel: [8.*, 7.*, 6.*]
-        statamic: [3.1.*]
         simpleCommerce: [2.3]
         os: [ubuntu-latest]
         include:
@@ -23,7 +22,7 @@ jobs:
           - laravel: 6.*
             testbench: 4.*
 
-    name: ${{ matrix.php }} - ${{ matrix.simpleCommerce }} - ${{ matrix.statamic }} - ${{ matrix.laravel }}
+    name: ${{ matrix.php }} - ${{ matrix.simpleCommerce }} - 3.1 - ${{ matrix.laravel }}
 
     steps:
       - name: Checkout code
@@ -38,7 +37,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer require "laravel/framework:${{ matrix.laravel }}" "doublethreedigital/simple-commerce:${{ matrix.simpleCommerce }}" "statamic/cms:${{ matrix.statamic }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
+          composer require "laravel/framework:${{ matrix.laravel }}" "doublethreedigital/simple-commerce:${{ matrix.simpleCommerce }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
           composer install --no-interaction
 
       - name: Run PHPUnit
