@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+> **Note**: Before updating, you'll need to upgrade to Simple Commerce v2.3. Review the [upgrade guide](https://sc-docs.doublethree.digital/v2.3/update-guide).
+
+### What's new?
+
+* Support for Simple Commerce v2.3 #87
+* Digital downloads are now zipped up, instead of downloading the raw file.
+* You can attach multiple assets to a product for downloading. #62
+
 ## v2.0.4 (2021-04-21)
 
 * [fix] Fixed bug with digital product detection sometimes being off #88
