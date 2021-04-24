@@ -33,7 +33,6 @@ class AddFieldsToProductBlueprint
             'type' => 'assets',
             'mode' => 'grid',
             'display' => 'Downloadable Asset',
-            'max_files' => 1,
             'if' => [
                 'is_digital_product' => 'equals true',
             ],
