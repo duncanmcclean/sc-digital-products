@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v2.1.0 (2021-05-10)
+
 > **Note**: Before updating, you'll need to upgrade to Simple Commerce v2.3. Review the [upgrade guide](https://sc-docs.doublethree.digital/v2.3/update-guide).
 
 ### What's new?
