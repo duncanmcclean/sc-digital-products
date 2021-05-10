@@ -24,8 +24,7 @@
         }
     },
     "require": {
-        "doublethreedigital/simple-commerce": "^v2.2",
-        "statamic/cms": "^3.0 || ^3.1"
+        "doublethreedigital/simple-commerce": "2.3.*"
     },
     "require-dev": {
         "nunomaduro/collision": "^5.0",
@@ -39,6 +38,7 @@
             "./vendor/bin/phpunit"
         ]
     },
+    "minimum-stability": "dev",
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",

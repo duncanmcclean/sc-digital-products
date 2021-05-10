@@ -2,13 +2,19 @@
 
 namespace DoubleThreeDigital\DigitalProducts\Listeners;
 
+use DoubleThreeDigital\SimpleCommerce\Products\Product;
+use DoubleThreeDigital\SimpleCommerce\SimpleCommerce;
 use Statamic\Events\EntryBlueprintFound;
 
 class AddFieldsToProductBlueprint
 {
     public function handle(EntryBlueprintFound $event)
     {
-        if ($event->blueprint->namespace() !== "collections.".config('simple-commerce.collections.products')) {
+        if (SimpleCommerce::productDriver()['driver'] !== Product::class) {
+            return $event->blueprint;
+        }
+
+        if ($event->blueprint->namespace() !== 'collections.'.SimpleCommerce::productDriver()['collection']) {
             return $event->blueprint;
         }
 
@@ -27,7 +33,6 @@ class AddFieldsToProductBlueprint
             'type' => 'assets',
             'mode' => 'grid',
             'display' => 'Downloadable Asset',
-            'max_files' => 1,
             'if' => [
                 'is_digital_product' => 'equals true',
             ],

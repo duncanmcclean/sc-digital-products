@@ -4,19 +4,17 @@ namespace DoubleThreeDigital\DigitalProducts\Listeners;
 
 use DoubleThreeDigital\DigitalProducts\Facades\LicenseKey;
 use DoubleThreeDigital\DigitalProducts\Mail\CustomerDownload;
-use DoubleThreeDigital\SimpleCommerce\Events\CartCompleted;
-use DoubleThreeDigital\SimpleCommerce\Facades\Order;
+use DoubleThreeDigital\SimpleCommerce\Events\OrderPaid;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\URL;
 use Statamic\Entries\Entry;
 
 class ProcessCheckout
 {
-    public function handle(CartCompleted $event)
+    public function handle(OrderPaid $event)
     {
-        $order = Order::find($event->cart->id());
-
-        $hasDownloads = collect($order->get('items'))
+        $hasDownloads = $event->order->lineItems()
             ->filter(function ($item) {
                 $product = Entry::find($item['product']);
 
@@ -24,21 +22,23 @@ class ProcessCheckout
                     $product->get('is_digital_product') :
                     false;
             })
-            ->each(function ($item) use ($order) {
-                $order->updateLineItem($item['id'], [
-                    'license_key'  => $licenseKey = LicenseKey::generate(),
-                    'download_url' => URL::signedRoute('statamic.digital-downloads.download', [
-                        'order_id'    => $order->id,
-                        'item_id'     => $item['id'],
-                        'license_key' => $licenseKey,
-                    ]),
-                    'download_history' => [],
+            ->each(function ($item) use ($event) {
+                $event->order->updateLineItem($item['id'], [
+                    'metadata' => array_merge([
+                        'license_key'  => $licenseKey = LicenseKey::generate(),
+                        'download_url' => URL::signedRoute('statamic.digital-downloads.download', [
+                            'order_id'    => $event->order->id,
+                            'item_id'     => $item['id'],
+                            'license_key' => $licenseKey,
+                        ]),
+                        'download_history' => [],
+                    ], Arr::get($item, 'metadata', [])),
                 ]);
             });
 
-        if ($hasDownloads->count() >= 1 && isset($order->data['customer'])) {
-            Mail::to($order->customer()->email())
-                ->send(new CustomerDownload($order->entry()));
+        if ($hasDownloads->count() >= 1 && $customer = $event->order->customer()) {
+            Mail::to($customer->email())
+                ->send(new CustomerDownload($event->order->entry()));
         }
     }
 }

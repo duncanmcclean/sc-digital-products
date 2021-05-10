@@ -21,7 +21,9 @@ class VerificationControllerTest extends TestCase
             ->set('is_paid', true)
             ->set('items', [
                 [
-                    'license_key' => $licenseKey,
+                    'metadata' => [
+                        'license_key' => $licenseKey,
+                    ],
                 ],
             ])
             ->save();

@@ -2,8 +2,7 @@
 
 namespace DoubleThreeDigital\DigitalProducts;
 
-use DoubleThreeDigital\DigitalProducts\Listeners\ProcessCheckout;
-use DoubleThreeDigital\SimpleCommerce\Events\CartCompleted;
+use DoubleThreeDigital\SimpleCommerce\Events\OrderPaid;
 use Illuminate\Support\Facades\Route;
 use Statamic\Events\EntryBlueprintFound;
 use Statamic\Providers\AddonServiceProvider;
@@ -15,8 +14,8 @@ class ServiceProvider extends AddonServiceProvider
         EntryBlueprintFound::class => [
             Listeners\AddFieldsToProductBlueprint::class,
         ],
-        CartCompleted::class => [
-            ProcessCheckout::class,
+        OrderPaid::class => [
+            Listeners\ProcessCheckout::class,
         ],
     ];
 
@@ -39,6 +38,7 @@ class ServiceProvider extends AddonServiceProvider
         $this->publishes([
             __DIR__.'/../resources/views' => resource_path('views/vendor/sc-digital-products'),
         ], 'sc-digital-products-views');
+
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'sc-digital-products');
 
         return $this;
