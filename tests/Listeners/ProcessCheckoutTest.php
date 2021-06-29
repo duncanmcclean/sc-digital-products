@@ -3,24 +3,51 @@
 namespace DoubleThreeDigital\DigitalProducts\Tests\Listeners;
 
 use DoubleThreeDigital\DigitalProducts\Tests\TestCase;
-use DoubleThreeDigital\SimpleCommerce\Events\CartCompleted;
+use DoubleThreeDigital\DigitalProducts\Tests\SetupCollections;
+use DoubleThreeDigital\DigitalProducts\Notifications\OrderDigitalDownloadsNotification;
+use DoubleThreeDigital\SimpleCommerce\Facades\Customer;
 use DoubleThreeDigital\SimpleCommerce\Facades\Order;
 use DoubleThreeDigital\SimpleCommerce\Facades\Product;
 use Statamic\Facades\Stache;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Notification;
+use Illuminate\Notifications\AnonymousNotifiable;
 
 class ProcessCheckoutTest extends TestCase
 {
+    use SetupCollections;
+
+    public function setUp(): void
+    {
+        parent::setUp();
+
+        $this->setupCollections();
+    }
+
     /** @test */
     public function can_process_checkout()
     {
-        $this->markTestIncomplete();
+        Notification::fake();
+
+        Config::set('simple-commerce.notifications', [
+            'digital_download_ready' => [
+                \DoubleThreeDigital\DigitalProducts\Notifications\OrderDigitalDownloadsNotification::class => [
+                    'to' => 'customer',
+                ],
+            ],
+        ]);
 
         $product = Product::create([
             'is_digital_product' => true,
             'price' => 1200,
         ]);
 
-        $cart = Order::create([
+        $customer = Customer::create([
+            'name' => 'Duncan',
+            'email' => 'duncan@example.com',
+        ]);
+
+        $order = Order::create([
             'items' => [
                 [
                     'id' => Stache::generateId(),
@@ -29,15 +56,24 @@ class ProcessCheckoutTest extends TestCase
                     'total' => 1200,
                 ],
             ],
+            'customer' => $customer->id(),
         ]);
 
-        $event = new CartCompleted($cart->entry());
+        $order->markAsPaid();
 
-        $cart = Order::find($cart->id());
+        $order = $order->fresh();
 
-        $this->assertArrayHasKey($cart->data, 'license_key');
-        $this->assertArrayHasKey($cart->data, 'download_url');
+        // Asset metadata is saved
+        $lineItem = $order->lineItems()->first();
 
-        // TODO: assert email has been sent, if customer is attached to order
+        $this->assertTrue(array_key_exists('license_key', $lineItem['metadata']));
+        $this->assertTrue(array_key_exists('download_url', $lineItem['metadata']));
+        $this->assertTrue(array_key_exists('download_history', $lineItem['metadata']));
+
+        // Assert notification has been sent
+        Notification::assertSentTo(
+            new AnonymousNotifiable,
+            OrderDigitalDownloadsNotification::class,
+        );
     }
 }

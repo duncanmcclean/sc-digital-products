@@ -81,6 +81,7 @@ abstract class TestCase extends OrchestraTestCase
             \DoubleThreeDigital\SimpleCommerce\Contracts\Gateway::class  => \DoubleThreeDigital\SimpleCommerce\Gateways\Manager::class,
             \DoubleThreeDigital\SimpleCommerce\Contracts\Product::class  => \DoubleThreeDigital\SimpleCommerce\Products\Product::class,
             \DoubleThreeDigital\SimpleCommerce\Contracts\Shipping::class => \DoubleThreeDigital\SimpleCommerce\Shipping\Manager::class,
+            \DoubleThreeDigital\SimpleCommerce\Contracts\Calculator::class => \DoubleThreeDigital\SimpleCommerce\Orders\Calculator::class,
         ])->each(function ($concrete, $abstract) use ($app) {
             if (! $app->bound($abstract)) {
                 Statamic::repository($abstract, $concrete);

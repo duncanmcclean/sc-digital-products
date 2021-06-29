@@ -3,6 +3,7 @@
 namespace DoubleThreeDigital\DigitalProducts;
 
 use DoubleThreeDigital\SimpleCommerce\Events\OrderPaid;
+use DoubleThreeDigital\SimpleCommerce\Listeners\SendConfiguredNotifications;
 use Illuminate\Support\Facades\Route;
 use Statamic\Events\EntryBlueprintFound;
 use Statamic\Providers\AddonServiceProvider;
@@ -16,6 +17,9 @@ class ServiceProvider extends AddonServiceProvider
         ],
         OrderPaid::class => [
             Listeners\ProcessCheckout::class,
+        ],
+        Events\DigitalDownloadReady::class => [
+            SendConfiguredNotifications::class,
         ],
     ];
 

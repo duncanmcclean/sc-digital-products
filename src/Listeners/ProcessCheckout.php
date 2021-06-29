@@ -2,11 +2,10 @@
 
 namespace DoubleThreeDigital\DigitalProducts\Listeners;
 
+use DoubleThreeDigital\DigitalProducts\Events\DigitalDownloadReady;
 use DoubleThreeDigital\DigitalProducts\Facades\LicenseKey;
-use DoubleThreeDigital\DigitalProducts\Mail\CustomerDownload;
 use DoubleThreeDigital\SimpleCommerce\Events\OrderPaid;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\URL;
 use Statamic\Entries\Entry;
 
@@ -37,8 +36,7 @@ class ProcessCheckout
             });
 
         if ($hasDownloads->count() >= 1 && $customer = $event->order->customer()) {
-            Mail::to($customer->email())
-                ->send(new CustomerDownload($event->order->entry()));
+            event(new DigitalDownloadReady($event->order));
         }
     }
 }
