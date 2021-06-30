@@ -44,7 +44,7 @@ If you'd like the Digital Products addon to send your customers an email notific
 ```php
 'notifications' => [
     'digital_download_ready' => [
-        \DoubleThreeDigital\DigitalProducts\Notifications\OrderDigitalDownloadsNotification::class => [
+        \DoubleThreeDigital\DigitalProducts\Notifications\DigitalDownloadsNotification::class => [
             'to' => 'customer',
         ],
     ],

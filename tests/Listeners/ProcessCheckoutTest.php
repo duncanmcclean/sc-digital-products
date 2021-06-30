@@ -4,7 +4,6 @@ namespace DoubleThreeDigital\DigitalProducts\Tests\Listeners;
 
 use DoubleThreeDigital\DigitalProducts\Tests\TestCase;
 use DoubleThreeDigital\DigitalProducts\Tests\SetupCollections;
-use DoubleThreeDigital\DigitalProducts\Notifications\OrderDigitalDownloadsNotification;
 use DoubleThreeDigital\SimpleCommerce\Facades\Customer;
 use DoubleThreeDigital\SimpleCommerce\Facades\Order;
 use DoubleThreeDigital\SimpleCommerce\Facades\Product;
@@ -31,7 +30,7 @@ class ProcessCheckoutTest extends TestCase
 
         Config::set('simple-commerce.notifications', [
             'digital_download_ready' => [
-                \DoubleThreeDigital\DigitalProducts\Notifications\OrderDigitalDownloadsNotification::class => [
+                DigitalDownloadsNotification::class => [
                     'to' => 'customer',
                 ],
             ],
@@ -73,7 +72,7 @@ class ProcessCheckoutTest extends TestCase
         // Assert notification has been sent
         Notification::assertSentTo(
             new AnonymousNotifiable,
-            OrderDigitalDownloadsNotification::class,
+            DigitalDownloadsNotification::class,
         );
     }
 }
