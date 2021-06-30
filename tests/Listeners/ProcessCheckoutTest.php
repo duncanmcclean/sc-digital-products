@@ -2,6 +2,7 @@
 
 namespace DoubleThreeDigital\DigitalProducts\Tests\Listeners;
 
+use DoubleThreeDigital\DigitalProducts\Notifications\DigitalDownloadsNotification;
 use DoubleThreeDigital\DigitalProducts\Tests\TestCase;
 use DoubleThreeDigital\DigitalProducts\Tests\SetupCollections;
 use DoubleThreeDigital\SimpleCommerce\Facades\Customer;
