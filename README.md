@@ -7,15 +7,18 @@ This addon is a first-party extension of Simple Commerce which enables you to se
 This repository contains the source code to the Digital Products addon. The addon itself is free, however you must already [own a Simple Commerce license](https://statamic.com/simple-commerce) to use this in production.
 
 ## Features
+
 * Allows you to specifiy assets for the customer to download
 * Generates license keys
 * Emails customers with license keys and download links to purchased products
 
 ## Installation
+
 1. Install with Composer - `composer require doublethreedigital/sc-digital-products`
 2. Start using the addon!
 
 ## Documentation
+
 ### Adding downloadable assets to products
 Once installed, you'll see a `Digital Product` tab appear on the publish form for your product entries.
 
@@ -34,8 +37,25 @@ To register your repository, you'll need to bind it to our `LicenseKey` facade. 
 $this->app->bind('LicenseKey', App\Repositories\LicenseKeyRepository::class);
 ```
 
-### Customising email views
-If you wish to customise the email views, you can publish them with this command.
+### Notifications
+
+If you'd like the Digital Products addon to send your customers an email notification after they've purchased digital products, add the following to your `config/simple-commerce.php` config file.
+
+```php
+'notifications' => [
+    'digital_download_ready' => [
+        \DoubleThreeDigital\DigitalProducts\Notifications\OrderDigitalDownloadsNotification::class => [
+            'to' => 'customer',
+        ],
+    ],
+],
+```
+
+You can learn more about Simple Commerce's notifications system in the [SC Documentation](https://sc-docs.doublethree.digital/v2.3/notifications).
+
+#### Customising the default view
+
+If you wish to customise the default email view, you can publish it with this command.
 
 ```
 php artisan vendor:pulish --tag="sc-digital-products-views"
@@ -43,7 +63,12 @@ php artisan vendor:pulish --tag="sc-digital-products-views"
 
 You'll then find the published views in your `resources/views/vendor/sc-digital-products` folder.
 
+#### Using your own notification
+
+If you wish to have full control over the notification being used here, you may simply replace the class name.
+
 ### License Verification
+
 We've included a basic verification endpoint which you can use to check if a customer's license key is valid. Before you can use the endpoint, you'll need to [enable Statamic's REST API](https://statamic.dev/rest-api#enable-the-api).
 
 Once enabled, you can simply make a POST request to `/api/sc-digital-downloads/verification` with a JSON body containing the license key you wish to verify.
