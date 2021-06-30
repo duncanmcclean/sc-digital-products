@@ -2,6 +2,24 @@
 
 ## Unreleased
 
+## v2.2.0 (2021-06-30)
+
+**⚠️ This update contains a breaking change.**
+
+This release introduces a few changes to the way email notifications work. Essentially, now the Digital Products addon hooks into Simple Commerce's existing [notifications system](https://sc-docs.doublethree.digital/v2.3/notifications).
+
+To keep notifications from sending, add the following to the `notifications` array in your `config/simple-commerce.php` file.
+
+```php
+'notifications' => [
+    'digital_download_ready' => [
+        \DoubleThreeDigital\DigitalProducts\Notifications\DigitalDownloadsNotification::class => [
+            'to' => 'customer',
+        ],
+    ],
+],
+```
+
 ## v2.1.0 (2021-05-10)
 
 > **Note**: Before updating, you'll need to upgrade to Simple Commerce v2.3. Review the [upgrade guide](https://sc-docs.doublethree.digital/v2.3/update-guide).
