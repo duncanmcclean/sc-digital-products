@@ -27,6 +27,10 @@ class ServiceProvider extends AddonServiceProvider
         'actions' => __DIR__.'/../routes/actions.php',
     ];
 
+    protected $updateScripts = [
+        UpdateScripts\NotificationConfigWarning::class,
+    ];
+
     public function boot()
     {
         parent::boot();

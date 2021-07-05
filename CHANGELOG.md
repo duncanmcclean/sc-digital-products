@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v2.2.1 (2021-07-05)
+
+### What's improved
+
+* Added a 'breaking changes' warning when updating to v2.2.0 #95
+
 ## v2.2.0 (2021-06-30)
 
 **⚠️ This update contains a breaking change.**
