@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v2.2.2 (2021-08-30)
+
+### What's fixed
+
+* Fixed issue with email view, where it would call a method that doesn't exist
+* An exception is now thrown if product does not have any digital downloads
+
 ## v2.2.1 (2021-07-05)
 
 ### What's improved
