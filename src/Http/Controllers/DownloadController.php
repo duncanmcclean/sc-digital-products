@@ -22,6 +22,10 @@ class DownloadController extends Controller
         if (! isset($item['metadata']['license_key']) || $item['metadata']['license_key'] !== $request->license_key) {
             abort(401);
         }
+        
+        if (! $product->has('downloadable_asset')) {
+            throw new \Exception("Product [{$product->id()}] does not have any digital downloadable assets.");
+        }
 
         $zip = new ZipArchive;
         $zip->open(storage_path("{$order->id()}__{$item['id']}__{$product->id()}.zip"), ZipArchive::CREATE | ZipArchive::OVERWRITE);
