@@ -19,7 +19,7 @@
 
 **⚠️ This update contains a breaking change.**
 
-This release introduces a few changes to the way email notifications work. Essentially, now the Digital Products addon hooks into Simple Commerce's existing [notifications system](https://sc-docs.doublethree.digital/v2.3/notifications).
+This release introduces a few changes to the way email notifications work. Essentially, now the Digital Products addon hooks into Simple Commerce's existing [notifications system](https://simple-commerce.duncanmcclean.com/notifications).
 
 To keep notifications from sending, add the following to the `notifications` array in your `config/simple-commerce.php` file.
 
@@ -35,7 +35,7 @@ To keep notifications from sending, add the following to the `notifications` arr
 
 ## v2.1.0 (2021-05-10)
 
-> **Note**: Before updating, you'll need to upgrade to Simple Commerce v2.3. Review the [upgrade guide](https://sc-docs.doublethree.digital/v2.3/update-guide).
+> **Note**: Before updating, you'll need to upgrade to Simple Commerce v2.3. Review the [upgrade guide](https://simple-commerce.duncanmcclean.com/update-guide).
 
 ### What's new?
 
@@ -72,7 +72,7 @@ To keep notifications from sending, add the following to the `notifications` arr
 ## v1.0.5
 
 * [new] Supports Simple Commerce v2.1
-* [fix] The Verification endpoint will now get orders from the [configured order collection](https://sc-docs.doublethree.digital/v2.1/configuring#collections-amp-taxonomies), instead of being hard coded.
+* [fix] The Verification endpoint will now get orders from the [configured order collection](https://simple-commerce.duncanmcclean.com//configuring#collections-amp-taxonomies), instead of being hard coded.
 * [fix] Fixed bug where enabling the Statamic API wouldn't enable the Verification endpoint
 * `LicenseKeyRepository` is now bound by `Statamic::repository`
 * Added tests and did some refactoring

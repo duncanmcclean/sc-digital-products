@@ -51,7 +51,7 @@ If you'd like the Digital Products addon to send your customers an email notific
 ],
 ```
 
-You can learn more about Simple Commerce's notifications system in the [SC Documentation](https://sc-docs.doublethree.digital/v2.3/notifications).
+You can learn more about Simple Commerce's notifications system in the [SC Documentation](https://simple-commerce.duncanmcclean.com/notifications).
 
 #### Customising the default view
 
