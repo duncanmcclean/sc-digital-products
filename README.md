@@ -143,4 +143,4 @@ items:
 <a href="https://packagist.org/packages/doublethreedigital/sc-digital-products/stats"><img src="https://img.shields.io/packagist/v/doublethreedigital/sc-digital-products?style=for-the-badge" alt="Simple Commerce Digital Products on Packagist"></a>
 </p>
 
-<!-- statamic:hide -->
+<!-- /statamic:hide -->
