@@ -1,10 +1,12 @@
-![Banner](https://raw.githubusercontent.com/doublethreedigital/sc-digital-products/master/banner.png)
+<!-- statamic:hide -->
+
+![Banner](./banner.png)
 
 ## Digital Products
 
-This addon is a first-party extension of Simple Commerce which enables you to sell Digital Products with Simple Commerce.
+<!-- /statamic:hide -->
 
-This repository contains the source code to the Digital Products addon. The addon itself is free, however you must already [own a Simple Commerce license](https://statamic.com/simple-commerce) to use this in production.
+This addon is a first-party extension of Simple Commerce which enables you to sell Digital Products with Simple Commerce. 
 
 ## Features
 
@@ -14,8 +16,13 @@ This repository contains the source code to the Digital Products addon. The addo
 
 ## Installation
 
-1. Install with Composer - `composer require doublethreedigital/sc-digital-products`
-2. Start using the addon!
+To install, require this addon as a Composer dependency:
+
+```
+composer require doublethreedigital/sc-digital-products
+```
+
+That's it! You're ready to start selling digital products.
 
 ## Documentation
 
@@ -127,9 +134,13 @@ items:
         ip_address: 127.0.0.1
 ```
 
+<!-- statamic:hide -->
+
 ---
 
 <p>
 <a href="https://statamic.com"><img src="https://img.shields.io/badge/Statamic-3.0+-FF269E?style=for-the-badge" alt="Compatible with Statamic v3"></a>
 <a href="https://packagist.org/packages/doublethreedigital/sc-digital-products/stats"><img src="https://img.shields.io/packagist/v/doublethreedigital/sc-digital-products?style=for-the-badge" alt="Simple Commerce Digital Products on Packagist"></a>
 </p>
+
+<!-- statamic:hide -->
