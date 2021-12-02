@@ -28,3 +28,11 @@ jobs:
           tag_name: ${{ steps.changelog.outputs.version }}
           release_name: ${{ steps.changelog.outputs.version }}
           body: ${{ steps.changelog.outputs.text }}
+
+      - name: Comment on related issues
+        uses: duncanmcclean/post-release-comments@v1.0.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          version: ${{ github.ref }}
+          changelog: ${{ steps.changelog.outputs.text }}
