@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v2.2.3 (2021-12-02)
+
+### What's fixed
+
+* Fixed issue where download history wasn't being saved #103 by @digitalam025
+
 ## v2.2.2 (2021-08-30)
 
 ### What's fixed
