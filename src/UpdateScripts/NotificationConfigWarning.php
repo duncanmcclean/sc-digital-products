@@ -14,7 +14,7 @@ class NotificationConfigWarning extends UpdateScript
 
     public function update()
     {
-        $message = "[SC Digital Products] BREAKING CHANGE: Please review breaking changes introduced in v2.2.0 https://github.com/doublethreedigital/sc-digital-products/releases/tag/v2.2.0";
+        $message = '[SC Digital Products] BREAKING CHANGE: Please review breaking changes introduced in v2.2.0 https://github.com/doublethreedigital/sc-digital-products/releases/tag/v2.2.0';
 
         dump($message);
         Log::warning($message);

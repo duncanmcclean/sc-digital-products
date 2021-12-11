@@ -3,15 +3,15 @@
 namespace DoubleThreeDigital\DigitalProducts\Tests\Listeners;
 
 use DoubleThreeDigital\DigitalProducts\Notifications\DigitalDownloadsNotification;
-use DoubleThreeDigital\DigitalProducts\Tests\TestCase;
 use DoubleThreeDigital\DigitalProducts\Tests\SetupCollections;
+use DoubleThreeDigital\DigitalProducts\Tests\TestCase;
 use DoubleThreeDigital\SimpleCommerce\Facades\Customer;
 use DoubleThreeDigital\SimpleCommerce\Facades\Order;
 use DoubleThreeDigital\SimpleCommerce\Facades\Product;
-use Statamic\Facades\Stache;
+use Illuminate\Notifications\AnonymousNotifiable;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Notification;
-use Illuminate\Notifications\AnonymousNotifiable;
+use Statamic\Facades\Stache;
 
 class ProcessCheckoutTest extends TestCase
 {
