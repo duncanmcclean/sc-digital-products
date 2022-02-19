@@ -1,0 +1,4 @@
+preset: laravel
+risky: false
+disabled:
+  - concat_without_spaces

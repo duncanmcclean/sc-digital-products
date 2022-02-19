@@ -7,7 +7,6 @@ use DoubleThreeDigital\SimpleCommerce\Facades\Product;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\Storage;
 use Statamic\Assets\Asset;
 use ZipArchive;
 
@@ -22,7 +21,7 @@ class DownloadController extends Controller
         if (! isset($item['metadata']['license_key']) || $item['metadata']['license_key'] !== $request->license_key) {
             abort(401);
         }
-        
+
         if (! $product->has('downloadable_asset')) {
             throw new \Exception("Product [{$product->id()}] does not have any digital downloadable assets.");
         }
