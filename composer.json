@@ -24,7 +24,7 @@
         }
     },
     "require": {
-        "doublethreedigital/simple-commerce": "2.3.*"
+        "doublethreedigital/simple-commerce": "2.3.* || 2.4.*"
     },
     "require-dev": {
         "nunomaduro/collision": "^5.0",
@@ -42,6 +42,9 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
     }
 }
