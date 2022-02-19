@@ -35,7 +35,7 @@ abstract class TestCase extends OrchestraTestCase
         $app->make(Manifest::class)->manifest = [
             'doublethreedigital/sc-digital-products' => [
                 'id' => 'doublethreedigital/sc-digital-products',
-                'namespace' => 'DoubleThreeDigital\\DigitalProducts\\',
+                'namespace' => 'DoubleThreeDigital\\DigitalProducts',
             ],
         ];
     }
@@ -50,21 +50,21 @@ abstract class TestCase extends OrchestraTestCase
         ];
 
         foreach ($configs as $config) {
-            $app['config']->set("statamic.$config", require(__DIR__."/../vendor/statamic/cms/config/{$config}.php"));
+            $app['config']->set("statamic.$config", require(__DIR__ . "/../vendor/statamic/cms/config/{$config}.php"));
         }
 
-        $app['config']->set('app.key', 'base64:'.base64_encode(
+        $app['config']->set('app.key', 'base64:' . base64_encode(
             Encrypter::generateKey($app['config']['app.cipher'])
         ));
         $app['config']->set('statamic.users.repository', 'file');
         $app['config']->set('statamic.stache.stores.users', [
             'class' => UsersStore::class,
-            'directory' => __DIR__.'/__fixtures/users',
+            'directory' => __DIR__ . '/__fixtures/users',
         ]);
         $app['config']->set('statamic.api.enabled', true);
-        $app['config']->set('simple-commerce', require(__DIR__.'/../vendor/doublethreedigital/simple-commerce/config/simple-commerce.php'));
+        $app['config']->set('simple-commerce', require(__DIR__ . '/../vendor/doublethreedigital/simple-commerce/config/simple-commerce.php'));
 
-        Blueprint::setDirectory(__DIR__.'/vendor/doublethreedigital/simple-commerce/resources/blueprints');
+        Blueprint::setDirectory(__DIR__ . '/vendor/doublethreedigital/simple-commerce/resources/blueprints');
 
         $app->booted(function () use ($app) {
             $this->bootSimpleCommerceRepositories($app);
