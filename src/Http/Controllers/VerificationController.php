@@ -5,7 +5,6 @@ namespace DoubleThreeDigital\DigitalProducts\Http\Controllers;
 use DoubleThreeDigital\DigitalProducts\Http\Requests\VerificationRequest;
 use DoubleThreeDigital\SimpleCommerce\Facades\Order;
 use Illuminate\Routing\Controller;
-use Statamic\Facades\Entry;
 
 class VerificationController extends Controller
 {

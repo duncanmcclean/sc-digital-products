@@ -2,10 +2,10 @@
 
 namespace DoubleThreeDigital\DigitalProducts\Tests;
 
-use Statamic\Extend\Manifest;
-use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use DoubleThreeDigital\DigitalProducts\ServiceProvider;
 use Illuminate\Encryption\Encrypter;
+use Orchestra\Testbench\TestCase as OrchestraTestCase;
+use Statamic\Extend\Manifest;
 use Statamic\Facades\Blueprint;
 use Statamic\Providers\StatamicServiceProvider;
 use Statamic\Stache\Stores\UsersStore;
@@ -46,7 +46,7 @@ abstract class TestCase extends OrchestraTestCase
 
         $configs = [
             'assets', 'cp', 'forms', 'static_caching',
-            'sites', 'stache', 'system', 'users'
+            'sites', 'stache', 'system', 'users',
         ];
 
         foreach ($configs as $config) {

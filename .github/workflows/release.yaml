@@ -30,7 +30,7 @@ jobs:
           body: ${{ steps.changelog.outputs.text }}
 
       - name: Comment on related issues
-        uses: duncanmcclean/post-release-comments@v1.0.2
+        uses: duncanmcclean/post-release-comments@v1.0.6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
