@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v2.3.1 (2022-03-31)
+
+### What's fixed
+
+- Fixed an issue when downloading products with Statamic 3.3
+
 ## v2.3.0 (2022-03-15)
 
 ### What's new
