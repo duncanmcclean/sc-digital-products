@@ -29,7 +29,7 @@ class DownloadController extends Controller
         $zip = new ZipArchive;
         $zip->open(storage_path("{$order->id()}__{$item['id']}__{$product->id()}.zip"), ZipArchive::CREATE | ZipArchive::OVERWRITE);
 
-        $product->toAugmentedArray()['downloadable_asset']->value()
+        $product->toAugmentedArray()['downloadable_asset']->value()->get()
             ->each(function (Asset $asset) use ($request, $order, $item, $product, &$zip) {
                 if (isset($item['metadata']['download_history']) && $product->has('download_limit')) {
                     if (collect($item['metadata']['download_history'])->count() >= $product->get('download_limit')) {
