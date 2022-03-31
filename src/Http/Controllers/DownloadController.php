@@ -31,25 +31,27 @@ class DownloadController extends Controller
 
         $product->toAugmentedArray()['downloadable_asset']->value()->get()
             ->each(function (Asset $asset) use ($request, $order, $item, $product, &$zip) {
-                if (isset($item['metadata']['download_history']) && $product->has('download_limit')) {
-                    if (collect($item['metadata']['download_history'])->count() >= $product->get('download_limit')) {
-                        abort(405, "You've reached the download limit for this product.");
+                if (config('sc-digital-products.download_history')) {
+                    if (isset($item['metadata']['download_history']) && $product->has('download_limit')) {
+                        if (collect($item['metadata']['download_history'])->count() >= $product->get('download_limit')) {
+                            abort(405, "You've reached the download limit for this product.");
+                        }
                     }
-                }
 
-                $order->updateLineItem($item['id'], [
-                    'metadata' => array_merge(Arr::get($item, 'metadata', []), [
-                        'download_history' => array_merge(
-                            [
+                    $order->updateLineItem($item['id'], [
+                        'metadata' => array_merge(Arr::get($item, 'metadata', []), [
+                            'download_history' => array_merge(
                                 [
-                                    'timestamp'  => now()->timestamp,
-                                    'ip_address' => $request->ip(),
+                                    [
+                                        'timestamp'  => now()->timestamp,
+                                        'ip_address' => $request->ip(),
+                                    ],
                                 ],
-                            ],
-                            isset($item['metadata']['download_history']) ? $item['metadata']['download_history'] : [],
-                        ),
-                    ]),
-                ]);
+                                isset($item['metadata']['download_history']) ? $item['metadata']['download_history'] : [],
+                            ),
+                        ]),
+                    ]);
+                }
 
                 $zip->addFile($asset->resolvedPath(), "{$product->slug()}/{$asset->basename()}");
             });

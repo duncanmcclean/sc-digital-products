@@ -6,13 +6,13 @@
 
 <!-- /statamic:hide -->
 
-This addon is a first-party extension of Simple Commerce which enables you to sell Digital Products with Simple Commerce. 
+This addon is a first-party extension of Simple Commerce which enables you to sell Digital Products with Simple Commerce.
 
 ## Features
 
-* Allows you to specifiy assets for the customer to download
-* Generates license keys
-* Emails customers with license keys and download links to purchased products
+- Allows you to specifiy assets for the customer to download
+- Generates license keys
+- Emails customers with license keys and download links to purchased products
 
 ## Installation
 
@@ -22,11 +22,14 @@ To install, require this addon as a Composer dependency:
 composer require doublethreedigital/sc-digital-products
 ```
 
-That's it! You're ready to start selling digital products.
+You may also publish the Digital Downloads config file by running `php artisan vendor:publish` and selecting the 'sc-digital-downloads' option.
+
+**That's it!** You're ready to start selling digital products.
 
 ## Documentation
 
 ### Adding downloadable assets to products
+
 Once installed, you'll see a `Digital Product` tab appear on the publish form for your product entries.
 
 ![Screenshot](https://raw.githubusercontent.com/doublethreedigital/sc-digital-products/master/publish-form.png)
@@ -34,6 +37,7 @@ Once installed, you'll see a `Digital Product` tab appear on the publish form fo
 In each of your digital products, you should enable the `Is Digital Product?` toggle and add the downloadable assets. These are the assets the customer will be able to access once they have purchased your product.
 
 ### Overriding the licence key generation logic
+
 By default, we create a serial license key which you can give to your customers. However, you may want to customise where the code comes from or maybe you want to send it away to a third party service.
 
 To do this, you can create your own license key repository which [implements the one provided by this addon](https://github.com/doublethreedigital/sc-digital-products/blob/master/src/Contracts/LicenseKeyRepository.php).
@@ -82,7 +86,7 @@ Once enabled, you can simply make a POST request to `/api/sc-digital-downloads/v
 
 ```json
 {
-    "license_key": "IpebSuXft9Koio5GgP7TSRdtl"
+  "license_key": "IpebSuXft9Koio5GgP7TSRdtl"
 }
 ```
 
@@ -112,25 +116,20 @@ Inside your order's entry, it may look something like this:
 
 ```yaml
 items:
-  -
-    product: d113c964-d254-4f6b-931b-686348f36af5
+  - product: d113c964-d254-4f6b-931b-686348f36af5
     quantity: 1
     total: 9000
     id: a50a22d3-432f-4b6c-85db-48ea7ba92036
     license_key: COt2IXuPqP6VTg3cfXmqQmP0
-    download_url: 'blahbla.test/link-for-download'
+    download_url: "blahbla.test/link-for-download"
     download_history:
-      -
-        timestamp: 1613228831
+      - timestamp: 1613228831
         ip_address: 127.0.0.1
-      -
-        timestamp: 1613228828
+      - timestamp: 1613228828
         ip_address: 127.0.0.1
-      -
-        timestamp: 1613228746
+      - timestamp: 1613228746
         ip_address: 127.0.0.1
-      -
-        timestamp: 1613228722
+      - timestamp: 1613228722
         ip_address: 127.0.0.1
 ```
 
