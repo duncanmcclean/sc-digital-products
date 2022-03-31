@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v2.3.2 (2022-04-01)
+
+### What's new
+
+- Config file
+
 ## v2.3.1 (2022-03-31)
 
 ### What's fixed
