@@ -48,7 +48,7 @@ class ServiceProvider extends AddonServiceProvider
         ], 'sc-digital-products-views');
 
         $this->publishes([
-            __DIR__ . '/../config/sc-digital-products' => config_path('sc-digital-products.php'),
+            __DIR__ . '/../config/sc-digital-products.php' => config_path('sc-digital-products.php'),
         ], 'sc-digital-products-config');
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'sc-digital-products');
