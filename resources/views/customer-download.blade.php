@@ -1,9 +1,21 @@
-Hi {{ $customer->name() }}, <br>
+@component('mail::message')
+# Digital Downloads Ready
 
-Your order, {{ $order->get('title') }} has some downloadable items. We've provided links to each of the items below.
+Your order, **#{{ $order->orderNumber() }}** has some downloadable items. We've provided links to each of the items below.
 
-@foreach($order->data()->get('items') as $item)
-    <a href="{{ $item['metadata']['download_url'] }}">{{ \Statamic\Facades\Entry::find($item['product'])->title }}</a>
+## Downloads
+
+@component('mail::table')
+| Items       | Download      |
+| :--------- | :------------- |
+@foreach ($order->lineItems() as $lineItem)
+@php
+$product = \DoubleThreeDigital\SimpleCommerce\Facades\Product::find($lineItem['product']);
+@endphp
+| [{{ $product->get('title') }}]({{ optional($product->resource())->absoluteUrl() }}) | [Download]({{ $lineItem['metadata']['download_url'] }}) |
 @endforeach
+@endcomponent
 
+Thanks,<br>
 {{ config('app.name') }}
+@endcomponent

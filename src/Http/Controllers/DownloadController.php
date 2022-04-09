@@ -53,11 +53,11 @@ class DownloadController extends Controller
                     ]);
                 }
 
-                $zip->addFile($asset->resolvedPath(), "{$product->slug()}/{$asset->basename()}");
+                $zip->addFile($asset->resolvedPath(), "{$product->get('slug')}/{$asset->basename()}");
             });
 
         $zip->close();
 
-        return response()->download(storage_path("{$order->id()}__{$item['id']}__{$product->id()}.zip"), "{$product->slug()}.zip");
+        return response()->download(storage_path("{$order->id()}__{$item['id']}__{$product->id()}.zip"), "{$product->get('slug')}.zip");
     }
 }
