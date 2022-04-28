@@ -3,10 +3,8 @@
 namespace DoubleThreeDigital\DigitalProducts\Http\Controllers;
 
 use DoubleThreeDigital\SimpleCommerce\Facades\Order;
-use DoubleThreeDigital\SimpleCommerce\Facades\Product;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Illuminate\Support\Arr;
 use Statamic\Assets\Asset;
 use ZipArchive;
 
@@ -16,9 +14,9 @@ class DownloadController extends Controller
     {
         $order = Order::find($request->order_id);
         $item = $order->lineItems()->firstWhere('id', $request->item_id);
-        $product = Product::find($item['product']);
+        $product = $item->product();
 
-        if (! isset($item['metadata']['license_key']) || $item['metadata']['license_key'] !== $request->license_key) {
+        if (! $item->metadata()->has('license_key') || $item->metadata()->get('license_key') !== $request->license_key) {
             abort(401);
         }
 
@@ -27,37 +25,34 @@ class DownloadController extends Controller
         }
 
         $zip = new ZipArchive;
-        $zip->open(storage_path("{$order->id()}__{$item['id']}__{$product->id()}.zip"), ZipArchive::CREATE | ZipArchive::OVERWRITE);
+        $zip->open(storage_path("{$order->id()}__{$item->id()}__{$product->id()}.zip"), ZipArchive::CREATE | ZipArchive::OVERWRITE);
 
         $product->toAugmentedArray()['downloadable_asset']->value()->get()
             ->each(function (Asset $asset) use ($request, $order, $item, $product, &$zip) {
                 if (config('sc-digital-products.download_history')) {
-                    if (isset($item['metadata']['download_history']) && $product->has('download_limit')) {
-                        if (collect($item['metadata']['download_history'])->count() >= $product->get('download_limit')) {
+                    if ($item->metadata()->has('download_history') && $product->has('download_limit')) {
+                        if (collect($item->datadata()->get('download_history'))->count() >= $product->get('download_limit')) {
                             abort(405, "You've reached the download limit for this product.");
                         }
                     }
 
-                    $order->updateLineItem($item['id'], [
-                        'metadata' => array_merge(Arr::get($item, 'metadata', []), [
-                            'download_history' => array_merge(
+                    $order->updateLineItem($item->id(), [
+                        'metadata' => array_merge($item->metadata()->toArray(), [
+                            'download_history' => array_merge([
                                 [
-                                    [
-                                        'timestamp'  => now()->timestamp,
-                                        'ip_address' => $request->ip(),
-                                    ],
+                                    'timestamp'  => now()->timestamp,
+                                    'ip_address' => $request->ip(),
                                 ],
-                                isset($item['metadata']['download_history']) ? $item['metadata']['download_history'] : [],
-                            ),
+                            ], $item->metadata()->get('download_history', [])),
                         ]),
                     ]);
                 }
 
-                $zip->addFile($asset->resolvedPath(), "{$product->slug()}/{$asset->basename()}");
+                $zip->addFile($asset->resolvedPath(), "{$product->get('slug')}/{$asset->basename()}");
             });
 
         $zip->close();
 
-        return response()->download(storage_path("{$order->id()}__{$item['id']}__{$product->id()}.zip"), "{$product->slug()}.zip");
+        return response()->download(storage_path("{$order->id()}__{$item->id()}__{$product->id()}.zip"), "{$product->get('slug')}.zip");
     }
 }

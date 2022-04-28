@@ -2,7 +2,6 @@
 
 namespace DoubleThreeDigital\DigitalProducts\Listeners;
 
-use DoubleThreeDigital\SimpleCommerce\Products\Product;
 use DoubleThreeDigital\SimpleCommerce\SimpleCommerce;
 use Statamic\Events\EntryBlueprintFound;
 
@@ -10,11 +9,11 @@ class AddFieldsToProductBlueprint
 {
     public function handle(EntryBlueprintFound $event)
     {
-        if (SimpleCommerce::productDriver()['driver'] !== Product::class) {
+        if (! isset(SimpleCommerce::productDriver()['collection'])) {
             return $event->blueprint;
         }
 
-        if ($event->blueprint->namespace() !== 'collections.'.SimpleCommerce::productDriver()['collection']) {
+        if ($event->blueprint->namespace() !== 'collections.' . SimpleCommerce::productDriver()['collection']) {
             return $event->blueprint;
         }
 
