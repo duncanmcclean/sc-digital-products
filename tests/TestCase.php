@@ -3,6 +3,7 @@
 namespace DoubleThreeDigital\DigitalProducts\Tests;
 
 use DoubleThreeDigital\DigitalProducts\ServiceProvider;
+use DoubleThreeDigital\SimpleCommerce\ServiceProvider as SimpleCommerceServiceProvider;
 use Illuminate\Encryption\Encrypter;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Statamic\Extend\Manifest;
@@ -17,6 +18,7 @@ abstract class TestCase extends OrchestraTestCase
     {
         return [
             StatamicServiceProvider::class,
+            SimpleCommerceServiceProvider::class,
             ServiceProvider::class,
         ];
     }
@@ -66,28 +68,28 @@ abstract class TestCase extends OrchestraTestCase
 
         Blueprint::setDirectory(__DIR__ . '/vendor/doublethreedigital/simple-commerce/resources/blueprints');
 
-        $app->booted(function () use ($app) {
-            $this->bootSimpleCommerceRepositories($app);
-        });
+        // $app->booted(function () use ($app) {
+        //     $this->bootSimpleCommerceRepositories($app);
+        // });
     }
 
-    protected function bootSimpleCommerceRepositories($app)
-    {
-        collect([
-            \DoubleThreeDigital\SimpleCommerce\Contracts\Order::class    => \DoubleThreeDigital\SimpleCommerce\Orders\Order::class,
-            \DoubleThreeDigital\SimpleCommerce\Contracts\Coupon::class   => \DoubleThreeDigital\SimpleCommerce\Coupons\Coupon::class,
-            \DoubleThreeDigital\SimpleCommerce\Contracts\Currency::class => \DoubleThreeDigital\SimpleCommerce\Support\Currency::class,
-            \DoubleThreeDigital\SimpleCommerce\Contracts\Customer::class => \DoubleThreeDigital\SimpleCommerce\Customers\Customer::class,
-            \DoubleThreeDigital\SimpleCommerce\Contracts\Gateway::class  => \DoubleThreeDigital\SimpleCommerce\Gateways\Manager::class,
-            \DoubleThreeDigital\SimpleCommerce\Contracts\Product::class  => \DoubleThreeDigital\SimpleCommerce\Products\Product::class,
-            \DoubleThreeDigital\SimpleCommerce\Contracts\Shipping::class => \DoubleThreeDigital\SimpleCommerce\Shipping\Manager::class,
-            \DoubleThreeDigital\SimpleCommerce\Contracts\Calculator::class => \DoubleThreeDigital\SimpleCommerce\Orders\Calculator::class,
-        ])->each(function ($concrete, $abstract) use ($app) {
-            if (! $app->bound($abstract)) {
-                Statamic::repository($abstract, $concrete);
-            }
-        });
+    // protected function bootSimpleCommerceRepositories($app)
+    // {
+    //     collect([
+    //         \DoubleThreeDigital\SimpleCommerce\Contracts\Order::class    => \DoubleThreeDigital\SimpleCommerce\Orders\Order::class,
+    //         \DoubleThreeDigital\SimpleCommerce\Contracts\Coupon::class   => \DoubleThreeDigital\SimpleCommerce\Coupons\Coupon::class,
+    //         \DoubleThreeDigital\SimpleCommerce\Contracts\Currency::class => \DoubleThreeDigital\SimpleCommerce\Support\Currency::class,
+    //         \DoubleThreeDigital\SimpleCommerce\Contracts\Customer::class => \DoubleThreeDigital\SimpleCommerce\Customers\Customer::class,
+    //         \DoubleThreeDigital\SimpleCommerce\Contracts\Gateway::class  => \DoubleThreeDigital\SimpleCommerce\Gateways\Manager::class,
+    //         \DoubleThreeDigital\SimpleCommerce\Contracts\Product::class  => \DoubleThreeDigital\SimpleCommerce\Products\Product::class,
+    //         \DoubleThreeDigital\SimpleCommerce\Contracts\Shipping::class => \DoubleThreeDigital\SimpleCommerce\Shipping\Manager::class,
+    //         \DoubleThreeDigital\SimpleCommerce\Contracts\Calculator::class => \DoubleThreeDigital\SimpleCommerce\Orders\Calculator::class,
+    //     ])->each(function ($concrete, $abstract) use ($app) {
+    //         if (! $app->bound($abstract)) {
+    //             Statamic::repository($abstract, $concrete);
+    //         }
+    //     });
 
-        return $this;
-    }
+    //     return $this;
+    // }
 }

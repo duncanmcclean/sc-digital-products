@@ -37,27 +37,34 @@ class ProcessCheckoutTest extends TestCase
             ],
         ]);
 
-        $product = Product::create([
-            'is_digital_product' => true,
-            'price' => 1200,
-        ]);
+        $product = Product::make()
+            ->price(1200)
+            ->merge([
+                'is_digital_product' => true,
+            ]);
 
-        $customer = Customer::create([
-            'name' => 'Duncan',
-            'email' => 'duncan@example.com',
-        ]);
+        $product->save();
 
-        $order = Order::create([
-            'items' => [
+        $customer = Customer::make()
+            ->email('duncan@example.com')
+            ->merge([
+                'name' => 'Duncan',
+            ]);
+
+        $customer->save();
+
+        $order = Order::make()
+            ->lineItems([
                 [
                     'id' => Stache::generateId(),
                     'product' => $product->id(),
                     'quantity' => 1,
                     'total' => 1200,
                 ],
-            ],
-            'customer' => $customer->id(),
-        ]);
+            ])
+            ->customer($customer->id());
+
+        $order->save();
 
         $order->markAsPaid();
 
@@ -66,9 +73,9 @@ class ProcessCheckoutTest extends TestCase
         // Asset metadata is saved
         $lineItem = $order->lineItems()->first();
 
-        $this->assertTrue(array_key_exists('license_key', $lineItem['metadata']));
-        $this->assertTrue(array_key_exists('download_url', $lineItem['metadata']));
-        $this->assertTrue(array_key_exists('download_history', $lineItem['metadata']));
+        $this->assertTrue($lineItem->metadata()->has('license_key'));
+        $this->assertTrue($lineItem->metadata()->has('download_url'));
+        $this->assertTrue($lineItem->metadata()->has('download_history'));
 
         // Assert notification has been sent
         Notification::assertSentTo(
