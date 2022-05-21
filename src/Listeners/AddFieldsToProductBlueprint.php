@@ -22,21 +22,56 @@ class AddFieldsToProductBlueprint
             'display' => 'Is Digital Product?',
         ], 'Digital Product');
 
-        $event->blueprint->ensureField('download_limit', [
-            'type' => 'integer',
-            'display' => 'Download Limit',
-            'instructions' => "If you'd like to limit the amount if times this product can be downloaded, set it here. Keep it blank if you'd like it to be unlimited.",
-        ], 'Digital Product');
+        if ($event->blueprint->hasField('product_variants')) {
+            $productVariantsField = $event->blueprint->field('product_variants');
 
-        $event->blueprint->ensureField('downloadable_asset', [
-            'type' => 'assets',
-            'mode' => 'grid',
-            'display' => 'Downloadable Asset',
-            'if' => [
-                'is_digital_product' => 'equals true',
-            ],
-        ], 'Digital Product');
+            $event->blueprint->ensureFieldHasConfig(
+                'product_variants',
+                array_merge(
+                    $productVariantsField->toArray(),
+                    [
+                        'option_fields' => array_merge(
+                            $productVariantsField->get('option_fields', []),
+                            collect($this->getDigitalProductFields())
+                                ->map(function ($value, $key) {
+                                    return [
+                                        'handle' => $key,
+                                        'field' => $value,
+                                    ];
+                                })
+                                ->values()
+                                ->toArray()
+                        ),
+                    ]
+                )
+            );
+
+            return $event->blueprint;
+        }
+
+        collect($this->getDigitalProductFields())->each(function ($value, $key) use (&$event) {
+            $event->blueprint->ensureField($key, $value, 'Digital Product');
+        });
 
         return $event->blueprint;
+    }
+
+    protected function getDigitalProductFields()
+    {
+        return [
+            'download_limit' => [
+                'type' => 'integer',
+                'display' => 'Download Limit',
+                'instructions' => "If you'd like to limit the amount if times this product can be downloaded, set it here. Keep it blank if you'd like it to be unlimited.",
+            ],
+            'downloadable_asset' => [
+                'type' => 'assets',
+                'mode' => 'grid',
+                'display' => 'Downloadable Asset',
+                'if' => [
+                    'is_digital_product' => 'equals true',
+                ],
+            ],
+        ];
     }
 }
