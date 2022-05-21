@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v3.1.0 (2022-05-21)
+
+### What's new
+
+- Support for Product Variants #116
+
 ## v3.0.0 (2022-04-28)
 
 Updated for [Simple Commerce v3.0](https://github.com/doublethreedigital/simple-commerce/releases/tag/v3.0.0) 🎉
