@@ -36,6 +36,10 @@ Once installed, you'll see a `Digital Product` tab appear on the publish form fo
 
 In each of your digital products, you should enable the `Is Digital Product?` toggle and add the downloadable assets. These are the assets the customer will be able to access once they have purchased your product.
 
+#### Product Variants
+
+As of v3.1.0, the Digital Products addon supports adding different 'downloadable assets' per variant. So, instead of specifying the 'Download Limit' and 'Downloadable Assets' in the `Digital Product` tab, you'll specify them on each of your variants.
+
 ### Overriding the licence key generation logic
 
 By default, we create a serial license key which you can give to your customers. However, you may want to customise where the code comes from or maybe you want to send it away to a third party service.
