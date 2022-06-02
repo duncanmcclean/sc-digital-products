@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v3.2.0 (2022-06-02)
+
+### What's new
+
+- Support for Simple Commerce v3.1 and v3.2
+
 ## v3.1.0 (2022-05-21)
 
 ### What's new

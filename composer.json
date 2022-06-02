@@ -24,7 +24,7 @@
         }
     },
     "require": {
-        "doublethreedigital/simple-commerce": "3.0.*"
+        "doublethreedigital/simple-commerce": "^3.0"
     },
     "require-dev": {
         "nunomaduro/collision": "^4.2 || ^5.0 || ^6.1",
