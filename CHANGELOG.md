@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## v3.2.1 (2022-06-02)
+
+- Regenerate `composer.lock` file so it works - I really shouldn't be working on a bank holiday 😅
+
 ## v3.2.0 (2022-06-02)
 
 ### What's new
