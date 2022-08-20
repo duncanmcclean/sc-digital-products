@@ -20,7 +20,7 @@
 
 ## v3.0.0 (2022-04-28)
 
-Updated for [Simple Commerce v3.0](https://github.com/doublethreedigital/simple-commerce/releases/tag/v3.0.0) 🎉
+Updated for [Simple Commerce v3.0](https://github.com/duncanmcclean/simple-commerce/releases/tag/v3.0.0) 🎉
 
 ## v2.3.2 (2022-04-01)
 
@@ -97,7 +97,7 @@ To keep notifications from sending, add the following to the `notifications` arr
 
 ## v2.0.2
 
-- [new] [Download History](https://github.com/doublethreedigital/sc-digital-products#download-history)
+- [new] [Download History](https://github.com/duncanmcclean/sc-digital-products#download-history)
 - [new] Supports Statamic 3.1
 
 ## v2.0.1

@@ -32,7 +32,7 @@ If you wish, you may also publish the configuration file for this addon by runni
 
 Once installed, you'll see a `Digital Product` tab appear on the publish form for your product entries.
 
-![Screenshot](https://raw.githubusercontent.com/doublethreedigital/sc-digital-products/master/publish-form.png)
+![Screenshot](https://raw.githubusercontent.com/duncanmcclean/sc-digital-products/master/publish-form.png)
 
 In each of your digital products, you should enable the `Is Digital Product?` toggle and add the downloadable assets. These are the assets the customer will be able to access once they have purchased your product.
 
