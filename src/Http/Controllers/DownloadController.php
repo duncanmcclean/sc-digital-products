@@ -26,7 +26,7 @@ class DownloadController extends Controller
         $zip = new ZipArchive;
         $zip->open(storage_path("{$order->id()}__{$item->id()}__{$product->id()}.zip"), ZipArchive::CREATE | ZipArchive::OVERWRITE);
 
-        if ($product->purchasableType() === ProductType::PRODUCT()) {
+        if ($product->purchasableType() === ProductType::Product) {
             if (! $product->has('downloadable_asset')) {
                 throw new \Exception("Product [{$product->id()}] does not have any digital downloadable assets.");
             }
@@ -56,7 +56,7 @@ class DownloadController extends Controller
                 });
         }
 
-        if ($product->purchasableType() === ProductType::VARIANT()) {
+        if ($product->purchasableType() === ProductType::Variant) {
             $productVariant = $product->variant($item->variant()['variant']);
 
             if (! $productVariant->has('downloadable_asset')) {
