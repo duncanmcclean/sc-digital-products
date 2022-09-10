@@ -66,6 +66,8 @@ abstract class TestCase extends OrchestraTestCase
         $app['config']->set('statamic.api.enabled', true);
         $app['config']->set('simple-commerce', require(__DIR__ . '/../vendor/doublethreedigital/simple-commerce/config/simple-commerce.php'));
 
-        Blueprint::setDirectory(__DIR__ . '/vendor/doublethreedigital/simple-commerce/resources/blueprints');
+        Statamic::booted(function () {
+            Blueprint::setDirectory(__DIR__ . '/../vendor/doublethreedigital/simple-commerce/resources/blueprints');
+        });
     }
 }
