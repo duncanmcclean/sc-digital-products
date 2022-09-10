@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## v4.0.0 (2022-09-10)
+
+- Simple Commerce v4.0 support #118
+
 ## v3.2.1 (2022-06-02)
 
 - Regenerate `composer.lock` file so it works - I really shouldn't be working on a bank holiday 😅
