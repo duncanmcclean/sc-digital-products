@@ -64,8 +64,6 @@ class ProcessCheckoutTest extends TestCase
             ])
             ->customer($customer->id());
 
-            // dd('hello - save is what did it');
-
         $order->save();
 
         $order->markAsPaid();

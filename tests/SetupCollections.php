@@ -28,6 +28,7 @@ trait SetupCollections
     {
         return Collection::make('customers')
             ->title('Customers')
+            ->entryBlueprints(['product'])
             ->sites(['default'])
             ->titleFormats([
                 'default' => '{name} <{email}>',
