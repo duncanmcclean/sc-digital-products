@@ -12,10 +12,10 @@ jobs:
 
     strategy:
       matrix:
-        php: [8.1]
+        php: [8.2, 8.1]
         laravel: [9.*]
         statamic: [3.3.*]
-        simpleCommerce: [4.0]
+        simpleCommerce: [^4.0]
         os: [ubuntu-latest]
         include:
           - laravel: 9.*
