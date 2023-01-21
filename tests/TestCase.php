@@ -40,6 +40,13 @@ abstract class TestCase extends OrchestraTestCase
                 'namespace' => 'DoubleThreeDigital\\DigitalProducts',
             ],
         ];
+
+        $app->make(Manifest::class)->manifest = [
+            'doublethreedigital/simple-commerce' => [
+                'id' => 'doublethreedigital/simple-commerce',
+                'namespace' => 'DoubleThreeDigital\\SimpleCommerce',
+            ],
+        ];
     }
 
     protected function resolveApplicationConfiguration($app)
