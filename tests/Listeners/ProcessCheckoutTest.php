@@ -2,17 +2,14 @@
 
 namespace DoubleThreeDigital\DigitalProducts\Tests\Listeners;
 
-use DoubleThreeDigital\DigitalProducts\Listeners\ProcessCheckout;
 use DoubleThreeDigital\DigitalProducts\Notifications\DigitalDownloadsNotification;
 use DoubleThreeDigital\DigitalProducts\Tests\SetupCollections;
 use DoubleThreeDigital\DigitalProducts\Tests\TestCase;
-use DoubleThreeDigital\SimpleCommerce\Events\OrderPaid;
 use DoubleThreeDigital\SimpleCommerce\Facades\Customer;
 use DoubleThreeDigital\SimpleCommerce\Facades\Order;
 use DoubleThreeDigital\SimpleCommerce\Facades\Product;
 use Illuminate\Notifications\AnonymousNotifiable;
 use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Notification;
 use Statamic\Facades\Stache;
 
@@ -25,11 +22,6 @@ class ProcessCheckoutTest extends TestCase
         parent::setUp();
 
         $this->setupCollections();
-
-        Event::listen(
-            OrderPaid::class,
-            ProcessCheckout::class
-        );
     }
 
     /** @test */
