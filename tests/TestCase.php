@@ -5,6 +5,7 @@ namespace DoubleThreeDigital\DigitalProducts\Tests;
 use DoubleThreeDigital\DigitalProducts\ServiceProvider;
 use DoubleThreeDigital\SimpleCommerce\ServiceProvider as SimpleCommerceServiceProvider;
 use Illuminate\Encryption\Encrypter;
+use Illuminate\Support\Facades\Event;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Statamic\Extend\Manifest;
 use Statamic\Facades\Blueprint;
@@ -40,6 +41,13 @@ abstract class TestCase extends OrchestraTestCase
                 'namespace' => 'DoubleThreeDigital\\DigitalProducts',
             ],
         ];
+
+        $app->make(Manifest::class)->manifest = [
+            'doublethreedigital/simple-commerce' => [
+                'id' => 'doublethreedigital/simple-commerce',
+                'namespace' => 'DoubleThreeDigital\\SimpleCommerce',
+            ],
+        ];
     }
 
     protected function resolveApplicationConfiguration($app)
@@ -68,6 +76,34 @@ abstract class TestCase extends OrchestraTestCase
 
         Statamic::booted(function () {
             Blueprint::setDirectory(__DIR__ . '/../vendor/doublethreedigital/simple-commerce/resources/blueprints');
+
+            $this->bootWhatStatamicMissed();
+        });
+    }
+
+    /**
+     * For some reason, Statamic isn't currently registering our event listeners
+     * and routes. This method is a temporary fix.
+     */
+    protected function bootWhatStatamicMissed()
+    {
+        Event::listen(
+            \Statamic\Events\EntryBlueprintFound::class,
+            \DoubleThreeDigital\DigitalProducts\Listeners\AddFieldsToProductBlueprint::class
+        );
+
+        Event::listen(
+            \DoubleThreeDigital\SimpleCommerce\Events\OrderPaid::class,
+            \DoubleThreeDigital\DigitalProducts\Listeners\ProcessCheckout::class
+        );
+
+        Event::listen(
+            \DoubleThreeDigital\DigitalProducts\Events\DigitalDownloadReady::class,
+            \DoubleThreeDigital\SimpleCommerce\Listeners\SendConfiguredNotifications::class
+        );
+
+        Statamic::pushActionRoutes(function () {
+            require __DIR__ . '/../routes/actions.php';
         });
     }
 }
