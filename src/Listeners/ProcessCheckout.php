@@ -4,12 +4,12 @@ namespace DoubleThreeDigital\DigitalProducts\Listeners;
 
 use DoubleThreeDigital\DigitalProducts\Events\DigitalDownloadReady;
 use DoubleThreeDigital\DigitalProducts\Facades\LicenseKey;
-use DoubleThreeDigital\SimpleCommerce\Events\OrderPaid;
+use DoubleThreeDigital\SimpleCommerce\Events\OrderStatusUpdated;
 use Illuminate\Support\Facades\URL;
 
 class ProcessCheckout
 {
-    public function handle(OrderPaid $event)
+    public function handle(OrderStatusUpdated $event)
     {
         $hasDownloads = $event->order->lineItems()
             ->filter(function ($lineItem) {
