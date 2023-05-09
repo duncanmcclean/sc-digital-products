@@ -13,7 +13,7 @@ class AddFieldsToProductBlueprint
             return $event->blueprint;
         }
 
-        if ($event->blueprint->namespace() !== 'collections.' . SimpleCommerce::productDriver()['collection']) {
+        if ($event->blueprint->namespace() !== 'collections.'.SimpleCommerce::productDriver()['collection']) {
             return $event->blueprint;
         }
 

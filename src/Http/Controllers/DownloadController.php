@@ -44,7 +44,7 @@ class DownloadController extends Controller
                             'metadata' => array_merge($item->metadata()->toArray(), [
                                 'download_history' => array_merge([
                                     [
-                                        'timestamp'  => now()->timestamp,
+                                        'timestamp' => now()->timestamp,
                                         'ip_address' => $request->ip(),
                                     ],
                                 ], $item->metadata()->get('download_history', [])),
@@ -89,7 +89,7 @@ class DownloadController extends Controller
                             'metadata' => array_merge($item->metadata()->toArray(), [
                                 'download_history' => array_merge([
                                     [
-                                        'timestamp'  => now()->timestamp,
+                                        'timestamp' => now()->timestamp,
                                         'ip_address' => $request->ip(),
                                     ],
                                 ], $item->metadata()->get('download_history', [])),

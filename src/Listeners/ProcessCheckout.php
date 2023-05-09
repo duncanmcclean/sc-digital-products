@@ -28,10 +28,10 @@ class ProcessCheckout
             ->each(function ($lineItem) use ($event) {
                 $event->order->updateLineItem($lineItem->id(), [
                     'metadata' => array_merge($lineItem->metadata()->toArray(), [
-                        'license_key'  => $licenseKey = LicenseKey::generate(),
+                        'license_key' => $licenseKey = LicenseKey::generate(),
                         'download_url' => URL::signedRoute('statamic.digital-downloads.download', [
-                            'order_id'    => $event->order->id,
-                            'item_id'     => $lineItem->id(),
+                            'order_id' => $event->order->id,
+                            'item_id' => $lineItem->id(),
                             'license_key' => $licenseKey,
                         ]),
                         'download_history' => [],

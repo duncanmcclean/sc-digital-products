@@ -7,6 +7,7 @@ use DoubleThreeDigital\DigitalProducts\Contracts\LicenseKeyRepository as Contrac
 class LicenseKeyRepository implements Contract
 {
     protected $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+
     protected $length = 24;
 
     public function generate(): string
