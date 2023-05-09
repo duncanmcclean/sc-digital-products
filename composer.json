@@ -24,11 +24,10 @@
         }
     },
     "require": {
-        "doublethreedigital/simple-commerce": "^4.0"
+        "doublethreedigital/simple-commerce": "^5.0"
     },
     "require-dev": {
-        "nunomaduro/collision": "^6.1",
-        "orchestra/testbench": "^7.0"
+        "orchestra/testbench": "^8.0"
     },
     "scripts": {
         "lint": [
