@@ -6,10 +6,7 @@ use DoubleThreeDigital\SimpleCommerce\Contracts\Order;
 
 class DigitalDownloadReady
 {
-    public $order;
-
-    public function __construct(Order $order)
+    public function __construct(public Order $order)
     {
-        $this->order = $order;
     }
 }

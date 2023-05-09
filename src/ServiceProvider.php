@@ -2,7 +2,6 @@
 
 namespace DoubleThreeDigital\DigitalProducts;
 
-use DoubleThreeDigital\SimpleCommerce\Events\OrderPaid;
 use DoubleThreeDigital\SimpleCommerce\Listeners\SendConfiguredNotifications;
 use Illuminate\Support\Facades\Route;
 use Statamic\Events\EntryBlueprintFound;
@@ -15,7 +14,7 @@ class ServiceProvider extends AddonServiceProvider
         EntryBlueprintFound::class => [
             Listeners\AddFieldsToProductBlueprint::class,
         ],
-        OrderPaid::class => [
+        OrderStatusUpdated::class => [
             Listeners\ProcessCheckout::class,
         ],
         Events\DigitalDownloadReady::class => [
@@ -25,10 +24,6 @@ class ServiceProvider extends AddonServiceProvider
 
     protected $routes = [
         'actions' => __DIR__ . '/../routes/actions.php',
-    ];
-
-    protected $updateScripts = [
-        UpdateScripts\NotificationConfigWarning::class,
     ];
 
     public function boot()

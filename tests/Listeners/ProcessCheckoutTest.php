@@ -8,6 +8,8 @@ use DoubleThreeDigital\DigitalProducts\Tests\TestCase;
 use DoubleThreeDigital\SimpleCommerce\Facades\Customer;
 use DoubleThreeDigital\SimpleCommerce\Facades\Order;
 use DoubleThreeDigital\SimpleCommerce\Facades\Product;
+use DoubleThreeDigital\SimpleCommerce\Orders\OrderStatus;
+use DoubleThreeDigital\SimpleCommerce\Orders\PaymentStatus;
 use Illuminate\Notifications\AnonymousNotifiable;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Notification;
@@ -66,7 +68,10 @@ class ProcessCheckoutTest extends TestCase
 
         $order->save();
 
-        $order->markAsPaid();
+        $order->updateOrderStatus(OrderStatus::Placed);
+        $order->updatePaymentStatus(PaymentStatus::Paid);
+
+        $order->save();
 
         $order = $order->fresh();
 
