@@ -73,6 +73,7 @@ abstract class TestCase extends OrchestraTestCase
         ]);
         $app['config']->set('statamic.api.enabled', true);
         $app['config']->set('simple-commerce', require(__DIR__ . '/../vendor/doublethreedigital/simple-commerce/config/simple-commerce.php'));
+        $app['config']->set('simple-commerce.tax_engine', \DoubleThreeDigital\SimpleCommerce\Tax\BasicTaxEngine::class);
 
         Statamic::booted(function () {
             Blueprint::setDirectory(__DIR__ . '/../vendor/doublethreedigital/simple-commerce/resources/blueprints');
@@ -93,7 +94,7 @@ abstract class TestCase extends OrchestraTestCase
         );
 
         Event::listen(
-            \DoubleThreeDigital\SimpleCommerce\Events\OrderPaid::class,
+            \DoubleThreeDigital\SimpleCommerce\Events\OrderStatusUpdated::class,
             \DoubleThreeDigital\DigitalProducts\Listeners\ProcessCheckout::class
         );
 

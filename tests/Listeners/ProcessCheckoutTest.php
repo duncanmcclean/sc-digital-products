@@ -71,6 +71,8 @@ class ProcessCheckoutTest extends TestCase
         $order->updateOrderStatus(OrderStatus::Placed);
         $order->updatePaymentStatus(PaymentStatus::Paid);
 
+        $order->save();
+
         $order = $order->fresh();
 
         // Asset metadata is saved

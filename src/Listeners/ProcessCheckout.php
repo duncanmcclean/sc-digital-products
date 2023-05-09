@@ -5,12 +5,18 @@ namespace DoubleThreeDigital\DigitalProducts\Listeners;
 use DoubleThreeDigital\DigitalProducts\Events\DigitalDownloadReady;
 use DoubleThreeDigital\DigitalProducts\Facades\LicenseKey;
 use DoubleThreeDigital\SimpleCommerce\Events\OrderStatusUpdated;
+use DoubleThreeDigital\SimpleCommerce\Orders\OrderStatus;
 use Illuminate\Support\Facades\URL;
 
 class ProcessCheckout
 {
     public function handle(OrderStatusUpdated $event)
     {
+        // Ignore if the order status wasn't just set to "Placed".
+        if ($event->orderStatus !== OrderStatus::Placed) {
+            return;
+        }
+
         $hasDownloads = $event->order->lineItems()
             ->filter(function ($lineItem) {
                 $product = $lineItem->product();
