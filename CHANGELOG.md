@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## v5.0.0 (2023-05-09)
+
+- Simple Commerce v5.0 support #120
+
 ## v4.0.0 (2022-09-10)
 
 - Simple Commerce v4.0 support #118
