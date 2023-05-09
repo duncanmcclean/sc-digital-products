@@ -45,7 +45,7 @@ class DigitalDownloadsNotification extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->subject(config('app.name') . ': Digital Downloads Ready')
+            ->subject(config('app.name').': Digital Downloads Ready')
             ->markdown('sc-digital-products::customer-download', [
                 'order' => $this->order,
             ]);

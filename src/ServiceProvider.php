@@ -23,7 +23,7 @@ class ServiceProvider extends AddonServiceProvider
     ];
 
     protected $routes = [
-        'actions' => __DIR__ . '/../routes/actions.php',
+        'actions' => __DIR__.'/../routes/actions.php',
     ];
 
     public function boot()
@@ -39,15 +39,15 @@ class ServiceProvider extends AddonServiceProvider
     protected function bootVendorAssets()
     {
         $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/vendor/sc-digital-products'),
+            __DIR__.'/../resources/views' => resource_path('views/vendor/sc-digital-products'),
         ], 'sc-digital-products-views');
 
         $this->publishes([
-            __DIR__ . '/../config/sc-digital-products.php' => config_path('sc-digital-products.php'),
+            __DIR__.'/../config/sc-digital-products.php' => config_path('sc-digital-products.php'),
         ], 'sc-digital-products-config');
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'sc-digital-products');
-        $this->mergeConfigFrom(__DIR__ . '/../config/sc-digital-products.php', 'sc-digital-products');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'sc-digital-products');
+        $this->mergeConfigFrom(__DIR__.'/../config/sc-digital-products.php', 'sc-digital-products');
 
         return $this;
     }
@@ -67,8 +67,8 @@ class ServiceProvider extends AddonServiceProvider
         if (config('statamic.api.enabled') === true) {
             Route::middleware(config('statamic.api.middleware'))
                 ->name('sc-digital-products.api.')
-                ->prefix(config('statamic.api.route') . '/sc-digital-downloads/')
-                ->group(__DIR__ . '/../routes/api.php');
+                ->prefix(config('statamic.api.route').'/sc-digital-downloads/')
+                ->group(__DIR__.'/../routes/api.php');
         }
 
         return $this;

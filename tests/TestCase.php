@@ -60,23 +60,23 @@ abstract class TestCase extends OrchestraTestCase
         ];
 
         foreach ($configs as $config) {
-            $app['config']->set("statamic.$config", require(__DIR__ . "/../vendor/statamic/cms/config/{$config}.php"));
+            $app['config']->set("statamic.$config", require(__DIR__."/../vendor/statamic/cms/config/{$config}.php"));
         }
 
-        $app['config']->set('app.key', 'base64:' . base64_encode(
+        $app['config']->set('app.key', 'base64:'.base64_encode(
             Encrypter::generateKey($app['config']['app.cipher'])
         ));
         $app['config']->set('statamic.users.repository', 'file');
         $app['config']->set('statamic.stache.stores.users', [
             'class' => UsersStore::class,
-            'directory' => __DIR__ . '/__fixtures/users',
+            'directory' => __DIR__.'/__fixtures/users',
         ]);
         $app['config']->set('statamic.api.enabled', true);
-        $app['config']->set('simple-commerce', require(__DIR__ . '/../vendor/doublethreedigital/simple-commerce/config/simple-commerce.php'));
+        $app['config']->set('simple-commerce', require(__DIR__.'/../vendor/doublethreedigital/simple-commerce/config/simple-commerce.php'));
         $app['config']->set('simple-commerce.tax_engine', \DoubleThreeDigital\SimpleCommerce\Tax\BasicTaxEngine::class);
 
         Statamic::booted(function () {
-            Blueprint::setDirectory(__DIR__ . '/../vendor/doublethreedigital/simple-commerce/resources/blueprints');
+            Blueprint::setDirectory(__DIR__.'/../vendor/doublethreedigital/simple-commerce/resources/blueprints');
 
             $this->bootWhatStatamicMissed();
         });
@@ -104,7 +104,7 @@ abstract class TestCase extends OrchestraTestCase
         );
 
         Statamic::pushActionRoutes(function () {
-            require __DIR__ . '/../routes/actions.php';
+            require __DIR__.'/../routes/actions.php';
         });
     }
 }
