@@ -2,6 +2,7 @@
 
 namespace DoubleThreeDigital\DigitalProducts;
 
+use DoubleThreeDigital\SimpleCommerce\Events\OrderStatusUpdated;
 use DoubleThreeDigital\SimpleCommerce\Listeners\SendConfiguredNotifications;
 use Illuminate\Support\Facades\Route;
 use Statamic\Events\EntryBlueprintFound;
