@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v5.0.1 (2023-05-16)
+
+### What's fixed
+
+- Added a missing import #122 #123
+
 ## v5.0.0 (2023-05-09)
 
 - Simple Commerce v5.0 support #120
