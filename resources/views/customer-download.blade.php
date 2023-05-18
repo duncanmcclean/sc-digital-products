@@ -9,10 +9,7 @@ Your order, **#{{ $order->orderNumber() }}** has some downloadable items. We've 
 | Items       | Download      |
 | :--------- | :------------- |
 @foreach ($order->lineItems() as $lineItem)
-@php
-$product = \DoubleThreeDigital\SimpleCommerce\Facades\Product::find($lineItem['product']);
-@endphp
-| [{{ $product->get('title') }}]({{ optional($product->resource())->absoluteUrl() }}) | [Download]({{ $lineItem['metadata']['download_url'] }}) |
+| [{{ $lineItem->product()->get('title') }}]({{ optional($lineItem->product()->resource())->absoluteUrl() }}) | [Download]({{ $lineItem->metadata->get('download_url') }}) |
 @endforeach
 @endcomponent
 
