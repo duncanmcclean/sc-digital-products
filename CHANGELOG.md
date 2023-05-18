@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v5.0.2 (2023-05-18)
+
+### What's fixed
+
+- Fixed the digital downloads email #124
+
 ## v5.0.1 (2023-05-16)
 
 ### What's fixed
