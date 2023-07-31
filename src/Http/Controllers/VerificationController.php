@@ -10,28 +10,13 @@ class VerificationController extends Controller
 {
     public function index(VerificationRequest $request)
     {
-        $orders = collect(Order::all())
-            ->filter(function ($order) {
-                return $order->get('is_paid') === true;
-            })
-            ->map(function ($order) use ($request) {
-                foreach ($order->get('items') as $item) {
-                    if (isset($item['metadata']['license_key']) && $item['metadata']['license_key'] === $request->license_key) {
-                        return ['result' => true];
-                    }
-                }
-
-                return ['result' => false];
-            })
-            ->where('result', true)
-            ->flatten()
-            ->toArray();
-
-        if (isset($orders[0])) {
-            return $this->validResponse($request);
-        }
-
-        return $this->invalidResponse($request);
+        $order = Order::query()
+            ->where('is_paid', '=', 'true') // make sure the order is paid
+            ->where('items->metadata->license_key', '=', $request->license_key)
+            ->limit(1) // explicitly set a limit to return faster in the SELECT
+            ->first(); // first will call GET which will run the query and return the first result
+        return $order === null ? 
+            $this->invalidResponse($request) : $this->validResponse($request);
     }
 
     protected function validResponse($request)
