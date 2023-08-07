@@ -27,6 +27,7 @@
         "doublethreedigital/simple-commerce": "^5.0"
     },
     "require-dev": {
+        "doublethreedigital/runway": "^5.0",
         "orchestra/testbench": "^8.0"
     },
     "scripts": {

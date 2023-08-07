@@ -83,6 +83,22 @@ abstract class TestCase extends OrchestraTestCase
     }
 
     /**
+     * Boot the testing helper traits.
+     *
+     * @return array<class-string, class-string>
+     */
+    protected function setUpTraits()
+    {
+        $uses = array_flip(class_uses_recursive(static::class));
+
+        if (isset($uses[Helpers\UseDatabaseContentDrivers::class])) {
+            $this->setUpDatabaseContentDrivers();
+        }
+
+        return $this->setUpTheTestEnvironmentTraits($uses);
+    }
+
+    /**
      * For some reason, Statamic isn't currently registering our event listeners
      * and routes. This method is a temporary fix.
      */

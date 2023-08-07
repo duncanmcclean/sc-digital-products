@@ -1,13 +1,13 @@
 <?php
 
-namespace DoubleThreeDigital\SimpleCommerce\Tests\Http;
+namespace DoubleThreeDigital\SimpleCommerce\Tests\Http\Controllers;
 
 use DoubleThreeDigital\DigitalProducts\Facades\LicenseKey;
 use DoubleThreeDigital\DigitalProducts\Tests\TestCase;
 use Statamic\Facades\Collection;
 use Statamic\Facades\Entry;
 
-class VerificationControllerTest extends TestCase
+class VerificationControllerStacheTest extends TestCase
 {
     /** @test */
     public function can_get_verification_index()
