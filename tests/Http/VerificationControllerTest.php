@@ -5,7 +5,7 @@ namespace DoubleThreeDigital\SimpleCommerce\Tests\Http;
 use DoubleThreeDigital\DigitalProducts\Facades\LicenseKey;
 use DoubleThreeDigital\DigitalProducts\Tests\TestCase;
 use Statamic\Facades\Collection;
-use Statamic\Facades\Entry as FacadesEntry;
+use Statamic\Facades\Entry;
 
 class VerificationControllerTest extends TestCase
 {
@@ -14,11 +14,12 @@ class VerificationControllerTest extends TestCase
     {
         $licenseKey = LicenseKey::generate();
 
-        $collection = Collection::make('orders')->save();
+        Collection::make('orders')->save();
 
-        $order = FacadesEntry::make()
+        Entry::make()
             ->collection('orders')
-            ->set('is_paid', true)
+            ->set('order_status', 'placed')
+            ->set('payment_status', 'paid')
             ->set('items', [
                 [
                     'metadata' => [
@@ -28,14 +29,14 @@ class VerificationControllerTest extends TestCase
             ])
             ->save();
 
-        $response = $this->postJson('/api/sc-digital-downloads/verification', [
-            'license_key' => $licenseKey,
-        ]);
-
-        $response->assertOk();
-        $response->assertJson([
-            'license_key' => $licenseKey,
-            'valid' => true,
-        ]);
+        $this
+            ->post('/api/sc-digital-downloads/verification', [
+                'license_key' => $licenseKey,
+            ])
+            ->assertOk()
+            ->assertJson([
+                'license_key' => $licenseKey,
+                'valid' => true,
+            ]);
     }
 }

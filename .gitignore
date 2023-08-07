@@ -1,6 +1,7 @@
 vendor
 .DS_Store
 .phpunit.result.cache
+.phpunit.cache
 node_modules
 package-lock.json
 .php_cs.cache
