@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## v5.0.3 (2023-08-07)
+
+### What's improved
+
+* Improved license verification queries #126 #128 by @barchard
+
+### What's fixed
+
+* Refactored order completion check in `VerificationController` #127 by @duncanmcclean
+* Fixed failing tests
+
 ## v5.0.2 (2023-05-18)
 
 ### What's fixed
