@@ -5,9 +5,9 @@ namespace DoubleThreeDigital\SimpleCommerce\Tests\Http\Controllers;
 use DoubleThreeDigital\DigitalProducts\Facades\LicenseKey;
 use DoubleThreeDigital\DigitalProducts\Tests\Helpers\UseDatabaseContentDrivers;
 use DoubleThreeDigital\DigitalProducts\Tests\TestCase;
+use DoubleThreeDigital\SimpleCommerce\Orders\OrderModel;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Statamic\Facades\Collection;
-use Statamic\Facades\Entry;
 
 class VerificationControllerEloquentTest extends TestCase
 {
@@ -21,18 +21,17 @@ class VerificationControllerEloquentTest extends TestCase
 
         Collection::make('orders')->save();
 
-        Entry::make()
-            ->collection('orders')
-            ->set('order_status', 'placed')
-            ->set('payment_status', 'paid')
-            ->set('items', [
+        OrderModel::create([
+            'order_status' => 'placed',
+            'payment_status' => 'paid',
+            'items' => [
                 [
                     'metadata' => [
                         'license_key' => $licenseKey,
                     ],
                 ],
-            ])
-            ->save();
+            ],
+        ]);
 
         $this
             ->post('/api/sc-digital-downloads/verification', [

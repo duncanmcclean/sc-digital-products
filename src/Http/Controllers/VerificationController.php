@@ -43,7 +43,7 @@ class VerificationController extends Controller
                     OrderStatus::Placed->value,
                     OrderStatus::Dispatched->value,
                 ])
-                ->where('items->metadata->license_key', $request->license_key)
+                ->whereRaw("JSON_EXTRACT(items, '$[0].metadata.license_key') = ?", [$request->license_key])
                 ->limit(1)
                 ->get();
         }
