@@ -18,7 +18,8 @@ class VerificationControllerTest extends TestCase
 
         Entry::make()
             ->collection('orders')
-            ->set('is_paid', true)
+            ->set('order_status', 'placed')
+            ->set('payment_status', 'paid')
             ->set('items', [
                 [
                     'metadata' => [

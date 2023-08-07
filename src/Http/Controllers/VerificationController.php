@@ -4,6 +4,7 @@ namespace DoubleThreeDigital\DigitalProducts\Http\Controllers;
 
 use DoubleThreeDigital\DigitalProducts\Http\Requests\VerificationRequest;
 use DoubleThreeDigital\SimpleCommerce\Facades\Order;
+use DoubleThreeDigital\SimpleCommerce\Orders\OrderStatus;
 use Illuminate\Routing\Controller;
 
 class VerificationController extends Controller
@@ -12,7 +13,10 @@ class VerificationController extends Controller
     {
         $orders = collect(Order::all())
             ->filter(function ($order) {
-                return $order->get('is_paid') === true;
+                return in_array($order->get('order_status'), [
+                    OrderStatus::Placed->value,
+                    OrderStatus::Dispatched->value,
+                ]);
             })
             ->map(function ($order) use ($request) {
                 foreach ($order->get('items') as $item) {
