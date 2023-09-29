@@ -63,6 +63,9 @@ class AddFieldsToProductBlueprint
                 'type' => 'integer',
                 'display' => 'Download Limit',
                 'instructions' => "If you'd like to limit the amount if times this product can be downloaded, set it here. Keep it blank if you'd like it to be unlimited.",
+                'if' => [
+                    'is_digital_product' => 'equals true',
+                ],
             ],
             'downloadable_asset' => [
                 'type' => 'assets',
