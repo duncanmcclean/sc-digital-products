@@ -4,6 +4,7 @@ namespace DoubleThreeDigital\DigitalProducts\Listeners;
 
 use DoubleThreeDigital\SimpleCommerce\SimpleCommerce;
 use Statamic\Events\EntryBlueprintFound;
+use Statamic\Facades\AssetContainer;
 
 class AddFieldsToProductBlueprint
 {
@@ -71,6 +72,7 @@ class AddFieldsToProductBlueprint
                 'type' => 'assets',
                 'mode' => 'grid',
                 'display' => 'Downloadable Asset',
+                'container' => AssetContainer::all()->first()->handle(),
                 'if' => [
                     'is_digital_product' => 'equals true',
                 ],
