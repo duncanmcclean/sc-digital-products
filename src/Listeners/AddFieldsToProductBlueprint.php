@@ -76,7 +76,7 @@ class AddFieldsToProductBlueprint
                 'type' => 'assets',
                 'mode' => 'grid',
                 'display' => 'Downloadable Asset',
-                'container' => AssetContainer::all()->first()->handle(),
+                'container' => AssetContainer::all()->first()?->handle(),
                 'if' => [
                     'is_digital_product' => 'equals true',
                 ],
