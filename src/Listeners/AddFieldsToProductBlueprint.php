@@ -50,9 +50,11 @@ class AddFieldsToProductBlueprint
             return $event->blueprint;
         }
 
-        collect($this->getDigitalProductFields())->each(function ($value, $key) use (&$event) {
-            $event->blueprint->ensureField($key, $value, 'Digital Product');
-        });
+        collect($this->getDigitalProductFields())
+            ->reject(fn ($value, $key) => $event->blueprint->hasField($key))
+            ->each(function ($value, $key) use (&$event) {
+                $event->blueprint->ensureField($key, $value, 'Digital Product');
+            });
 
         return $event->blueprint;
     }
