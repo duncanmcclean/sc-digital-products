@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v5.0.4 (2023-09-29)
+
+### What's fixed
+
+* Fixed a few issues with how fields are added to product blueprints #130 by @duncanmcclean
+
 ## v5.0.3 (2023-08-07)
 
 ### What's improved
