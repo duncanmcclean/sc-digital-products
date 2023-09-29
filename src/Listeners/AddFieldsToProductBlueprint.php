@@ -18,10 +18,12 @@ class AddFieldsToProductBlueprint
             return $event->blueprint;
         }
 
-        $event->blueprint->ensureField('is_digital_product', [
-            'type' => 'toggle',
-            'display' => 'Is Digital Product?',
-        ], 'Digital Product');
+        if (! $event->blueprint->hasField('is_digital_product')) {
+            $event->blueprint->ensureField('is_digital_product', [
+                'type' => 'toggle',
+                'display' => 'Is Digital Product?',
+            ], 'Digital Product');
+        }
 
         if ($event->blueprint->hasField('product_variants')) {
             $productVariantsField = $event->blueprint->field('product_variants');
