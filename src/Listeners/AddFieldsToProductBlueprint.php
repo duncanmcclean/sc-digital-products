@@ -4,6 +4,7 @@ namespace DoubleThreeDigital\DigitalProducts\Listeners;
 
 use DoubleThreeDigital\SimpleCommerce\SimpleCommerce;
 use Statamic\Events\EntryBlueprintFound;
+use Statamic\Facades\AssetContainer;
 
 class AddFieldsToProductBlueprint
 {
@@ -17,10 +18,12 @@ class AddFieldsToProductBlueprint
             return $event->blueprint;
         }
 
-        $event->blueprint->ensureField('is_digital_product', [
-            'type' => 'toggle',
-            'display' => 'Is Digital Product?',
-        ], 'Digital Product');
+        if (! $event->blueprint->hasField('is_digital_product')) {
+            $event->blueprint->ensureField('is_digital_product', [
+                'type' => 'toggle',
+                'display' => 'Is Digital Product?',
+            ], 'Digital Product');
+        }
 
         if ($event->blueprint->hasField('product_variants')) {
             $productVariantsField = $event->blueprint->field('product_variants');
@@ -49,9 +52,11 @@ class AddFieldsToProductBlueprint
             return $event->blueprint;
         }
 
-        collect($this->getDigitalProductFields())->each(function ($value, $key) use (&$event) {
-            $event->blueprint->ensureField($key, $value, 'Digital Product');
-        });
+        collect($this->getDigitalProductFields())
+            ->reject(fn ($value, $key) => $event->blueprint->hasField($key))
+            ->each(function ($value, $key) use (&$event) {
+                $event->blueprint->ensureField($key, $value, 'Digital Product');
+            });
 
         return $event->blueprint;
     }
@@ -63,11 +68,15 @@ class AddFieldsToProductBlueprint
                 'type' => 'integer',
                 'display' => 'Download Limit',
                 'instructions' => "If you'd like to limit the amount if times this product can be downloaded, set it here. Keep it blank if you'd like it to be unlimited.",
+                'if' => [
+                    'is_digital_product' => 'equals true',
+                ],
             ],
             'downloadable_asset' => [
                 'type' => 'assets',
                 'mode' => 'grid',
                 'display' => 'Downloadable Asset',
+                'container' => AssetContainer::all()->first()?->handle(),
                 'if' => [
                     'is_digital_product' => 'equals true',
                 ],
