@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v5.0.5 (2023-10-03)
+
+### What's fixed
+
+* Fixed duplicate digital product fields being added to variant options #131 #132 by @duncanmcclean
+
 ## v5.0.4 (2023-09-29)
 
 ### What's fixed
