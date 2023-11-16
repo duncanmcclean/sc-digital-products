@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v5.0.6 (2023-11-16)
+
+### What's fixed
+
+* Fixed error from `AddFieldsToProductBlueprint` listener when no option fields were configured on a "Product Variants" field #133 #134 by @duncanmcclean
+
 ## v5.0.5 (2023-10-03)
 
 ### What's fixed
