@@ -28,7 +28,7 @@ class AddFieldsToProductBlueprint
         if ($event->blueprint->hasField('product_variants')) {
             $productVariantsField = $event->blueprint->field('product_variants');
 
-            $hasDigitalProductFields = collect($productVariantsField->config()['option_fields'])
+            $hasDigitalProductFields = collect($productVariantsField->config()['option_fields'] ?? [])
                 ->filter(function ($value, $key) {
                     return $value['handle'] === 'download_limit' || $value['handle'] === 'downloadable_asset';
                 })
