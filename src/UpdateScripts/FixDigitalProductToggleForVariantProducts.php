@@ -3,6 +3,7 @@
 namespace DoubleThreeDigital\DigitalProducts\UpdateScripts;
 
 use DoubleThreeDigital\SimpleCommerce\Facades\Product;
+use Statamic\Facades\Blueprint;
 use Statamic\UpdateScripts\UpdateScript;
 
 class FixDigitalProductToggleForVariantProducts extends UpdateScript
@@ -36,6 +37,13 @@ class FixDigitalProductToggleForVariantProducts extends UpdateScript
                         ],
                     ])
                     ->save();
+            });
+
+        Blueprint::in("collections.products")
+            ->filter(fn ($blueprint) => $blueprint->hasField('is_digital_product'))
+            ->filter(fn ($blueprint) => $blueprint->hasField('product_variants'))
+            ->each(function ($blueprint) {
+                $blueprint->removeTab('Digital Product')->save();
             });
     }
 }
