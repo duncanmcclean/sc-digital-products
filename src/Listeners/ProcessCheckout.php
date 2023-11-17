@@ -7,7 +7,6 @@ use DoubleThreeDigital\DigitalProducts\Facades\LicenseKey;
 use DoubleThreeDigital\SimpleCommerce\Events\OrderStatusUpdated;
 use DoubleThreeDigital\SimpleCommerce\Orders\OrderStatus;
 use DoubleThreeDigital\SimpleCommerce\Products\ProductType;
-use DoubleThreeDigital\SimpleCommerce\Products\ProductVariant;
 use Illuminate\Support\Facades\URL;
 
 class ProcessCheckout
