@@ -38,8 +38,8 @@ class AddFieldsToProductBlueprintTest extends TestCase
                             'handle' => 'product_variants',
                             'field' => ['type' => 'product_variants'],
                         ],
-                    ]]
-                ]]]
+                    ]],
+                ]]],
             ])
             ->save();
 
