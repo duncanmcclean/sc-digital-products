@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v5.1.0 (2023-11-17)
+
+### What's improved
+
+* For variant products, the "Is Digital Product?" toggle is now on each variant #135 #136 by @duncanmcclean
+
 ## v5.0.6 (2023-11-16)
 
 ### What's fixed
