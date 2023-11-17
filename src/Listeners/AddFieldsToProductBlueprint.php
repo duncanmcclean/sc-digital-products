@@ -18,13 +18,6 @@ class AddFieldsToProductBlueprint
             return $event->blueprint;
         }
 
-        if (! $event->blueprint->hasField('is_digital_product')) {
-            $event->blueprint->ensureField('is_digital_product', [
-                'type' => 'toggle',
-                'display' => 'Is Digital Product?',
-            ], 'Digital Product');
-        }
-
         if ($event->blueprint->hasField('product_variants')) {
             $productVariantsField = $event->blueprint->field('product_variants');
 
@@ -62,7 +55,7 @@ class AddFieldsToProductBlueprint
             collect($this->getDigitalProductFields())
                 ->reject(fn ($value, $key) => $event->blueprint->hasField($key))
                 ->each(function ($value, $key) use (&$event) {
-                    $event->blueprint->ensureField($key, $value, 'Digital Product');
+                    $event->blueprint->ensureField($key, $value, __('Digital Product'));
                 });
         }
 
@@ -72,10 +65,14 @@ class AddFieldsToProductBlueprint
     protected function getDigitalProductFields()
     {
         return [
+            'is_digital_product' => [
+                'type' => 'toggle',
+                'display' => __('Is Digital Product?'),
+            ],
             'download_limit' => [
                 'type' => 'integer',
-                'display' => 'Download Limit',
-                'instructions' => "If you'd like to limit the amount if times this product can be downloaded, set it here. Keep it blank if you'd like it to be unlimited.",
+                'display' => __('Download Limit'),
+                'instructions' => __("If you'd like to limit the amount if times this product can be downloaded, set it here. Keep it blank if you'd like it to be unlimited."),
                 'if' => [
                     'is_digital_product' => 'equals true',
                 ],
@@ -83,7 +80,7 @@ class AddFieldsToProductBlueprint
             'downloadable_asset' => [
                 'type' => 'assets',
                 'mode' => 'grid',
-                'display' => 'Downloadable Asset',
+                'display' => __('Downloadable Asset'),
                 'container' => AssetContainer::all()->first()?->handle(),
                 'if' => [
                     'is_digital_product' => 'equals true',
