@@ -25,21 +25,21 @@ class FixDigitalProductToggleForVariantProducts extends UpdateScript
                     ->merge([
                         'is_digital_product' => null,
                         'product_variants' => [
-                        'variants' => $productVariants['variants'],
-                        'options' => collect($productVariants['options'])
-                            ->map(function ($option) {
-                                $option['is_digital_product'] = true;
+                            'variants' => $productVariants['variants'],
+                            'options' => collect($productVariants['options'])
+                                ->map(function ($option) {
+                                    $option['is_digital_product'] = true;
 
-                                return $option;
-                            })
-                            ->values()
-                            ->toArray(),
+                                    return $option;
+                                })
+                                ->values()
+                                ->toArray(),
                         ],
                     ])
                     ->save();
             });
 
-        Blueprint::in("collections.products")
+        Blueprint::in('collections.products')
             ->filter(fn ($blueprint) => $blueprint->hasField('is_digital_product'))
             ->filter(fn ($blueprint) => $blueprint->hasField('product_variants'))
             ->each(function ($blueprint) {
