@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v5.1.1 (2023-11-21)
+
+### What's fixed
+
+* Fixed an issue where Digital Product fields weren't being added to variant option fields by @duncanmcclean
+
 ## v5.1.0 (2023-11-17)
 
 ### What's improved
