@@ -23,7 +23,7 @@ class ProcessCheckout
                 $product = $lineItem->product();
 
                 if ($product->purchasableType() === ProductType::Variant) {
-                    $productVariant = $product->variant($lineItem->variant());
+                    $productVariant = $product->variant($lineItem->variant()['variant'] ?? $lineItem->variant());
 
                     return $productVariant->has('is_digital_product')
                         ? $productVariant->get('is_digital_product')

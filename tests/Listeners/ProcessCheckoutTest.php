@@ -130,7 +130,10 @@ class ProcessCheckoutTest extends TestCase
                     'id' => Stache::generateId(),
                     'product' => $product->id(),
                     'quantity' => 1,
-                    'variant' => 'Red_Small',
+                    'variant' => [
+                        'variant' => 'Red_Small',
+                        'product' => $product->id(),
+                    ],
                     'total' => 1200,
                 ],
             ])
