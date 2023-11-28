@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v5.1.2 (2023-11-28)
+
+### What's fixed
+
+* Fixed an error when checking out with a product variant #139 by @duncanmcclean
+
 ## v5.1.1 (2023-11-21)
 
 ### What's fixed
