@@ -12,6 +12,8 @@
 
 <!-- /statamic:hide -->
 
+> **This addon has been merged into the core Simple Commerce addon.** Please review the [v5.x to v6.x update guide](https://simple-commerce.duncanmcclean.com/upgrade-guides/v5-x-to-v6-0) for more information.
+
 The Digital Products addon is a first-party extension of Simple Commerce which enables you to sell digital products to your customers.
 
 Simply link up a Statamic asset, then after your customer has checked out, they'll be able to download your product.
